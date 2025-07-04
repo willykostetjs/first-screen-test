@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Golos Text", sans-serif;
+  color: #1c3749;
+  background-color: #EBF1F8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1380px;
+  margin: auto;
+  padding: 14px 66px;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header-container ul {
+  display: flex;
+  gap: 40px;
+}
+
+.header-items li {
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #161618
+}
+
+.header-button {
+  display: block;
+  width: 193px;
+  cursor: pointer;
+  height: 38px;
+  background-color: #161618;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 0;
+}
+
+.header-button:hover {
+  background-color: #333;
+}
+
+.header-burger {
+  display: none;
+  height: 34px;
+  width: 34px;
+}
+
+.logo {
+  width: 147px;
+  height: 49px;
+}
+
+.start {
+  margin-bottom: 20px;
+}
+
+.start-container {
+  background-color: #161618;
+  background-image: url('./img/start-image.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: white;
+  padding: 60px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.start-badges {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.start-badges span {
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.start-text {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.start-heading {
+  font-size: 58px;
+  font-weight: 600;
+  max-width: 630px;
+  line-height: 92%;
+  margin-bottom: 35px;
+}
+
+.start-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.start-list li {
+  color: #A6A6A6;
+  font-weight: 400;
+  padding-left: 27px;
+  position: relative;
+}
+
+.start-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background-image: url('./img/check.svg');
+}
+
+.start-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.start-buttons button {
+  max-width: 213px;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 20px 30px;
+  font-size: 16px;
+  color: white;
+  background: 0;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.start-buttons-blue {
+  background-color: #2A5CD9 !important;
+  border: 0 !important;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.icon-list-item {
+  background-color: #fff;
+  border-radius: 28px;
+  width: 100%;
+  padding: 20px;
+}
+
+.icon-list-item div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 12px;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-list-item div h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.icon-list-item p {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -2%;
+  line-height: 126%;
+  max-width: 290px;
+  padding-bottom: 25px;
+}
+.start-image {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header-burger {
+    display: block;
+  }
+
+  .header-container ul,
+  .header-items,
+  .header-items li {
+    display: none;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .start-badges {
+    justify-content: center;
+  }
+
+  .start-badges span {
+    font-size: 12px;
+    padding: 12px 16px;
+  }
+
+  .start-container {
+    padding: 14px 20px;
+  }
+
+  .start-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .start-container, .start {
+    background-image: none;
+  }
+
+  .start-heading {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .start-buttons {
+    margin-bottom: 10px
+  }
+
+  .start-list li {
+    font-size: 14px;
+  }
+
+  .start-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .start-heading {
+    max-width: 100%;
+  }
+
+  .start-buttons button {
+    max-width: 100%;
+  }
+
+  .icon-list {
+    flex-direction: column;
+  }
+
+  .icon-list-item {
+    padding-bottom: 0;
+  }
+  .start-image {
+    display: block;
+  }
+}
