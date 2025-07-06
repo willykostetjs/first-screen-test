@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>ED Pro</title>
-    <link rel="preload" href="style/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./style/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="style/fonts.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style/fonts.css">
+        <link rel="stylesheet" href="./styles.css">
     </noscript>
+    <link rel="preload" href="style/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 </head>
 
 <body>
@@ -185,27 +186,246 @@
             </div>
             <button class="base-list-button">Это про меня</button>
         </section>
+        <section class="icf">
+            <div class="container">
+                <h2 class="icf-title">Что вас ждет на программе<br />
+                    по международным стандартам ICF?</h2>
+                <div class=" icf-list icf-slider swiper ">
+                    <div class="swiper-wrapper">
+                        <div class="icf-item swiper-slide">
+                            <img class="icf-item-tick" src="./img/tick.svg" alt="">
+                            <div class="icf-item-text">Научитесь проводить коуч-сессии по международным стандартам</div>
+                        </div>
+                        <div class="icf-item swiper-slide">
+                            <img class="icf-item-tick" src="./img/tick.svg" alt="">
+                            <div class="icf-item-text">Узнаете, как с помощью вопросов расширять мышление собеседника
+                            </div>
+                        </div>
+                        <div class="icf-item swiper-slide">
+                            <img class="icf-item-tick" src="./img/tick.svg" alt="">
+                            <div class="icf-item-text">Освоите инструменты для преодоления страхов и ограничивающих
+                                убеждений</div>
+                        </div>
+                        <div class="icf-item swiper-slide">
+                            <img class="icf-item-tick" src="./img/tick.svg" alt="">
+                            <div class="icf-item-text">Научитесь создавать безопасную, экологичную атмосферу в разговоре
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sw sw-bottom">
+                    <div class="sw-navigation">
+                        <button class="sw-navigation-button sw-navigation-left icf-navigation-left">
+                            <img src="./img/left.svg" alt="Назад">
+                        </button>
+                        <button class="sw-navigation-button sw-navigation-right icf-navigation-right">
+                            <img src="./img/right.svg" alt="Вперед">
+                        </button>
+                    </div>
+                    <div class="sw-navigation-pagination sw-dots icf-dots swiper-pagination"></div>
+                </div>
+                <div class="icf-link">
+                    <button class="base-list-button icf-button">Подробности обучения</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="container">
+                <h2 class="history-title">Истории выпускников</h2>
+                <h3 class="history-subtitle">Коучем может стать каждый!</h3>
+                <div class="sw history-list history-slider swiper ">
+                    <div class="swiper-wrapper">
+                        <div class="history-item swiper-slide">
+                            <div class="history-item-top"><span class="text-blue">До:</span> была предпринимателем,
+                                часто меняла направления (ателье по пошиву одежды, парфюмерный бизнес, косметический
+                                бизнес). Пандемия внесла свои коррективы, пришлось закрыть бизнес и пересмотреть свой
+                                вид деятельности</div>
+                            <div class="history-item-body">
+                                <p><span class="text-blue">После:</span> работа коуча позволяет
+                                    проводить сессии онлайн даже в небольшом провинциальном городке.</p>
+                                <p>Проводит индивидуальные коуч-сессии с руководителями разного уровня и статуса. Также
+                                    помогает людям с запросами типа «как найти себя и ресурс», «как выйти из состояния
+                                    выгорания».
+                                </p>
+                                <p>Работает куратором в Академии EDPRO.
+                                </p>
+                                <p>Сотрудничает со спортивной академией в качестве коуча и спикера на семинарах.
+                                </p>
+                                <p>И уже больше года снова является собственником бизнеса.</p>
+                                <p><b>«Коучинг — это возможность изменить свое отношение к людям, внешнему миру и
+                                        научиться по-новому выстраивать взаимоотношения с окружающими»</b></p>
+                            </div>
+                            <div class="history-item-bottom">
+                                <img class="history-item-bottom-ava" src="./img/history/1.png" alt="">
+                                <div class="history-item-bottom-name">Мария Ткаченко</div>
+                            </div>
+                        </div>
+                        <div class="history-item swiper-slide">
+                            <div class="history-item-top"><span class="text-blue">До:</span> работала
+                                проджект-менеджером в крупной компании. Стаж — более 15 лет. После декрета вышла на
+                                работу, пыталась совмещать карьерные амбиции и изменившиеся семейные ценности. Активное
+                                совмещение привело к усталости и выгоранию</div>
+                            <div class="history-item-body">
+                                <p><span class="text-blue">После:</span> сейчас проводит коуч-сессии для людей из
+                                    корпоративной сферы, помогает им справляться с различными проблемами, в том числе с
+                                    предотвращением выгорания. </p>
+                                <div>Благодаря обучению:
+                                    <ul>
+                                        <li>преодолела страх проявляться и начала вести телеграм-канал;</li>
+                                        <li>осознала и заякорила свои жизненные ценности;</li>
+                                        <li>теперь легче идет в новое.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="history-item-bottom">
+                                <img class="history-item-bottom-ava" src="./img/history/2.png" alt="">
+                                <div class="history-item-bottom-name">Ольга Буданова</div>
+                            </div>
+                        </div>
+  <div class="history-item swiper-slide">
+                            <div class="history-item-top"><span class="text-blue">До:</span> была предпринимателем,
+                                часто меняла направления (ателье по пошиву одежды, парфюмерный бизнес, косметический
+                                бизнес). Пандемия внесла свои коррективы, пришлось закрыть бизнес и пересмотреть свой
+                                вид деятельности</div>
+                            <div class="history-item-body">
+                                <p><span class="text-blue">После:</span> работа коуча позволяет
+                                    проводить сессии онлайн даже в небольшом провинциальном городке.</p>
+                                <p>Проводит индивидуальные коуч-сессии с руководителями разного уровня и статуса. Также
+                                    помогает людям с запросами типа «как найти себя и ресурс», «как выйти из состояния
+                                    выгорания».
+                                </p>
+                                <p>Работает куратором в Академии EDPRO.
+                                </p>
+                                <p>Сотрудничает со спортивной академией в качестве коуча и спикера на семинарах.
+                                </p>
+                                <p>И уже больше года снова является собственником бизнеса.</p>
+                                <p><b>«Коучинг — это возможность изменить свое отношение к людям, внешнему миру и
+                                        научиться по-новому выстраивать взаимоотношения с окружающими»</b></p>
+                            </div>
+                            <div class="history-item-bottom">
+                                <img class="history-item-bottom-ava" src="./img/history/1.png" alt="">
+                                <div class="history-item-bottom-name">Мария Ткаченко</div>
+                            </div>
+                        </div>
+                        <div class="history-item swiper-slide">
+                            <div class="history-item-top"><span class="text-blue">До:</span> работала
+                                проджект-менеджером в крупной компании. Стаж — более 15 лет. После декрета вышла на
+                                работу, пыталась совмещать карьерные амбиции и изменившиеся семейные ценности. Активное
+                                совмещение привело к усталости и выгоранию</div>
+                            <div class="history-item-body">
+                                <p><span class="text-blue">После:</span> сейчас проводит коуч-сессии для людей из
+                                    корпоративной сферы, помогает им справляться с различными проблемами, в том числе с
+                                    предотвращением выгорания. </p>
+                                <div>Благодаря обучению:
+                                    <ul>
+                                        <li>преодолела страх проявляться и начала вести телеграм-канал;</li>
+                                        <li>осознала и заякорила свои жизненные ценности;</li>
+                                        <li>теперь легче идет в новое.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="history-item-bottom">
+                                <img class="history-item-bottom-ava" src="./img/history/2.png" alt="">
+                                <div class="history-item-bottom-name">Ольга Буданова</div>
+                            </div>
+                        </div>  <div class="history-item swiper-slide">
+                            <div class="history-item-top"><span class="text-blue">До:</span> была предпринимателем,
+                                часто меняла направления (ателье по пошиву одежды, парфюмерный бизнес, косметический
+                                бизнес). Пандемия внесла свои коррективы, пришлось закрыть бизнес и пересмотреть свой
+                                вид деятельности</div>
+                            <div class="history-item-body">
+                                <p><span class="text-blue">После:</span> работа коуча позволяет
+                                    проводить сессии онлайн даже в небольшом провинциальном городке.</p>
+                                <p>Проводит индивидуальные коуч-сессии с руководителями разного уровня и статуса. Также
+                                    помогает людям с запросами типа «как найти себя и ресурс», «как выйти из состояния
+                                    выгорания».
+                                </p>
+                                <p>Работает куратором в Академии EDPRO.
+                                </p>
+                                <p>Сотрудничает со спортивной академией в качестве коуча и спикера на семинарах.
+                                </p>
+                                <p>И уже больше года снова является собственником бизнеса.</p>
+                                <p><b>«Коучинг — это возможность изменить свое отношение к людям, внешнему миру и
+                                        научиться по-новому выстраивать взаимоотношения с окружающими»</b></p>
+                            </div>
+                            <div class="history-item-bottom">
+                                <img class="history-item-bottom-ava" src="./img/history/1.png" alt="">
+                                <div class="history-item-bottom-name">Мария Ткаченко</div>
+                            </div>
+                        </div>
+                        <div class="history-item swiper-slide">
+                            <div class="history-item-top"><span class="text-blue">До:</span> работала
+                                проджект-менеджером в крупной компании. Стаж — более 15 лет. После декрета вышла на
+                                работу, пыталась совмещать карьерные амбиции и изменившиеся семейные ценности. Активное
+                                совмещение привело к усталости и выгоранию</div>
+                            <div class="history-item-body">
+                                <p><span class="text-blue">После:</span> сейчас проводит коуч-сессии для людей из
+                                    корпоративной сферы, помогает им справляться с различными проблемами, в том числе с
+                                    предотвращением выгорания. </p>
+                                <div>Благодаря обучению:
+                                    <ul>
+                                        <li>преодолела страх проявляться и начала вести телеграм-канал;</li>
+                                        <li>осознала и заякорила свои жизненные ценности;</li>
+                                        <li>теперь легче идет в новое.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="history-item-bottom">
+                                <img class="history-item-bottom-ava" src="./img/history/2.png" alt="">
+                                <div class="history-item-bottom-name">Ольга Буданова</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" sw sw-bottom">
+                    <div class="sw-navigation">
+                        <button class="sw-navigation-button sw-navigation-left history-navigation-left">
+                            <img src="./img/left.svg" alt="Назад">
+                        </button>
+                        <button class="sw-navigation-button sw-navigation-right history-navigation-right">
+                            <img src="./img/right.svg" alt="Вперед">
+                        </button>
+                    </div>
+                    <div class="sw-navigation-pagination sw-dots history-dots swiper-pagination"></div>
+                </div>
+                <div class="history-link">
+                    <button class="base-list-button history-button">Стать коучем ICF</button>
+                </div>
+            </div>
+        </section>
+
         <section class="how-much">
             <div class="how-much-left">
                 <h1>Сколько зарабатывает коуч ICF?</h1>
-                <p class="how-much-left-text">Вы можете работать дома, в офисе либо из другого удобного вам места. Работаете по найму или на себя в свободном графике. Решать только вам!</p>
-                <p class="how-much-left-bold">После получения сертификата ICF действующие коучи <b>увеличивают свой чек в среднем на 30 000 ₽ за контракт из 10 сессий.</b></p>
+                <p class="how-much-left-text">Вы можете работать дома, в офисе либо из другого удобного вам места.
+                    Работаете по найму или на себя в свободном графике. Решать только вам!</p>
+                <p class="how-much-left-bold">После получения сертификата ICF действующие коучи <b>увеличивают свой чек
+                        в среднем на 30 000 ₽ за контракт из 10 сессий.</b></p>
                 <button>Хочу так же!</button>
             </div>
             <div class="how-much-right">
                 <div class="how-much-right-lines">
                     <div class="how-much-right-line">
-                        <span>от 2 000 до 6 000 ₽ за сессию</span> <p>Получают выпускники EdPro уже в начале своей практики</p>
+                        <span>от 2 000 до 6 000 ₽ за сессию</span>
+                        <p>Получают выпускники EdPro уже в начале своей практики</p>
                     </div>
                     <div class="how-much-right-line">
-                        <span>от 6 сессий в неделю</span> <p>Проводит коуч ICF при средней загрузке</p>
+                        <span>от 6 сессий в неделю</span>
+                        <p>Проводит коуч ICF при средней загрузке</p>
                     </div>
                 </div>
                 <strong>от 150 000 ₽</strong>
-                <p>Ваш месячный заработок. Вы можете брать клиентов уже в процессе обучения. Повышаете свой уровень → увеличиваете доход.</p>
+                <p>Ваш месячный заработок. Вы можете брать клиентов уже в процессе обучения. Повышаете свой уровень →
+                    увеличиваете доход.</p>
             </div>
         </section>
     </div>
+    <script src="./scripts/swiper-bundle.min.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
 </body>
 
 </html>
