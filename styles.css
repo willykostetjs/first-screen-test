@@ -15,10 +15,9 @@ body {
 }
 
 .container {
-  max-width: 1380px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 a {
