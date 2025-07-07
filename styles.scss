@@ -17,7 +17,7 @@ body {
 
 .container {
   max-width: 1400px;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 0 10px;
   // display: flex;
   // flex-direction: column;
@@ -215,6 +215,9 @@ ul {
   flex-direction: column;
   gap: 20px;
   margin-top: 100px;
+  @media screen and (max-width: 420px) {
+    margin-top: 40px;
+  }
 }
 
 .about-coach-top,
@@ -265,6 +268,10 @@ ul {
   margin-bottom: 20px;
   font-weight: 400;
   line-height: 130%;
+  @media screen and (max-width: 420px) {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
 
 .about-coach-top-image,
@@ -274,30 +281,36 @@ ul {
   height: 100%;
   @media screen and (max-width: 420px) {
     max-width: 100%;
+    border-radius: 18px;
   }
 }
 
 .about-coach-bottom-text {
   padding: 40px;
-}
-
-.about-coach-bottom-text h1 {
-  font-size: 44px;
-  color: white;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-
-.about-coach-bottom-text {
   background-color: #4c77aa;
   border-radius: 45px;
+  @media screen and (max-width: 420px) {
+    border-radius: 18px;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 44px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 40px;
+    @media screen and (max-width: 420px) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    color: white;
+    font-weight: 400;
+  }
 }
-
-.about-coach-bottom-text p {
-  color: white;
-  font-weight: 400;
+.about-coach-bottom-image {
+  // height: 127px;
 }
-
 .base-list {
   background: white;
   padding: 66px 71px;
@@ -305,6 +318,14 @@ ul {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+  @media screen and (max-width: 420px) {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 18px;
+  }
+  &-medium-reverse {
+    flex-direction: column-reverse !important;
+  }
 }
 
 .base-list-heading {
@@ -329,6 +350,7 @@ ul {
   gap: 50px;
   @media screen and (max-width: 420px) {
     flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -343,6 +365,10 @@ ul {
   line-height: 126%;
   font-weight: 500;
   margin-bottom: 20px;
+  @media screen and (max-width: 420px) {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
 }
 
 .base-list-container > div > div > p {
@@ -351,12 +377,20 @@ ul {
   font-weight: 400;
   color: #161618;
   opacity: 60%;
+  @media screen and (max-width: 420px) {
+    font-size: 14px;
+    line-height: 126%;
+    letter-spacing: -0.01em;
+  }
 }
 
 .base-list-container > div > img {
   border-radius: 45px;
   @media screen and (max-width: 420px) {
     width: 100%;
+    border-radius: 18px;
+    height: 260px;
+    object-fit: cover;
   }
 }
 
@@ -370,6 +404,11 @@ ul {
   border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
+  @media screen and (max-width: 420px) {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+  }
 }
 
 .base-list-listing {
@@ -526,15 +565,20 @@ ul {
 }
 .icf {
   padding: 80px 0;
-    @media screen and (max-width: 420px) {
-      overflow: hidden;
-    }
+  @media screen and (max-width: 420px) {
+    // overflow: hidden;
+  }
   &-title {
     font-weight: 500;
     font-size: 44px;
     line-height: 102%;
     letter-spacing: -0.02em;
     margin-bottom: 50px;
+    @media screen and (max-width: 420px) {
+      font-size: 30px;
+      line-height: 102%;
+      margin-bottom: 30px;
+    }
   }
   &-item {
     border-radius: 45px;
@@ -546,6 +590,9 @@ ul {
     padding: 30px;
     @media screen and (max-width: 420px) {
       width: 320px !important;
+border-radius: 18px;
+padding: 14px;
+height: 121px;
     }
     &-tick {
       width: 31px;
@@ -556,6 +603,9 @@ ul {
       font-size: 23px;
       line-height: 126%;
       letter-spacing: -0.02em;
+       @media screen and (max-width: 420px) {
+      font-size: 16px;
+    }
     }
   }
   &-bottom {
@@ -596,8 +646,8 @@ ul {
 .history {
   padding: 0;
   @media screen and (max-width: 420px) {
-      overflow: hidden;
-    }
+    overflow: hidden;
+  }
   &-title {
     font-weight: 500;
     font-size: 44px;

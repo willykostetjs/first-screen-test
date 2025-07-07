@@ -24,7 +24,7 @@ function handleFormSubmit() {
 document.addEventListener("DOMContentLoaded", function () {
   const icfSwiper = new Swiper(".icf-slider", {
     loop: false,
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     spaceBetween: 12,
     pagination: {
       el: ".icf-dots",
@@ -36,18 +36,18 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       200: {
-        slidesPerView: 1,
-        spaceBetween: 30,
+        slidesPerView: 'auto',
+        spaceBetween: 12,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 12,
       },
     },
   });
   const historySwiper = new Swiper(".history-slider", {
     loop: false,
-    slidesPerView: 2,
+    slidesPerView: 'auto',
     spaceBetween: 12,
     pagination: {
       el: ".history-dots",
@@ -59,11 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       200: {
-        slidesPerView: 1,
-        spaceBetween: 30,
+        slidesPerView: 'auto',
+        spaceBetween: 12,
       },
       1024: {
-        slidesPerView: 2,
+        slidesPerView: 'auto',
         spaceBetween: 12,
       },
     },
