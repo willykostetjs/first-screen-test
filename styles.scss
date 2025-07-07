@@ -371,6 +371,15 @@ ul {
   cursor: pointer;
 }
 
+.base-list-listing {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 130%;
+  color: #161618;
+}
+
 .how-much {
   display: flex;
   gap: 41px;
@@ -378,6 +387,7 @@ ul {
   color: white;
   border-radius: 45px;
   padding: 45px 40px;
+  margin-top: 100px;
   @media screen and (max-width: 420px) {
     flex-direction: column;
   }
@@ -583,7 +593,7 @@ ul {
   color: #2a5cd9;
 }
 .history {
-  padding: 80px 0;
+  padding: 0;
   @media screen and (max-width: 420px) {
       overflow: hidden;
     }
@@ -702,4 +712,13 @@ ul {
     width: 30px !important;
     border-radius: 300px !important;
   }
+}
+.form {
+  margin-top: 20px;
+  display: flex;
+  padding: 40px;
+  gap: 82px;
+  background: #161618;
+  color: white;
+  border-radius: 28px;
 }
