@@ -324,7 +324,9 @@ ul {
     border-radius: 18px;
   }
   &-medium-reverse {
+     @media screen and (max-width: 420px) {
     flex-direction: column-reverse !important;
+  }
   }
 }
 
@@ -566,7 +568,7 @@ ul {
 .icf {
   padding: 80px 0;
   @media screen and (max-width: 420px) {
-    // overflow: hidden;
+    overflow: hidden;
   }
   &-title {
     font-weight: 500;

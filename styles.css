@@ -329,8 +329,10 @@ ul {
     border-radius: 18px;
   }
 }
-.base-list-medium-reverse {
-  flex-direction: column-reverse !important;
+@media screen and (max-width: 420px) {
+  .base-list-medium-reverse {
+    flex-direction: column-reverse !important;
+  }
 }
 
 .base-list-heading {
@@ -569,6 +571,11 @@ ul {
 
 .icf {
   padding: 80px 0;
+}
+@media screen and (max-width: 420px) {
+  .icf {
+    overflow: hidden;
+  }
 }
 .icf-title {
   font-weight: 500;
