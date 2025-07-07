@@ -267,6 +267,12 @@ ul {
   border-radius: 45px;
   height: 100%;
 }
+@media screen and (max-width: 420px) {
+  .about-coach-top-image,
+  .about-coach-bottom-image {
+    max-width: 100%;
+  }
+}
 
 .about-coach-bottom-text {
   padding: 40px;
@@ -303,6 +309,12 @@ ul {
   font-weight: 500;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 420px) {
+  .base-list-heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
 
 .base-list-container {
   display: flex;
@@ -314,6 +326,11 @@ ul {
   display: flex;
   align-items: center;
   gap: 50px;
+}
+@media screen and (max-width: 420px) {
+  .base-list-container > div {
+    flex-direction: column;
+  }
 }
 
 .base-list-container > div > div {
@@ -340,6 +357,11 @@ ul {
 .base-list-container > div > img {
   border-radius: 45px;
 }
+@media screen and (max-width: 420px) {
+  .base-list-container > div > img {
+    width: 100%;
+  }
+}
 
 .base-list-button {
   display: inline-block;
@@ -360,6 +382,11 @@ ul {
   color: white;
   border-radius: 45px;
   padding: 45px 40px;
+}
+@media screen and (max-width: 420px) {
+  .how-much {
+    flex-direction: column;
+  }
 }
 
 .how-much-left {
@@ -479,6 +506,11 @@ ul {
 .icf {
   padding: 80px 0;
 }
+@media screen and (max-width: 420px) {
+  .icf {
+    overflow: hidden;
+  }
+}
 .icf-title {
   font-weight: 500;
   font-size: 44px;
@@ -494,6 +526,11 @@ ul {
   flex: 0 0 auto;
   background: white;
   padding: 30px;
+}
+@media screen and (max-width: 420px) {
+  .icf-item {
+    width: 320px !important;
+  }
 }
 .icf-item-tick {
   width: 31px;
@@ -544,6 +581,11 @@ ul {
 .history {
   padding: 80px 0;
 }
+@media screen and (max-width: 420px) {
+  .history {
+    overflow: hidden;
+  }
+}
 .history-title {
   font-weight: 500;
   font-size: 44px;
@@ -568,6 +610,11 @@ ul {
   line-height: 126%;
   letter-spacing: -0.01em;
   color: #161618;
+}
+@media screen and (max-width: 420px) {
+  .history-item {
+    width: 320px !important;
+  }
 }
 .history-item-body {
   display: flex;

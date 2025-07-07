@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".icf-navigation-right",
     },
     breakpoints: {
-      600: {
-        slidesPerView: 2,
+      200: {
+        slidesPerView: 1,
         spaceBetween: 30,
       },
       1024: {
@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".history-navigation-right",
     },
     breakpoints: {
-      600: {
-        slidesPerView: 2,
+      200: {
+        slidesPerView: 1,
         spaceBetween: 30,
       },
       1024: {

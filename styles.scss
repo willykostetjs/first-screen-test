@@ -271,6 +271,9 @@ ul {
   max-width: 600px;
   border-radius: 45px;
   height: 100%;
+  @media screen and (max-width: 420px) {
+    max-width: 100%;
+  }
 }
 
 .about-coach-bottom-text {
@@ -307,6 +310,10 @@ ul {
   font-size: 44px;
   font-weight: 500;
   margin-bottom: 50px;
+  @media screen and (max-width: 420px) {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .base-list-container {
@@ -319,6 +326,9 @@ ul {
   display: flex;
   align-items: center;
   gap: 50px;
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+  }
 }
 
 .base-list-container > div > div {
@@ -344,6 +354,9 @@ ul {
 
 .base-list-container > div > img {
   border-radius: 45px;
+  @media screen and (max-width: 420px) {
+    width: 100%;
+  }
 }
 
 .base-list-button {
@@ -365,6 +378,9 @@ ul {
   color: white;
   border-radius: 45px;
   padding: 45px 40px;
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+  }
 }
 
 .how-much-left {
@@ -499,6 +515,9 @@ ul {
 }
 .icf {
   padding: 80px 0;
+    @media screen and (max-width: 420px) {
+      overflow: hidden;
+    }
   &-title {
     font-weight: 500;
     font-size: 44px;
@@ -514,6 +533,9 @@ ul {
     flex: 0 0 auto;
     background: white;
     padding: 30px;
+    @media screen and (max-width: 420px) {
+      width: 320px !important;
+    }
     &-tick {
       width: 31px;
       margin-bottom: 20px;
@@ -562,6 +584,9 @@ ul {
 }
 .history {
   padding: 80px 0;
+  @media screen and (max-width: 420px) {
+      overflow: hidden;
+    }
   &-title {
     font-weight: 500;
     font-size: 44px;
@@ -580,7 +605,9 @@ ul {
     border-radius: 45px;
     padding: 30px;
     width: 684px !important;
-
+    @media screen and (max-width: 420px) {
+      width: 320px !important;
+    }
     flex: 0 0 auto;
     font-weight: 400;
     font-size: 16px;
