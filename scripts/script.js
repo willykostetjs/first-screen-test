@@ -68,6 +68,29 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+  const teachersSwiper = new Swiper(".teachers-slider", {
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 12,
+    pagination: {
+      el: ".teachers-dots",
+      clickable: true,
+    },
+    navigation: {
+      prevEl: ".teachers-navigation-left",
+      nextEl: ".teachers-navigation-right",
+    },
+    breakpoints: {
+      200: {
+        slidesPerView: 'auto',
+        spaceBetween: 12,
+      },
+      1024: {
+        slidesPerView: 'auto',
+        spaceBetween: 12,
+      },
+    },
+  });
   const e = new Swiper(".speaker-swiper", {
       direction: "horizontal",
       loop: !0,

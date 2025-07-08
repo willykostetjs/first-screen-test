@@ -32,7 +32,19 @@ a {
 ul {
   list-style: none;
 }
+.title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 102%;
+  letter-spacing: -0.02em;
+  color: #161618;
+    @media screen and (max-width: 748px) {
+      }
+      @media screen and (max-width: 460px) {
+font-size: 30px;
 
+      }
+}
 .header-container {
   display: flex;
   width: 100%;
@@ -821,7 +833,7 @@ ul {
 }
 .internship {
   margin-top: 20px;
-  
+
   @media screen and (max-width: 748px) {
   }
   @media screen and (max-width: 460px) {
@@ -918,4 +930,192 @@ ul {
 }
 .text-green {
   color: #01d46b;
+}
+.help {
+  margin: 80px 0;
+  @media screen and (max-width: 748px) {
+  }
+  @media screen and (max-width: 460px) {
+    margin: 30px 0;
+  }
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 578px;
+    gap: 12px;
+    @media screen and (max-width: 748px) {
+      grid-template-columns: 1fr;
+    }
+    @media screen and (max-width: 460px) {
+      gap: 8px;
+    }
+  }
+  &-left {
+    border-radius: 28px;
+    height: 293px;
+    background: #4c77aa;
+    padding: 40px;
+    color: white;
+    height: 100%;
+    @media screen and (max-width: 748px) {
+    }
+    @media screen and (max-width: 460px) {
+      border-radius: 18px;
+      padding: 20px;
+      height: auto;
+      width: 100%;
+    }
+  }
+  &-right {
+    border-radius: 28px;
+    overflow: hidden;
+    @media screen and (max-width: 748px) {
+    }
+    @media screen and (max-width: 460px) {
+      height: 215px;
+      border-radius: 18px;
+    }
+    &-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &-title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 102%;
+    letter-spacing: -0.02em;
+    @media screen and (max-width: 748px) {
+    }
+    @media screen and (max-width: 460px) {
+      font-size: 30px;
+    }
+  }
+  &-subtitle {
+    font-weight: 500;
+    margin-top: 30px;
+    font-size: 24px;
+    @media screen and (max-width: 748px) {
+    }
+    @media screen and (max-width: 460px) {
+      font-size: 18px;
+    }
+    &-text {
+      font-weight: 400;
+      font-size: 18px;
+      margin-top: 20px;
+      @media screen and (max-width: 748px) {
+      }
+      @media screen and (max-width: 460px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.teachers {
+  overflow-x: hidden;
+  &-title {
+    margin-bottom: 30px;
+    @media screen and (max-width: 748px) {
+    }
+    @media screen and (max-width: 460px) {
+      margin-bottom: 20px;
+    }
+  }
+  &-subitle {
+    font-weight: 400;
+    font-size: 26px;
+    color: #161618;
+    @media screen and (max-width: 748px) {
+    }
+    @media screen and (max-width: 460px) {
+      font-size: 14px;
+    }
+  }
+  &-list {
+    margin-top: 50px;
+    @media screen and (max-width: 748px) {
+    }
+    @media screen and (max-width: 460px) {
+      margin-top: 30px;
+    }
+  }
+  &-item {
+    border-radius: 45px;
+    overflow: hidden;
+    width: 410px !important;
+    height: 531px !important;
+    background: white;
+    @media screen and (max-width: 748px) {
+    }
+    @media screen and (max-width: 460px) {
+      border-radius: 18px;
+      width: 330px !important;
+      height: 454px !important;
+    }
+    &-img {
+      width: 100%;
+      height: 360px;
+      border-radius: 45px;
+      @media screen and (max-width: 748px) {
+      }
+      @media screen and (max-width: 460px) {
+      height: 300px;
+      border-radius: 18px;
+
+      }
+    }
+    &-content {
+      padding: 14px 30px 24px;
+      @media screen and (max-width: 748px) {
+      }
+      @media screen and (max-width: 460px) {
+      padding: 10px 20px 24px;
+      }
+    }
+    &-name {
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 126%;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+      @media screen and (max-width: 748px) {
+      }
+      @media screen and (max-width: 460px) {
+      font-size: 20px;
+      margin-bottom: 10px;
+      }
+    }
+    &-role {
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+      height: 30px;
+      margin-bottom: 22px;
+      @media screen and (max-width: 748px) {
+      }
+      @media screen and (max-width: 460px) {
+      font-size: 14px;
+      }
+    }
+    &-about {
+      color: white;
+      border-radius: 8px;
+      padding: 10px 20px;
+      width: 118px;
+      background: #161618;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      @media screen and (max-width: 748px) {
+      }
+      @media screen and (max-width: 460px) {
+      padding: 10px 16px;
+      font-size: 12px;
+      border-radius: 6px;
+
+      }
+    }
+  }
 }
