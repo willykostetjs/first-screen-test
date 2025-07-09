@@ -24,7 +24,7 @@ function handleFormSubmit() {
 document.addEventListener("DOMContentLoaded", function () {
   const icfSwiper = new Swiper(".icf-slider", {
     loop: false,
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     spaceBetween: 12,
     pagination: {
       el: ".icf-dots",
@@ -36,18 +36,18 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       200: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 12,
       },
       1024: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 12,
       },
     },
   });
   const historySwiper = new Swiper(".history-slider", {
     loop: false,
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     spaceBetween: 12,
     pagination: {
       el: ".history-dots",
@@ -59,18 +59,18 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       200: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 12,
       },
       1024: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 12,
       },
     },
   });
   const teachersSwiper = new Swiper(".teachers-slider", {
     loop: false,
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     spaceBetween: 12,
     pagination: {
       el: ".teachers-dots",
@@ -82,15 +82,48 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       200: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 12,
       },
       1024: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 12,
       },
     },
   });
+const learningSwiper = new Swiper(".learning-slider", {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 42,
+    pagination: {
+      el: ".learning-dots",
+      clickable: true,
+    },
+    navigation: {
+      prevEl: ".learning-navigation-left",
+      nextEl: ".learning-navigation-right",
+    },
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 42,
+      },
+    },
+  });
+
+  const learningRightSwiper = new Swiper(".learning-right-slider", {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 42,
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 42,
+      },
+    },
+  });
+   learningSwiper.controller.control      = learningRightSwiper;
+  learningRightSwiper.controller.control = learningSwiper;
   const e = new Swiper(".speaker-swiper", {
       direction: "horizontal",
       loop: !0,
