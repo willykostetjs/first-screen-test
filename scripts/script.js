@@ -150,6 +150,72 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+   const careerSwiper = new Swiper(".career-slider", {
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 12,
+    pagination: {
+      el: ".career-dots",
+      clickable: true,
+    },
+    navigation: {
+      prevEl: ".career-navigation-left",
+      nextEl: ".career-navigation-right",
+    },
+     
+
+    breakpoints: {
+      200: {
+        slidesPerView: "auto",
+        spaceBetween: 12,
+         centeredSlides: true,
+      },
+      824: {
+        slidesPerView: "auto",
+        spaceBetween: 12,
+         centeredSlides: false,
+      },
+    },
+  });
+
+
+
+    const whereSwiper = new Swiper(".where-slider", {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 42,
+    pagination: {
+      el: ".where-dots",
+      clickable: true,
+    },
+    navigation: {
+      prevEl: ".where-navigation-left",
+      nextEl: ".where-navigation-right",
+    },
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 42,
+      },
+    },
+  });
+
+  const whereRightSwiper = new Swiper(".where-right-slider", {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 42,
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 42,
+      },
+    },
+  });
+  whereSwiper.controller.control = whereRightSwiper;
+  whereRightSwiper.controller.control = whereSwiper;
+
+
+
   const e = new Swiper(".speaker-swiper", {
       direction: "horizontal",
       loop: !0,
