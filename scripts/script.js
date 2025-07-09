@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-const learningSwiper = new Swiper(".learning-slider", {
+  const learningSwiper = new Swiper(".learning-slider", {
     loop: false,
     slidesPerView: 1,
     spaceBetween: 42,
@@ -122,8 +122,34 @@ const learningSwiper = new Swiper(".learning-slider", {
       },
     },
   });
-   learningSwiper.controller.control      = learningRightSwiper;
+  learningSwiper.controller.control = learningRightSwiper;
   learningRightSwiper.controller.control = learningSwiper;
+
+  const communitySwiper = new Swiper(".community-slider", {
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 12,
+    pagination: {
+      el: ".community-dots",
+      clickable: true,
+    },
+    navigation: {
+      prevEl: ".community-navigation-left",
+      nextEl: ".community-navigation-right",
+    },
+      centeredSlides: true,
+
+    breakpoints: {
+      200: {
+        slidesPerView: "auto",
+        spaceBetween: 12,
+      },
+      1024: {
+        slidesPerView: "auto",
+        spaceBetween: 12,
+      },
+    },
+  });
   const e = new Swiper(".speaker-swiper", {
       direction: "horizontal",
       loop: !0,
