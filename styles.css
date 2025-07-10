@@ -71,15 +71,14 @@ li::before {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  padding: 14px 0;
 }
 
-.header-container ul {
+.header-items {
   display: flex;
   gap: 40px;
 }
-
-.header-items li {
+.header-items a {
   font-size: 16px;
   cursor: pointer;
   font-weight: 500;
