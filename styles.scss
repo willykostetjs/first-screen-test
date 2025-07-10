@@ -476,63 +476,187 @@ ul {
 }
 
 .how-much {
-  display: flex;
-  gap: 41px;
-  background: #161618;
-  color: white;
-  border-radius: 45px;
-  padding: 45px 40px;
   margin-top: 100px;
-  @media screen and (max-width: 460px) {
-    flex-direction: column;
+  @media screen and (max-width: 748px) {
   }
-}
-
-.how-much-left {
-  max-width: 577px;
-}
-
-.how-much-left h1 {
-  font-size: 44px;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-
-.how-much-left-text {
-  font-size: 16px;
-  color: #eaeaea;
-  line-height: 126%;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.how-much-left-bold {
-  font-size: 23px;
-  line-height: 126%;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-
-.how-much-left-bold b {
-  color: #01d46b;
-}
-
-.how-much-left button {
-  all: unset;
-  padding: 19px 54px;
-  background: #2a5cd9;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 10px;
-  outline: none;
-  cursor: pointer;
-}
-
-.how-much-right {
-  background-image: url("./img/rubles.jpg");
-  border-radius: 28px;
-  padding: 20px;
+  @media screen and (max-width: 460px) {
+    margin-top: 40px;
+    padding: 0 14px;
+  }
+  &-wrapper {
+    background: #161618;
+    border-radius: 45px;
+    padding: 45px 40px;
+    @media screen and (max-width: 748px) {
+    }
+    @media screen and (max-width: 460px) {
+      border-radius: 18px;
+      padding: 20px;
+    }
+  }
+  &-content {
+    display: flex;
+    gap: 41px;
+    color: white;
+    @media screen and (max-width: 460px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &-left {
+    max-width: 577px;
+    h2 {
+      font-size: 44px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      @media screen and (max-width: 748px) {
+      }
+      @media screen and (max-width: 460px) {
+        font-size: 30px;
+      }
+    }
+    &-text {
+      font-size: 16px;
+      color: #eaeaea;
+      line-height: 126%;
+      font-weight: 400;
+      margin-bottom: 20px;
+      @media screen and (max-width: 748px) {
+      }
+      @media screen and (max-width: 460px) {
+        font-size: 14px;
+      }
+    }
+    &-bold {
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 126%;
+      margin-bottom: 40px;
+      @media screen and (max-width: 748px) {
+      }
+      @media screen and (max-width: 460px) {
+        font-size: 18px;
+      }
+    }
+    button {
+      padding: 19px 54px;
+      background: #2a5cd9;
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      @media screen and (max-width: 748px) {
+      }
+      @media screen and (max-width: 460px) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  &-bold {
+    font-size: 23px;
+    line-height: 126%;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  &-right {
+    background-color: #282f3f;
+    background-image: url("./img/russian-ruble.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 28px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 396px;
+    @media screen and (max-width: 748px) {
+    }
+    @media screen and (max-width: 460px) {
+      border-radius: 18px;
+      padding: 10px;
+      background-image: url("./img/russian-ruble-mb.png");
+      background-position: center;
+    }
+    &-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &-line {
+      background: #576074;
+      border-radius: 28px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      span {
+        background-color: white;
+        font-weight: 500;
+        font-size: 16px;
+        color: #161618;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        height: 39px;
+        border-radius: 100px;
+        padding: 0 15px;
+        @media screen and (max-width: 748px) {
+        }
+        @media screen and (max-width: 460px) {
+          font-size: 10px;
+        height: 27px;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        max-width: 230px;
+        @media screen and (max-width: 748px) {
+        }
+        @media screen and (max-width: 460px) {
+          font-size: 8px;
+          max-width: 40%;
+        }
+      }
+    }
+    &-bottom {
+      &-price {
+        font-weight: 400;
+        font-size: 44px;
+        @media screen and (max-width: 748px) {
+        }
+        @media screen and (max-width: 460px) {
+          font-size: 22px;
+        }
+      }
+      &-sum {
+        font-weight: 400;
+        font-size: 82px;
+        @media screen and (max-width: 748px) {
+        }
+        @media screen and (max-width: 460px) {
+          font-size: 55px;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: -0.01em;
+        color: #808aa0;
+        margin-top: 20px;
+        @media screen and (max-width: 748px) {
+        }
+        @media screen and (max-width: 460px) {
+          font-size: 13px;
+        margin-top: 0px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1626,8 +1750,8 @@ ul {
     @media screen and (max-width: 748px) {
     }
     @media screen and (max-width: 460px) {
-      flex-direction:column;
-    gap: 40px;
+      flex-direction: column;
+      gap: 40px;
     }
   }
   &-title {
@@ -1638,9 +1762,9 @@ ul {
     @media screen and (max-width: 748px) {
     }
     @media screen and (max-width: 460px) {
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+      text-align: center;
     }
   }
   &-subtitle {
@@ -1651,8 +1775,8 @@ ul {
     @media screen and (max-width: 748px) {
     }
     @media screen and (max-width: 460px) {
-    font-size: 16px;
-    text-align: center;
+      font-size: 16px;
+      text-align: center;
     }
   }
   &-right {
