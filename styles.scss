@@ -1069,10 +1069,14 @@ li {
       border-radius: 5px;
       height: 52px;
     }
-    img {
+    picture {
       height: 65%;
       max-width: 75%;
+      img{
+      height: 100%;
+        width: 100%;
       object-fit: contain;
+      }
     }
   }
 }
@@ -1383,11 +1387,10 @@ li {
       @media screen and (max-width: 460px) {
       }
       &-img {
-        width: 85%;
+        width: 100%;
         @media screen and (max-width: 1000px) {
         }
         @media screen and (max-width: 460px) {
-          width: 95%;
         }
       }
     }

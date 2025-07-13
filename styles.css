@@ -1109,9 +1109,13 @@ li::before {
     height: 52px;
   }
 }
-.internship-item img {
+.internship-item picture {
   height: 65%;
   max-width: 75%;
+}
+.internship-item picture img {
+  height: 100%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1430,12 +1434,7 @@ li::before {
   align-items: center;
 }
 .learning-right-item-img {
-  width: 85%;
-}
-@media screen and (max-width: 460px) {
-  .learning-right-item-img {
-    width: 95%;
-  }
+  width: 100%;
 }
 .learning-link {
   width: 100%;
