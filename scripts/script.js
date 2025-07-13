@@ -254,31 +254,30 @@ document.addEventListener("DOMContentLoaded", function () {
 }),
   (window.openModal = openModal),
   (window.closeModal = closeModal);
-document.addEventListener("DOMContentLoaded", function () {
-  const careerBtns = document.querySelectorAll(".career-item .career-btn");
-  const modals = [
-    document.getElementById("modal-1"),
-    document.getElementById("modal-2"),
-    document.getElementById("modal-3"),
-  ];
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Обработка открытия
+  document.querySelectorAll("[data-modal-target]").forEach((btn) => {
+    const targetId = btn.getAttribute("data-modal-target");
+    const modal = document.getElementById(targetId);
+    if (!modal) return; 
 
-  careerBtns.forEach((btn, idx) => {
     btn.addEventListener("click", () => {
-      modals[idx].classList.add("active");
-      document.body.style.overflow = "hidden"; // Запретить прокрутку фона
+      modal.classList.add("active");
+      document.body.style.overflow = "hidden";
     });
   });
 
-  modals.forEach((modal) => {
-    modal.querySelector(".modal-close").addEventListener("click", () => {
-      closeModal(modal);
-    });
-    modal.querySelector(".modal-overlay").addEventListener("click", () => {
-      closeModal(modal);
-    });
-    function closeModal(modal) {
+  // 2. Универсальное закрытие для всех модалок
+  document.querySelectorAll(".modal").forEach((modal) => {
+    const closeBtn = modal.querySelector(".modal-close");
+    const overlay  = modal.querySelector(".modal-overlay");
+
+    function close() {
       modal.classList.remove("active");
       document.body.style.overflow = "";
     }
+
+    if (closeBtn) closeBtn.addEventListener("click", close);
+    if (overlay)  overlay.addEventListener("click", close);
   });
 });

@@ -15,6 +15,7 @@ body {
   overflow-x: hidden;
 }
 button {
+    font-family: "Golos Text", sans-serif;
   cursor: pointer;
   outline: none;
   border: none;
@@ -186,11 +187,10 @@ li {
 }
 
 .start-buttons button {
-  max-width: 213px;
   cursor: pointer;
   border: 1px solid white;
   padding: 20px 30px;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   background: 0;
   border-radius: 10px;
