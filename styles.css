@@ -912,6 +912,8 @@ li::before {
 @media screen and (max-width: 460px) {
   .history-item {
     width: 320px !important;
+    padding: 20px;
+    border-radius: 18px;
   }
 }
 .history-item-body {
@@ -919,9 +921,18 @@ li::before {
   flex-direction: column;
   gap: 10px;
   margin-top: 10px;
+  background-color: #F2F2F2;
+  border-radius: 24px;
+  padding: 15px;
+}
+@media screen and (max-width: 460px) {
+  .history-item-body {
+    border-radius: 18px;
+  }
 }
 .history-item-body ul {
   list-style: inside;
+  margin-bottom: 0;
 }
 .history-item-bottom {
   display: flex;
