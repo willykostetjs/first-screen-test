@@ -209,6 +209,11 @@ li::before {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 12px;
 }
+@media screen and (max-width: 758px) {
+  .icon-list-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media screen and (max-width: 460px) {
   .icon-list-list {
     grid-template-columns: 1fr;
@@ -298,6 +303,9 @@ li::before {
        object-position: center;
   }
 }
+.about-coach-top img {
+  width: 100%;
+}
 .about-coach-top-text {
   background: white;
   border-radius: 45px;
@@ -379,7 +387,7 @@ li::before {
   align-items: center;
   background: white;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
   .about-coach-bottom-image-wrapper {
     max-width: 100%;
     height: auto;
@@ -553,7 +561,7 @@ li::before {
   gap: 41px;
   color: white;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
   .how-much-content {
     flex-direction: column;
     gap: 20px;
@@ -746,7 +754,7 @@ li::before {
     background-image: none;
   }
   .start-heading {
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
   }
   .start-buttons {
@@ -758,9 +766,6 @@ li::before {
   .start-buttons {
     flex-direction: column;
     width: 100%;
-  }
-  .start-heading {
-    max-width: 100%;
   }
   .start-buttons button {
     max-width: 100%;
@@ -1035,15 +1040,31 @@ li::before {
   max-width: 722px;
   width: 100%;
 }
+@media screen and (max-width: 1000px) {
+  .internship-left {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .internship-left {
+    max-width: 100%;
+  }
+}
 .internship-title {
   font-weight: 600;
   font-size: 48px;
   line-height: 102%;
   margin-bottom: 35px;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 1000px) {
+  .internship-title {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
   .internship-title {
     font-size: 30px;
+    max-width: 100%;
     line-height: 102%;
   }
 }
@@ -1087,12 +1108,12 @@ li::before {
     border-radius: 5px;
     height: 52px;
   }
-  .internship-item img {
-    height: 65%;
-    max-width: 75%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
+}
+.internship-item img {
+  height: 65%;
+  max-width: 75%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .text-green {
@@ -1112,7 +1133,7 @@ li::before {
   grid-template-columns: 1fr 578px;
   gap: 12px;
 }
-@media screen and (max-width: 948px) {
+@media screen and (max-width: 1000px) {
   .help-content {
     grid-template-columns: 1fr;
   }
@@ -1315,7 +1336,7 @@ li::before {
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
   .learning-content {
     display: flex;
     flex-direction: column-reverse;
@@ -1571,7 +1592,7 @@ li::before {
   display: flex;
   gap: 30px;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
   .community-header {
     gap: 20px;
     flex-direction: column;
@@ -1779,7 +1800,7 @@ li::before {
   color: white;
   gap: 80px;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
   .faq-content {
     flex-direction: column;
     gap: 40px;
@@ -1859,12 +1880,12 @@ li::before {
   grid-template-columns: 578px 1fr;
   gap: 12px;
 }
-@media screen and (max-width: 948px) {
+@media screen and (max-width: 1000px) {
   .develop-content {
     grid-template-columns: 378px 1fr;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
   .develop-content {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -1933,9 +1954,13 @@ li::before {
   gap: 30px;
   padding-right: 20px;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 1000px) {
   .develop-right-item {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 460px) {
+  .develop-right-item {
     gap: 14px;
     padding: 14px;
   }
@@ -2085,15 +2110,26 @@ li::before {
   font-size: 24px;
   line-height: 126%;
 }
+@media screen and (max-width: 1000px) {
+  .banks-title {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 460px) {
   .banks-title {
     font-size: 20px;
     margin-bottom: 20px;
+    width: 100%;
   }
 }
 .banks-list {
   display: flex;
   gap: 12px;
+}
+@media screen and (max-width: 1000px) {
+  .banks-list {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 460px) {
   .banks-list {
@@ -2142,7 +2178,12 @@ li::before {
   grid-template-columns: 578px 1fr;
   gap: 12px;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 1000px) {
+  .cert-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
   .cert-content {
     display: flex;
     flex-direction: column-reverse;
@@ -2235,7 +2276,7 @@ li::before {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 12px;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
   .international-list {
     grid-template-columns: 1fr;
   }
