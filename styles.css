@@ -2168,13 +2168,26 @@ li::before {
     height: 126px;
   }
 }
-.banks-item img {
+.banks-item picture {
   width: 100%;
   max-height: 50px;
   max-width: 163px;
 }
 @media screen and (max-width: 460px) {
-  .banks-item img {
+  .banks-item picture {
+    max-height: 60%;
+    max-width: 70%;
+  }
+}
+.banks-item img {
+  width: 100%;
+}
+.banks-item img.tbank {
+  max-width: 163px;
+  max-height: 50px;
+}
+@media screen and (max-width: 460px) {
+  .banks-item img.tbank {
     max-height: 60%;
     max-width: 70%;
   }

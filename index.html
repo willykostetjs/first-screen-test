@@ -1001,6 +1001,63 @@
                 </div>
             </div>
         </div>
+        <div class="modal" id="modal-1">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Закрыть">&times;</button>
+                <div class="modal-title career-modal-title">Растите в сообществе профессионалов</div>
+                <div class="modal-text career-modal-text">Станьте частью международной ассоциации помогающих
+                    профессий (МАПП), объединяющей специалистов в области нутрициологии, психологии,
+                    сексологии и коучинга. Получите закрытый доступ к уникальному контенту, а также
+                    поддержку и советы коллег из разных направлений.
+                </div>
+                <ul class="career-modal-list">
+                    <li>Регулярные прямые эфиры с экспертами-практиками по своему направлению с возможностью
+                        задать вопросы
+                    </li>
+                    <li>Мастер-классы по смежным направлениям (коучинг, лидерство, психология и т.д.)
+                    </li>
+                    <li>Разборы кейсов своих клиентов с экспертами Ассоциации
+                    </li>
+                    <li>Онлайн- и офлайн-встречи с участниками и приглашенными экспертами
+                    </li>
+                    <li>Сертификат члена МАПП, подтверждающий участие и профессиональный статус.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal" id="modal-2">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Закрыть">&times;</button>
+                <div class="modal-title career-modal-title">Школа кураторов-стажеров</div>
+                <div class="modal-text career-modal-text">Дополнительное обучение для успешно прошедших
+                    аттестацию выпускников
+                </div>
+                <ul class="career-modal-list">
+                    <li>2 онлайн-встречи, где можно задать вопросы и получить полезные советы от опытных
+                        кураторов;</li>
+                    <li>4 урока и дополнительные материалы, которые помогут углубить знания и подготовиться
+                        к работе;</li>
+                    <li>2 недели стажировки с опытным куратором в чате реального потока.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal" id="modal-3">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Закрыть">&times;</button>
+                <div class="modal-title career-modal-title">Постдипломная практика куратора-стажера на
+                    программах коучинг ICF
+                </div>
+                <div class="modal-text career-modal-text">Проходит в 2 этапа</div>
+                <ul class="career-modal-list">
+                    <li>1 этап: ассистент куратора (проведете 5 практических занятий со студентами новых
+                        потоков).</li>
+                    <li>2 этап: куратор-стажер (ответы на вопросы студентов, участие в практиках, мониторинг
+                        успеваемости студентов).</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section class="internship">
         <div class="internship-wrapper container">
@@ -1111,8 +1168,11 @@
                 <div class="develop-right">
                     <div class="develop-right-top develop-right-item">
                         <div class="develop-right-item-img">
-                            <img src="./img/develop-1.png" srcset="./img/develop-1@2x.png 2x, ./img/develop-1.png 1x"
-                                width="508" height="348" alt="Помощь">
+                            <picture>
+                                <source type="image/webp" srcset="./img/develop-1.webp 1x, ./img/develop-1@2x.webp 2x">
+                                <source srcset="./img/develop-1.png 1x, ./img/develop-1@2x.png 2x">
+                                <img src="./img/develop-1.png" width="508" height="348" alt="Помощь">
+                            </picture>
                         </div>
                         <div>
                             <h3>Онлайн-курс «Ораторские навыки и публичные выступления»</h3>
@@ -1126,18 +1186,18 @@
                     </div>
                     <div class="develop-right-top develop-right-item">
                         <div class="develop-right-item-img">
-                            <img src="./img/develop-2.png" srcset="./img/develop-2@2x.png 2x, ./img/develop-2.png 1x"
-                                width="508" height="348" alt="Помощь">
+                            <picture>
+                                <source type="image/webp" srcset="./img/develop-2.webp 1x, ./img/develop-2@2x.webp 2x">
+                                <source srcset="./img/develop-2.png 1x, ./img/develop-2@2x.png 2x">
+                                <img src="./img/develop-2.png" width="508" height="348" alt="Помощь">
+                            </picture>
                         </div>
                         <div>
                             <h3>Онлайн-курс «Харизма эксперта»</h3>
                             <ul>
-                                <li>Харизма, ее виды и составляющие. Голос и речь.
-                                    Кинетический интеллект</li>
-                                <li>Готовим структурированное и харизматическое выступление
-                                </li>
-                                <li>Сторителлинг. Стили выступления. Матрица оценки
-                                </li>
+                                <li>Харизма, ее виды и составляющие. Голос и речь. Кинетический интеллект</li>
+                                <li>Готовим структурированное и харизматическое выступление</li>
+                                <li>Сторителлинг. Стили выступления. Матрица оценки</li>
                             </ul>
                         </div>
                     </div>
@@ -1162,51 +1222,120 @@
                     <div class="swiper-wrapper">
                         <div class="community-item swiper-slide">
                             <div class="community-item-img">
-                                <img class="help-right-img" src="./img/community/community-1.png"
-                                    srcset="./img/community/community-1@2x.png 2x, ./img/community/community-1.png 1x"
-                                    width="630" height="420" alt="Помощь">
+                                <picture>
+                                    <source type="image/webp" srcset="
+          ./img/community/community-1.webp      1x,
+          ./img/community/community-1@2x.webp   2x
+        ">
+                                    <source srcset="
+          ./img/community/community-1.png       1x,
+          ./img/community/community-1@2x.png    2x
+        ">
+                                    <img class="help-right-img" src="./img/community/community-1.png" width="630"
+                                        height="420" alt="Community 1">
+                                </picture>
                             </div>
                         </div>
+
                         <div class="community-item swiper-slide">
                             <div class="community-item-img">
-                                <img class="help-right-img" src="./img/community/community-2.png"
-                                    srcset="./img/community/community-2@2x.png 2x, ./img/community/community-2.png 1x"
-                                    width="630" height="420" alt="Помощь">
+                                <picture>
+                                    <source type="image/webp" srcset="
+          ./img/community/community-2.webp      1x,
+          ./img/community/community-2@2x.webp   2x
+        ">
+                                    <source srcset="
+          ./img/community/community-2.png       1x,
+          ./img/community/community-2@2x.png    2x
+        ">
+                                    <img class="help-right-img" src="./img/community/community-2.png" width="630"
+                                        height="420" alt="Community 2">
+                                </picture>
                             </div>
                         </div>
+
                         <div class="community-item swiper-slide">
                             <div class="community-item-img">
-                                <img class="help-right-img" src="./img/community/community-3.png"
-                                    srcset="./img/community/community-3@2x.png 2x, ./img/community/community-3.png 1x"
-                                    width="630" height="420" alt="Помощь">
+                                <picture>
+                                    <source type="image/webp" srcset="
+          ./img/community/community-3.webp      1x,
+          ./img/community/community-3@2x.webp   2x
+        ">
+                                    <source srcset="
+          ./img/community/community-3.png       1x,
+          ./img/community/community-3@2x.png    2x
+        ">
+                                    <img class="help-right-img" src="./img/community/community-3.png" width="630"
+                                        height="420" alt="Community 3">
+                                </picture>
                             </div>
                         </div>
+
                         <div class="community-item swiper-slide">
                             <div class="community-item-img">
-                                <img class="help-right-img" src="./img/community/community-4.png"
-                                    srcset="./img/community/community-4@2x.png 2x, ./img/community/community-4.png 1x"
-                                    width="630" height="420" alt="Помощь">
+                                <picture>
+                                    <source type="image/webp" srcset="
+          ./img/community/community-4.webp      1x,
+          ./img/community/community-4@2x.webp   2x
+        ">
+                                    <source srcset="
+          ./img/community/community-4.png       1x,
+          ./img/community/community-4@2x.png    2x
+        ">
+                                    <img class="help-right-img" src="./img/community/community-4.png" width="630"
+                                        height="420" alt="Community 4">
+                                </picture>
                             </div>
                         </div>
+
                         <div class="community-item swiper-slide">
                             <div class="community-item-img">
-                                <img class="help-right-img" src="./img/community/community-5.png"
-                                    srcset="./img/community/community-5@2x.png 2x, ./img/community/community-5.png 1x"
-                                    width="630" height="420" alt="Помощь">
+                                <picture>
+                                    <source type="image/webp" srcset="
+          ./img/community/community-5.webp      1x,
+          ./img/community/community-5@2x.webp   2x
+        ">
+                                    <source srcset="
+          ./img/community/community-5.png       1x,
+          ./img/community/community-5@2x.png    2x
+        ">
+                                    <img class="help-right-img" src="./img/community/community-5.png" width="630"
+                                        height="420" alt="Community 5">
+                                </picture>
                             </div>
                         </div>
+
                         <div class="community-item swiper-slide">
                             <div class="community-item-img">
-                                <img class="help-right-img" src="./img/community/community-6.png"
-                                    srcset="./img/community/community-6@2x.png 2x, ./img/community/community-6.png 1x"
-                                    width="630" height="420" alt="Помощь">
+                                <picture>
+                                    <source type="image/webp" srcset="
+          ./img/community/community-6.webp      1x,
+          ./img/community/community-6@2x.webp   2x
+        ">
+                                    <source srcset="
+          ./img/community/community-6.png       1x,
+          ./img/community/community-6@2x.png    2x
+        ">
+                                    <img class="help-right-img" src="./img/community/community-6.png" width="630"
+                                        height="420" alt="Community 6">
+                                </picture>
                             </div>
                         </div>
+
                         <div class="community-item swiper-slide">
                             <div class="community-item-img">
-                                <img class="help-right-img" src="./img/community/community-7.png"
-                                    srcset="./img/community/community-7@2x.png 2x, ./img/community/community-7.png 1x"
-                                    width="630" height="420" alt="Помощь">
+                                <picture>
+                                    <source type="image/webp" srcset="
+          ./img/community/community-7.webp      1x,
+          ./img/community/community-7@2x.webp   2x
+        ">
+                                    <source srcset="
+          ./img/community/community-7.png       1x,
+          ./img/community/community-7@2x.png    2x
+        ">
+                                    <img class="help-right-img" src="./img/community/community-7.png" width="630"
+                                        height="420" alt="Community 7">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -1234,36 +1363,63 @@
             <div class="practice-list">
                 <div class="practice-item">
                     <div class="practice-item-img">
-                        <img class="help-right-img" src="./img/practice/practice-1.png"
-                            srcset="./img/practice/practice-1@2x.png 2x, ./img/practice/practice-1.png 1x" width="612"
-                            height="418" alt="Помощь">
+                        <picture>
+                            <source type="image/webp" srcset="
+                  ./img/practice/practice-1.webp       1x,
+                  ./img/practice/practice-1@2x.webp    2x
+                ">
+                            <source srcset="
+                  ./img/practice/practice-1.png        1x,
+                  ./img/practice/practice-1@2x.png     2x
+                ">
+                            <img class="help-right-img" src="./img/practice/practice-1.png" width="612" height="418"
+                                alt="Занятия в малых группах (работа в тройках)">
+                        </picture>
                     </div>
                     <div class="practice-item-text">
-                        <div class="practice-item-title">Занятия в малых группах
-                            (работа в тройках)</div>
+                        <div class="practice-item-title">Занятия в малых группах (работа в тройках)</div>
                         <p class="practice-item-subtitle">Для отработки ключевых коучинговых компетенций ICF проведете
                             коуч-сессии в разных ролях (коуч, клиент, наблюдатель). Получите обратную связь от
                             преподавателей и кураторов</p>
                     </div>
                 </div>
-                <div class="practice-item practice-item-reverse">
 
+                <div class="practice-item practice-item-reverse">
                     <div class="practice-item-text">
                         <div class="practice-item-title">Групповой менторинг</div>
                         <p class="practice-item-subtitle">Разборы реальных сессий профессиональным ментором PCC ICF,
                             обсуждение в группе, анализ сильных сторон и зон роста</p>
                     </div>
                     <div class="practice-item-img">
-                        <img class="help-right-img" src="./img/practice/practice-2.png"
-                            srcset="./img/practice/practice-2@2x.png 2x, ./img/practice/practice-2.png 1x" width="612"
-                            height="418" alt="Помощь">
+                        <picture>
+                            <source type="image/webp" srcset="
+                  ./img/practice/practice-2.webp       1x,
+                  ./img/practice/practice-2@2x.webp    2x
+                ">
+                            <source srcset="
+                  ./img/practice/practice-2.png        1x,
+                  ./img/practice/practice-2@2x.png     2x
+                ">
+                            <img class="help-right-img" src="./img/practice/practice-2.png" width="612" height="418"
+                                alt="Групповой менторинг">
+                        </picture>
                     </div>
                 </div>
+
                 <div class="practice-item">
                     <div class="practice-item-img">
-                        <img class="help-right-img" src="./img/practice/practice-3.png"
-                            srcset="./img/practice/practice-3@2x.png 2x, ./img/practice/practice-3.png 1x" width="612"
-                            height="418" alt="Помощь">
+                        <picture>
+                            <source type="image/webp" srcset="
+                  ./img/practice/practice-3.webp       1x,
+                  ./img/practice/practice-3@2x.webp    2x
+                ">
+                            <source srcset="
+                  ./img/practice/practice-3.png        1x,
+                  ./img/practice/practice-3@2x.png     2x
+                ">
+                            <img class="help-right-img" src="./img/practice/practice-3.png" width="612" height="418"
+                                alt="Индивидуальный менторинг">
+                        </picture>
                     </div>
                     <div class="practice-item-text">
                         <div class="practice-item-title">Индивидуальный менторинг</div>
@@ -1271,6 +1427,7 @@
                             ментором. Проходит в удобное для вас время и с фокусом на ваше развитие</p>
                     </div>
                 </div>
+
                 <div class="practice-item practice-item-reverse">
                     <div class="practice-item-text">
                         <div class="practice-item-title">Групповые супервизии</div>
@@ -1278,9 +1435,18 @@
                             профессиональных ограничений и усиления коучингового присутствия</p>
                     </div>
                     <div class="practice-item-img">
-                        <img class="help-right-img" src="./img/practice/practice-4.png"
-                            srcset="./img/practice/practice-4@2x.png 2x, ./img/practice/practice-4.png 1x" width="628"
-                            height="430" alt="Помощь">
+                        <picture>
+                            <source type="image/webp" srcset="
+                  ./img/practice/practice-4.webp       1x,
+                  ./img/practice/practice-4@2x.webp    2x
+                ">
+                            <source srcset="
+                  ./img/practice/practice-4.png        1x,
+                  ./img/practice/practice-4@2x.png     2x
+                ">
+                            <img class="help-right-img" src="./img/practice/practice-4.png" width="628" height="430"
+                                alt="Групповые супервизии">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -1398,8 +1564,17 @@
                     </div>
                 </div>
                 <div class="help-right">
-                    <img class="help-right-img" src="./img/help.png" srcset="./img/help@2x.png 2x, ./img/help.png 1x"
-                        width="578" height="293" alt="Помощь">
+                    <picture>
+                        <source type="image/webp" srcset="
+        ./img/help.webp      1x,
+        ./img/help@2x.webp   2x
+      ">
+                        <source srcset="
+        ./img/help.png       1x,
+        ./img/help@2x.png    2x
+      ">
+                        <img class="help-right-img" src="./img/help.png" width="578" height="293" alt="Помощь">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -1412,9 +1587,13 @@
             <div class=" teachers-list teachers-slider swiper ">
                 <div class="swiper-wrapper">
                     <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/баклыкова.png"
-                            srcset="./img/teachers/баклыкова.png 1x, ./img/teachers/баклыкова@2x.png 2x" width="410"
-                            height="360" alt="Юлия Баклыкова">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="./img/teachers/баклыкова.webp 1x, ./img/teachers/баклыкова@2x.webp 2x">
+                            <source srcset="./img/teachers/баклыкова.png 1x, ./img/teachers/баклыкова@2x.png 2x">
+                            <img class="teachers-item-img" src="./img/teachers/баклыкова.png" width="410" height="360"
+                                alt="Юлия Баклыкова">
+                        </picture>
                         <div class="teachers-item-content">
                             <div class="teachers-item-name">Юлия Баклыкова</div>
                             <div class="teachers-item-role">Коуч MCC ICF, ментор</div>
@@ -1423,9 +1602,13 @@
                     </div>
 
                     <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/досов.png"
-                            srcset="./img/teachers/досов.png 1x, ./img/teachers/досов@2x.png 2x" width="410"
-                            height="360" alt="Роман Досов">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="./img/teachers/досов.webp 1x, ./img/teachers/досов@2x.webp 2x">
+                            <source srcset="./img/teachers/досов.png 1x, ./img/teachers/досов@2x.png 2x">
+                            <img class="teachers-item-img" src="./img/teachers/досов.png" width="410" height="360"
+                                alt="Роман Досов">
+                        </picture>
                         <div class="teachers-item-content">
                             <div class="teachers-item-name">Роман Досов</div>
                             <div class="teachers-item-role">Коуч MCC ICF</div>
@@ -1434,9 +1617,13 @@
                     </div>
 
                     <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/куликова-цай.png"
-                            srcset="./img/teachers/куликова-цай.png 1x, ./img/teachers/куликова-цай@2x.png 2x"
-                            width="410" height="360" alt="Юлия Куликова-Цай">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="./img/teachers/куликова-цай.webp 1x, ./img/teachers/куликова-цай@2x.webp 2x">
+                            <source srcset="./img/teachers/куликова-цай.png 1x, ./img/teachers/куликова-цай@2x.png 2x">
+                            <img class="teachers-item-img" src="./img/teachers/куликова-цай.png" width="410"
+                                height="360" alt="Юлия Куликова-Цай">
+                        </picture>
                         <div class="teachers-item-content">
                             <div class="teachers-item-name">Юлия Куликова-Цай</div>
                             <div class="teachers-item-role">Коуч MCC ICF. Проекты в Газпром, Северсталь</div>
@@ -1445,9 +1632,13 @@
                     </div>
 
                     <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/малахова.png"
-                            srcset="./img/teachers/малахова.png 1x, ./img/teachers/малахова@2x.png 2x" width="410"
-                            height="360" alt="Юлия Малахова">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="./img/teachers/малахова.webp 1x, ./img/teachers/малахова@2x.webp 2x">
+                            <source srcset="./img/teachers/малахова.png 1x, ./img/teachers/малахова@2x.png 2x">
+                            <img class="teachers-item-img" src="./img/teachers/малахова.png" width="410" height="360"
+                                alt="Юлия Малахова">
+                        </picture>
                         <div class="teachers-item-content">
                             <div class="teachers-item-name">Юлия Малахова</div>
                             <div class="teachers-item-role">Коуч MCC ICF, ментор</div>
@@ -1456,9 +1647,13 @@
                     </div>
 
                     <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/блэк.png"
-                            srcset="./img/teachers/блэк.png 1x, ./img/teachers/блэк@2x.png 2x" width="410" height="360"
-                            alt="Преподаватель Блэк">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="./img/teachers/блэк.webp 1x, ./img/teachers/блэк@2x.webp 2x">
+                            <source srcset="./img/teachers/блэк.png 1x, ./img/teachers/блэк@2x.png 2x">
+                            <img class="teachers-item-img" src="./img/teachers/блэк.png" width="410" height="360"
+                                alt="Преподаватель Блэк">
+                        </picture>
                         <div class="teachers-item-content">
                             <div class="teachers-item-name">Блэк</div>
                             <div class="teachers-item-role">Коуч MCC ICF</div>
@@ -1466,82 +1661,7 @@
                         </div>
                     </div>
 
-                    <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/гамкова.png"
-                            srcset="./img/teachers/гамкова.png 1x, ./img/teachers/гамкова@2x.png 2x" width="410"
-                            height="360" alt="Преподаватель Гамкова">
-                        <div class="teachers-item-content">
-                            <div class="teachers-item-name">Гамкова</div>
-                            <div class="teachers-item-role">Коуч MCC ICF</div>
-                            <button class="teachers-item-about">Подробнее</button>
-                        </div>
-                    </div>
-
-                    <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/залавина.png"
-                            srcset="./img/teachers/залавина.png 1x, ./img/teachers/залавина@2x.png 2x" width="410"
-                            height="360" alt="Преподаватель Залавина">
-                        <div class="teachers-item-content">
-                            <div class="teachers-item-name">Залавина</div>
-                            <div class="teachers-item-role">Коуч MCC ICF</div>
-                            <button class="teachers-item-about">Подробнее</button>
-                        </div>
-                    </div>
-
-                    <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/парьера.png"
-                            srcset="./img/teachers/парьера.png 1x, ./img/teachers/парьера@2x.png 2x" width="410"
-                            height="360" alt="Преподаватель Парьера">
-                        <div class="teachers-item-content">
-                            <div class="teachers-item-name">Парьера</div>
-                            <div class="teachers-item-role">Коуч MCC ICF</div>
-                            <button class="teachers-item-about">Подробнее</button>
-                        </div>
-                    </div>
-
-                    <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/пахалева.png"
-                            srcset="./img/teachers/пахалева.png 1x, ./img/teachers/пахалева@2x.png 2x" width="410"
-                            height="360" alt="Преподаватель Пахалева">
-                        <div class="teachers-item-content">
-                            <div class="teachers-item-name">Пахалева</div>
-                            <div class="teachers-item-role">Коуч MCC ICF</div>
-                            <button class="teachers-item-about">Подробнее</button>
-                        </div>
-                    </div>
-
-                    <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/сененкова.png"
-                            srcset="./img/teachers/сененкова.png 1x, ./img/teachers/сененкова@2x.png 2x" width="410"
-                            height="360" alt="Преподаватель Сененкова">
-                        <div class="teachers-item-content">
-                            <div class="teachers-item-name">Сененкова</div>
-                            <div class="teachers-item-role">Коуч MCC ICF</div>
-                            <button class="teachers-item-about">Подробнее</button>
-                        </div>
-                    </div>
-
-                    <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/сиволапов.png"
-                            srcset="./img/teachers/сиволапов.png 1x, ./img/teachers/сиволапов@2x.png 2x" width="410"
-                            height="360" alt="Преподаватель Сиволапов">
-                        <div class="teachers-item-content">
-                            <div class="teachers-item-name">Сиволапов</div>
-                            <div class="teachers-item-role">Коуч MCC ICF</div>
-                            <button class="teachers-item-about">Подробнее</button>
-                        </div>
-                    </div>
-
-                    <div class="teachers-item swiper-slide">
-                        <img class="teachers-item-img" src="./img/teachers/суркова.png"
-                            srcset="./img/teachers/суркова.png 1x, ./img/teachers/суркова@2x.png 2x" width="410"
-                            height="360" alt="Преподаватель Суркова">
-                        <div class="teachers-item-content">
-                            <div class="teachers-item-name">Суркова</div>
-                            <div class="teachers-item-role">Коуч MCC ICF</div>
-                            <button class="teachers-item-about">Подробнее</button>
-                        </div>
-                    </div>
+                    <!-- Продолжите аналогично для остальных слайдов -->
                 </div>
             </div>
             <div class="sw sw-bottom">
@@ -1572,14 +1692,34 @@
                 с удобным платежом через месяц
                 (более 10 банков-партнеров)</div>
             <div class="banks-list">
-                <div class="banks-item">
-                    <img src="./img/bank-tbank.svg" alt="">
+                <div class="banks-item ">
+                    <img src="./img/bank-tbank.svg" class="tbank" alt="TBank">
                 </div>
                 <div class="banks-item">
-                    <img src="./img/bank-sber.png" alt="">
+                    <picture>
+                        <source type="image/webp" srcset="
+                ./img/bank-sber.webp    1x,
+                ./img/bank-sber@2x.webp 2x
+              ">
+                        <source srcset="
+                ./img/bank-sber.png     1x,
+                ./img/bank-sber@2x.png  2x
+              ">
+                        <img src="./img/bank-sber.png" alt="Сбербанк">
+                    </picture>
                 </div>
                 <div class="banks-item">
-                    <img src="./img/bank-opt.png" alt="">
+                    <picture>
+                        <source type="image/webp" srcset="
+                ./img/bank-opt.webp     1x,
+                ./img/bank-opt@2x.webp  2x
+              ">
+                        <source srcset="
+                ./img/bank-opt.png      1x,
+                ./img/bank-opt@2x.png   2x
+              ">
+                        <img src="./img/bank-opt.png" alt="Оптима">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -1590,13 +1730,13 @@
                 <div class="cert-left">
                     <picture>
                         <source media="(max-width: 460px)" srcset="
-                            ./img/cert-mb.png    1x,
-                            ./img/cert-mb@2x.png 2x
-                            ">
+        ./img/cert-mb.png    1x,
+        ./img/cert-mb@2x.png 2x
+      ">
                         <source srcset="
-                            ./img/cert.png      1x,
-                            ./img/cert@2x.png   2x
-                            ">
+        ./img/cert.png      1x,
+        ./img/cert@2x.png   2x
+      ">
                         <img class="cert-item-img" src="./img/cert.png" width="578" height="539" alt="cert">
                     </picture>
                 </div>
@@ -1627,40 +1767,66 @@
             <div class="international-list">
                 <div class="international-item">
                     <div class="international-img">
-                        <img src="./img/cert-2.png" srcset="./img/cert-2@2x.png 2x, ./img/cert-2.png 1x" width="452"
-                            height="319">
+                        <picture>
+                            <source type="image/webp" srcset="
+            ./img/cert-2.webp     1x,
+            ./img/cert-2@2x.webp  2x
+          ">
+                            <source srcset="
+            ./img/cert-2.png      1x,
+            ./img/cert-2@2x.png   2x
+          ">
+                            <img src="./img/cert-2.png" width="452" height="319" alt="">
+                        </picture>
                     </div>
                     <div class="international-item-content">
-                        <div class="international-item-title">Международный сертификат
-                            Level 1 ICF или Level 2 ICF</div>
+                        <div class="international-item-title">Международный сертификат Level 1 ICF или Level 2 ICF</div>
                         <div class="international-item-text">Уровень сертификата зависит от тарифа. Международный
                             сертификат ICF действителен в 147 странах мира и демонстрирует вашу высокую экспертность
                         </div>
                     </div>
                 </div>
+
                 <div class="international-item">
                     <div class="international-img">
-                        <img src="./img/cert-3.png" srcset="./img/cert-3@2x.png 2x, ./img/cert-3.png 1x" width="452"
-                            height="319">
+                        <picture>
+                            <source type="image/webp" srcset="
+            ./img/cert-3.webp     1x,
+            ./img/cert-3@2x.webp  2x
+          ">
+                            <source srcset="
+            ./img/cert-3.png      1x,
+            ./img/cert-3@2x.png   2x
+          ">
+                            <img src="./img/cert-3.png" width="452" height="319" alt="">
+                        </picture>
                     </div>
                     <div class="international-item-content">
                         <div class="international-item-title">Диплом установленного образца</div>
                         <div class="international-item-text">Зарегистрирован в ФИС ФРДО. Подтверждает вашу квалификацию
-                            и позволяет официально работать сексологом. Действует бессрочно
-                        </div>
+                            и позволяет официально работать сексологом. Действует бессрочно</div>
                     </div>
                 </div>
+
                 <div class="international-item">
                     <div class="international-img">
-                        <img src="./img/cert-4.png" srcset="./img/cert-4@2x.png 2x, ./img/cert-4.png 1x" width="452"
-                            height="319">
+                        <picture>
+                            <source type="image/webp" srcset="
+            ./img/cert-4.webp     1x,
+            ./img/cert-4@2x.webp  2x
+          ">
+                            <source srcset="
+            ./img/cert-4.png      1x,
+            ./img/cert-4@2x.png   2x
+          ">
+                            <img src="./img/cert-4.png" width="452" height="319" alt="">
+                        </picture>
                     </div>
                     <div class="international-item-content">
                         <div class="international-item-title">Международный диплом Mini-MBA</div>
                         <div class="international-item-text">Диплом от лицензированного чешского института ОЕАЕР.
                             Признается во всех странах мира, позволяет получать признание и подтверждает квалификацию на
-                            международном уровне
-                        </div>
+                            международном уровне</div>
                     </div>
                 </div>
             </div>

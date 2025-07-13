@@ -1072,10 +1072,10 @@ li {
     picture {
       height: 65%;
       max-width: 75%;
-      img{
-      height: 100%;
+      img {
+        height: 100%;
         width: 100%;
-      object-fit: contain;
+        object-fit: contain;
       }
     }
   }
@@ -1485,7 +1485,7 @@ li {
       border-radius: 45px;
       overflow: hidden;
       display: flex;
-      img{
+      img {
         height: 100%;
         width: 100%;
       }
@@ -2141,7 +2141,7 @@ li {
       width: 100%;
       height: 126px;
     }
-    img {
+    picture {
       width: 100%;
       max-height: 50px;
       max-width: 163px;
@@ -2150,6 +2150,19 @@ li {
       @media screen and (max-width: 460px) {
         max-height: 60%;
         max-width: 70%;
+      }
+    }
+    img {
+      width: 100%;
+      &.tbank {
+        max-width: 163px;
+      max-height: 50px;
+        @media screen and (max-width: 1000px) {
+        }
+        @media screen and (max-width: 460px) {
+          max-height: 60%;
+          max-width: 70%;
+        }
       }
     }
   }
