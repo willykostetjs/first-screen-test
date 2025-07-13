@@ -1773,6 +1773,17 @@ li::before {
 .career-navigation-left {
   background-color: #7da2cf;
 }
+.career-btn {
+  background: black;
+  color: white;
+  border-radius: 8px;
+  padding: 14px 20px;
+  width: 118px;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  margin-top: 22px;
+}
 
 .faq {
   margin: 20px 0;
