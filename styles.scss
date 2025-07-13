@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 button {
-    font-family: "Golos Text", sans-serif;
+  font-family: "Golos Text", sans-serif;
   cursor: pointer;
   outline: none;
   border: none;
@@ -856,12 +856,20 @@ li {
     line-height: 102%;
     letter-spacing: -0.02em;
     margin-bottom: 30px;
+    @media screen and (max-width: 460px) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
   }
   &-subtitle {
     font-weight: 400;
     font-size: 26px;
     color: #161618;
     margin-bottom: 50px;
+    @media screen and (max-width: 460px) {
+      margin-bottom: 30px;
+    }
+    font-size: 14px;
   }
   &-item {
     background: white;
@@ -870,8 +878,8 @@ li {
     width: 684px !important;
     @media screen and (max-width: 460px) {
       width: 320px !important;
-    padding: 20px;
-    border-radius: 18px;
+      padding: 20px;
+      border-radius: 18px;
     }
     flex: 0 0 auto;
     font-weight: 400;
@@ -884,12 +892,12 @@ li {
       flex-direction: column;
       gap: 10px;
       margin-top: 10px;
-      background-color:#F2F2F2;
+      background-color: #f2f2f2;
       border-radius: 24px;
-padding: 15px;
-@media screen and (max-width: 460px) {
-    border-radius: 18px;
-    }
+      padding: 15px;
+      @media screen and (max-width: 460px) {
+        border-radius: 18px;
+      }
       ul {
         list-style: inside;
         margin-bottom: 0;
@@ -1097,7 +1105,7 @@ padding: 15px;
   @media screen and (max-width: 1000px) {
   }
   @media screen and (max-width: 460px) {
-    margin: 30px 0;
+    margin: 0px 0 30px;
   }
   &-content {
     display: grid;
@@ -1497,6 +1505,9 @@ padding: 15px;
       img {
         height: 100%;
         width: 100%;
+        @media screen and (max-width: 460px) {
+         height: 260px;
+        }
       }
       @media screen and (max-width: 1000px) {
       }
@@ -2165,7 +2176,7 @@ padding: 15px;
       width: 100%;
       &.tbank {
         max-width: 163px;
-      max-height: 50px;
+        max-height: 50px;
         @media screen and (max-width: 1000px) {
         }
         @media screen and (max-width: 460px) {
