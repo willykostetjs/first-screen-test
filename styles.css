@@ -1528,6 +1528,11 @@ li::before {
   width: 100%;
   border-radius: 45px;
   overflow: hidden;
+  display: flex;
+}
+.practice-item-img img {
+  height: 100%;
+  width: 100%;
 }
 @media screen and (max-width: 460px) {
   .practice-item-img {
