@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".community-navigation-left",
       nextEl: ".community-navigation-right",
     },
-      centeredSlides: true,
+    centeredSlides: true,
 
     breakpoints: {
       200: {
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-   const careerSwiper = new Swiper(".career-slider", {
+  const careerSwiper = new Swiper(".career-slider", {
     loop: true,
     slidesPerView: "auto",
     spaceBetween: 12,
@@ -162,25 +162,22 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".career-navigation-left",
       nextEl: ".career-navigation-right",
     },
-     
 
     breakpoints: {
       200: {
         slidesPerView: "auto",
         spaceBetween: 12,
-         centeredSlides: true,
+        centeredSlides: true,
       },
       824: {
         slidesPerView: "auto",
         spaceBetween: 12,
-         centeredSlides: false,
+        centeredSlides: false,
       },
     },
   });
 
-
-
-    const whereSwiper = new Swiper(".where-slider", {
+  const whereSwiper = new Swiper(".where-slider", {
     loop: false,
     slidesPerView: 1,
     spaceBetween: 42,
@@ -213,8 +210,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   whereSwiper.controller.control = whereRightSwiper;
   whereRightSwiper.controller.control = whereSwiper;
-
-
 
   const e = new Swiper(".speaker-swiper", {
       direction: "horizontal",
@@ -259,3 +254,31 @@ document.addEventListener("DOMContentLoaded", function () {
 }),
   (window.openModal = openModal),
   (window.closeModal = closeModal);
+document.addEventListener("DOMContentLoaded", function () {
+  const careerBtns = document.querySelectorAll(".career-item .career-btn");
+  const modals = [
+    document.getElementById("modal-1"),
+    document.getElementById("modal-2"),
+    document.getElementById("modal-3"),
+  ];
+
+  careerBtns.forEach((btn, idx) => {
+    btn.addEventListener("click", () => {
+      modals[idx].classList.add("active");
+      document.body.style.overflow = "hidden"; // Запретить прокрутку фона
+    });
+  });
+
+  modals.forEach((modal) => {
+    modal.querySelector(".modal-close").addEventListener("click", () => {
+      closeModal(modal);
+    });
+    modal.querySelector(".modal-overlay").addEventListener("click", () => {
+      closeModal(modal);
+    });
+    function closeModal(modal) {
+      modal.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+  });
+});
