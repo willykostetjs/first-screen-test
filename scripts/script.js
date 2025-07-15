@@ -281,3 +281,36 @@ document.addEventListener("DOMContentLoaded", () => {
     if (overlay)  overlay.addEventListener("click", close);
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const titles = document.querySelectorAll('.accordion__title');
+
+  titles.forEach(title => {
+    title.addEventListener('click', function(e) {
+      e.preventDefault();
+      const isActive = title.classList.contains('accordion-active');
+
+      // закрываем всё
+      document.querySelectorAll('.accordion__title').forEach(t => t.classList.remove('accordion-active'));
+      document.querySelectorAll('.accordion__arrow').forEach(a => a.classList.remove('accordion__rotate'));
+      document.querySelectorAll('.accordion__content').forEach(c => {
+        c.classList.remove('open');
+        c.style.maxHeight = null;
+      });
+
+      // если до клика не было активно — открываем именно этот
+      if (!isActive) {
+        title.classList.add('accordion-active');
+        const arrow = title.querySelector('.accordion__arrow');
+        if (arrow) arrow.classList.add('accordion__rotate');
+
+        const content = title.nextElementSibling;
+        if (content && content.classList.contains('accordion__content')) {
+          content.classList.add('open');
+          // даём браузеру замерить scrollHeight после добавления класса
+          // content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      }
+    });
+  });
+});
