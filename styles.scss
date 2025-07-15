@@ -1506,7 +1506,7 @@ li {
         height: 100%;
         width: 100%;
         @media screen and (max-width: 460px) {
-         height: 260px;
+          height: 260px;
         }
       }
       @media screen and (max-width: 1000px) {
@@ -2409,5 +2409,79 @@ li {
   }
   ul {
     margin-bottom: 0;
+  }
+}
+
+.program {
+  margin: 50px 0;
+  background-color: white;
+  border-radius: 50px;
+  @media screen and (max-width: 1000px) {
+  }
+  @media screen and (max-width: 460px) {
+    padding: 0 12px;
+  }
+
+  &-wrapper {
+    color: #161618;
+    padding: 60px 0;
+
+    @media screen and (max-width: 1000px) {
+    }
+    @media screen and (max-width: 460px) {
+    }
+  }
+  &-title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 126%;
+    margin-bottom: 20px;
+    @media screen and (max-width: 1000px) {
+    }
+    @media screen and (max-width: 460px) {
+    }
+  }
+  &-subtitle {
+    font-size: 26px;
+    line-height: 126%;
+    margin-bottom: 50px;
+    @media screen and (max-width: 1000px) {
+    }
+    @media screen and (max-width: 460px) {
+    }
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    @media screen and (max-width: 1000px) {
+    }
+    @media screen and (max-width: 460px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &-item {
+    border: 1px solid #eaeaea;
+    border-radius: 18px;
+    padding: 20px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 1000px) {
+    }
+    @media screen and (max-width: 460px) {
+    }
+    &-title {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 87%;
+    }
+    &-text {
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: -0.02em;
+      margin-top: 16px;
+    }
   }
 }
