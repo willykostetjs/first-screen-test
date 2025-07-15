@@ -94,7 +94,7 @@ a {
 
 .btn-primary {
   color: #fff;
-  background: #F23882;
+  background: #f23882;
 }
 .btn-primary:hover {
   background: #fff;
@@ -106,7 +106,7 @@ a {
   color: #fff;
 }
 .btn-black:hover {
-  background: #F23882;
+  background: #f23882;
 }
 
 .btn-bord {
@@ -3606,6 +3606,50 @@ li::before {
   color: #ffffff;
   font-size: clamp(26px, 2vw, 32px);
   line-height: 120%;
+}
+
+.reviews {
+  margin-top: 100px;
+}
+.reviews-title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 102%;
+  max-width: 1100px;
+  margin-bottom: 50px;
+}
+.reviews-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 460px) {
+  .reviews-tabs {
+    grid-template-columns: 1fr;
+  }
+}
+.reviews-tab {
+  padding: 30px;
+  background-color: white;
+  border-radius: 30px;
+}
+.reviews-tab.active {
+  background: #282f3f;
+  color: white;
+}
+.reviews-tab-title {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 126%;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+.reviews-tab-text {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  opacity: 0.6;
 }
 
 .reviewsN__inner {
