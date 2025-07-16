@@ -993,11 +993,11 @@ li::before {
   font-size: 26px;
   color: #161618;
   margin-bottom: 50px;
-  font-size: 14px;
 }
 @media screen and (max-width: 460px) {
   .history-subtitle {
     margin-bottom: 30px;
+    font-size: 14px;
   }
 }
 .history-item {
@@ -2058,7 +2058,13 @@ li::before {
 .develop-text:last-child {
   margin-bottom: 0;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media screen and (max-width: 460px) {
+  .develop-text:last-child {
+    font-size: 14px;
+  }
 }
 .develop-list-title {
   font-weight: 500;
@@ -2751,6 +2757,9 @@ li::before {
   background: #dcddee;
   color: #161618;
 }
+.lessons__all ul {
+  margin-top: 10px;
+}
 .lessons__all__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2768,7 +2777,6 @@ li::before {
   margin-top: 20px;
 }
 .lessons__tit {
-  margin-bottom: 15px;
   font-size: clamp(14px, 1.125vw, 18px);
   line-height: 120%;
 }
@@ -2826,7 +2834,7 @@ li::before {
 }
 .lessons__item_result {
   color: #ffffff;
-  background: #4c77aa;
+  background: #2a5cd9;
 }
 .lessons__item_result ul li:before {
   background-color: rgba(255, 255, 255, 0.8);
@@ -2952,7 +2960,7 @@ li::before {
 }
 .accordion__content p {
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 120%;
 }
 .paket {
@@ -3364,7 +3372,14 @@ li::before {
 }
 
 .questions {
-  margin-top: 80px;
+  margin: 80px 0;
+}
+.questions-link {
+  display: flex;
+  justify-content: center;
+}
+.questions-button {
+  margin-top: 0;
 }
 .questions-title {
   font-weight: 500;
