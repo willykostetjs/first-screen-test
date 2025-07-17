@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
 * {
   margin: 0;
@@ -4015,4 +4016,178 @@ li::before {
   margin-top: 20px;
   line-height: 120%;
   font-size: 18px;
+}
+
+.remodal-wrapper {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.remodal-wrapper.is-open {
+  display: block;
+  animation: fadeInOverlay 0.3s forwards;
+}
+.remodal-wrapper.is-closing {
+  animation: fadeOutOverlay 0.3s forwards;
+}
+
+.remodal {
+  width: 90%;
+  max-width: 680px;
+  margin: 5% auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+.remodal.is-open ~ .remodal { /* не требуется, анимация срабатывает при добавлении is-open у wrapper */ }
+.remodal-wrapper.is-open .remodal {
+  animation: slideDown 0.3s forwards;
+}
+.remodal-wrapper.is-closing .remodal {
+  animation: slideUp 0.3s forwards;
+}
+
+.remodal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml;base64,...") no-repeat center;
+  opacity: 0.6;
+  border: none;
+  cursor: pointer;
+}
+.remodal-close:hover {
+  opacity: 1;
+}
+
+.remodal__in {
+  padding: 30px;
+}
+
+.remodal__form .remodal__form-title {
+  margin-bottom: 20px;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 500;
+}
+.remodal__form .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.remodal__form .form .form__item {
+  display: flex;
+  flex-direction: column;
+}
+.remodal__form .form .form__item label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #161618;
+}
+.remodal__form .form .form__item input[type=text],
+.remodal__form .form .form__item input[type=email],
+.remodal__form .form .form__item input[type=tel] {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+.remodal__form .form .form__item input[type=text]:focus,
+.remodal__form .form .form__item input[type=email]:focus,
+.remodal__form .form .form__item input[type=tel]:focus {
+  outline: none;
+  border-color: #F23882;
+}
+.remodal__form .form .form__item-check {
+  display: flex;
+  align-items: center;
+}
+.remodal__form .form .form__item-check input[type=checkbox] {
+  margin-right: 10px;
+  width: auto;
+}
+.remodal__form .form .form__item-check label {
+  font-size: 14px;
+  color: #161618;
+}
+.remodal__form .form .form__item-check label a {
+  color: #F23882;
+  text-decoration: none;
+}
+.remodal__form .form .form__item-check label a:hover {
+  text-decoration: underline;
+}
+.remodal__form .form .form__item_bottom {
+  margin-top: 10px;
+}
+.remodal__form .form .form__item_bottom button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #161618;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.remodal__form .form .form__item_bottom button:hover {
+  background: #F23882;
+}
+
+@keyframes fadeInOverlay {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes fadeOutOverlay {
+  from {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+@media (max-width: 768px) {
+  .remodal {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+  .remodal-close {
+    width: 20px;
+    height: 20px;
+  }
+  .remodal__in {
+    padding: 20px;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -9,12 +9,48 @@
     <link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="./style/fonts.css">
+        <!-- <link rel="stylesheet" href="./style/remodal.css"> -->
         <link rel="stylesheet" href="./styles.css">
     </noscript>
     <link rel="preload" href="style/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 </head>
 
 <body>
+<div class="remodal-wrapper" data-modal-id="call1">
+  <div class="remodal">
+    <button class="remodal-close" data-modal-close></button>
+    <div class="remodal__in">
+      <div class="remodal__form">
+        <h2 class="remodal__form-title">Оставьте ваши данные</h2>
+        <form>
+          <div class="form">
+            <div class="form__item">
+              <label for="name1">Имя</label>
+              <input id="name1" type="text" name="name" required>
+            </div>
+            <div class="form__item">
+              <label for="email1">Email</label>
+              <input id="email1" type="email" name="email" required>
+            </div>
+            <div class="form__item">
+              <label for="tel1">Телефон</label>
+              <input id="tel1" type="tel" name="tel" required>
+            </div>
+            <div class="form__item-check">
+              <input id="agree1" type="checkbox" required>
+              <label for="agree1">
+                Даю <a href="#">согласие на обработку персональных данных</a>
+              </label>
+            </div>
+            <div class="form__item_bottom">
+              <button type="submit" class="btn btn-black">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
     <header class="header">
         <div class="container">
             <div class="header-container">
@@ -28,7 +64,7 @@
                     <a href="#program">Программа</a>
                     <a href="#paket">Тарифы</a>
                 </div>
-                <button class="header-button">Помощь консультанта</button>
+                <button class="header-button" data-modal-target="call1">Помощь консультанта</button>
             </div>
         </div>
     </header>
@@ -50,7 +86,7 @@
                 </ul>
                 <div class="start-buttons">
                     <a href="#paket" class="start-buttons-blue">Начать обучение</a>
-                    <button>Узнать подробнее</button>
+                    <button data-modal-target="call1">Узнать подробнее</button>
                 </div>
                 <img src="./img/start-image.png" class="start-image">
             </div>
@@ -580,59 +616,7 @@
             <h3 class="history-subtitle">Коучем может стать каждый!</h3>
             <div class="sw history-list history-slider swiper ">
                 <div class="swiper-wrapper">
-                    <div class="history-item swiper-slide">
-                        <div class="history-item-top"><span class="text-blue">До:</span> была предпринимателем, часто
-                            меняла направления (ателье по пошиву одежды, парфюмерный бизнес, косметический бизнес).
-                            Пандемия внесла свои коррективы, пришлось закрыть бизнес и пересмотреть свой вид
-                            деятельности</div>
-                        <div class="history-item-body">
-                            <p><span class="text-blue">После:</span> работа коуча позволяет проводить сессии онлайн даже
-                                в небольшом провинциальном городке.</p>
-                            <p>Проводит индивидуальные коуч-сессии с руководителями разного уровня и статуса. Также
-                                помогает людям с запросами типа «как найти себя и ресурс», «как выйти из состояния
-                                выгорания».</p>
-                            <p>Работает куратором в Академии EDPRO.</p>
-                            <p>Сотрудничает со спортивной академией в качестве коуча и спикера на семинарах.</p>
-                            <p>И уже больше года снова является собственником бизнеса.</p>
-                            <p><b>«Коучинг — это возможность изменить свое отношение к людям, внешнему миру и научиться
-                                    по-новому выстраивать взаимоотношения с окружающими»</b></p>
-                        </div>
-                        <div class="history-item-bottom">
-                            <picture>
-                                <source type="image/webp" srcset="./img/history/1.webp 1x, ./img/history/1@2x.webp 2x">
-                                <source srcset="./img/history/1.png 1x, ./img/history/1@2x.png 2x">
-                                <img class="history-item-bottom-ava" src="./img/history/1.png" alt="Мария Ткаченко">
-                            </picture>
-                            <div class="history-item-bottom-name">Мария Ткаченко</div>
-                        </div>
-                    </div>
 
-                    <div class="history-item swiper-slide">
-                        <div class="history-item-top"><span class="text-blue">До:</span> работала проджект-менеджером в
-                            крупной компании. Стаж — более 15 лет. После декрета вышла на работу, пыталась совмещать
-                            карьерные амбиции и изменившиеся семейные ценности. Активное совмещение привело к усталости
-                            и выгоранию</div>
-                        <div class="history-item-body">
-                            <p><span class="text-blue">После:</span> сейчас проводит коуч-сессии для людей из
-                                корпоративной сферы, помогает им справляться с различными проблемами, в том числе с
-                                предотвращением выгорания.</p>
-                            <div>Благодаря обучению:
-                                <ul>
-                                    <li>преодолела страх проявляться и начала вести телеграм-канал;</li>
-                                    <li>осознала и заякорила свои жизненные ценности;</li>
-                                    <li>теперь легче идет в новое.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="history-item-bottom">
-                            <picture>
-                                <source type="image/webp" srcset="./img/history/2.webp 1x, ./img/history/2@2x.webp 2x">
-                                <source srcset="./img/history/2.png 1x, ./img/history/2@2x.png 2x">
-                                <img class="history-item-bottom-ava" src="./img/history/2.png" alt="Ольга Буданова">
-                            </picture>
-                            <div class="history-item-bottom-name">Ольга Буданова</div>
-                        </div>
-                    </div>
                     <div class="history-item swiper-slide">
                         <div class="history-item-top">
                             <span class="text-blue">До:</span> работал в сфере маркетинга и не был знаком с коучингом,
@@ -699,7 +683,173 @@
                             <div class="history-item-bottom-name">Анастасия Козлова</div>
                         </div>
                     </div>
+                    <div class="history-item swiper-slide">
+                        <div class="history-item-top">
+                            <span class="text-blue">До:</span> работала в маркетинге и управлении, имела свой бизнес и
+                            опыт работы в разных областях, но коучингом и психологией не занималась.
+                        </div>
+                        <div class="history-item-body">
+                            <p><span class="text-blue">После:</span> поняла, насколько по-другому можно разговаривать с
+                                людьми, обсуждать что-то, доносить свою идею. В дополнение к основному доходу появились
+                                клиенты на коучинг, которые дополнительно приносят 80–100 тыс. ₽/мес. Теперь видит
+                                гораздо более глубокие результаты своих клиентов и наслаждается процессом их
+                                трансформации.</p>
+                        </div>
+                        <div class="history-item-bottom">
+                            <picture>
+                                <source type="image/webp" srcset="./img/history/6.webp">
+                                <img class="history-item-bottom-ava" src="./img/history/6.webp" alt="Фатима Панова">
+                            </picture>
+                            <div class="history-item-bottom-name">Фатима Панова</div>
+                        </div>
+                    </div>
 
+                    <div class="history-item swiper-slide">
+                        <div class="history-item-top">
+                            <span class="text-blue">До:</span> опыта в коучинге не было, пришла на обучение в EDPRO,
+                            чтобы получить новую профессию.
+                        </div>
+                        <div class="history-item-body">
+                            <p><span class="text-blue">После:</span> обучение помогло обрести уверенность в себе и четко
+                                сформулировать цели. Сейчас Екатерина — бизнес-консультант, коуч и основатель
+                                коучингового агентства, популяризует культуру коучинга в Беларуси.</p>
+                        </div>
+                        <div class="history-item-bottom">
+                            <picture>
+                                <source type="image/webp" srcset="./img/history/7.webp">
+                                <img class="history-item-bottom-ava" src="./img/history/7.webp" alt="Екатерина Дитман">
+                            </picture>
+                            <div class="history-item-bottom-name">Екатерина Дитман</div>
+                        </div>
+                    </div>
+
+                    <div class="history-item swiper-slide">
+                        <div class="history-item-top">
+                            <span class="text-blue">До:</span> работала руководителем в транспортной компании и не имела
+                            опыта в коучинге. Пришла на курс с целью получить профессиональное образование и
+                            подтверждение своей квалификации.
+                        </div>
+                        <div class="history-item-body">
+                            <p><span class="text-blue">После:</span> ощутила значительные внутренние изменения и поняла,
+                                чего она на самом деле хочет от жизни, что отразилось на уверенности и личностном росте.
+                                В результате стала практиковать, создала свой первый продукт — воркбук по целеполаганию.
+                                Появился дополнительный доход: 80–100 тыс. ₽/мес. Сейчас планирует уйти с работы в
+                                транспортной компании и полностью сосредоточиться на коучинге.</p>
+                        </div>
+                        <div class="history-item-bottom">
+                            <picture>
+                                <source type="image/webp" srcset="./img/history/8.webp">
+                                <img class="history-item-bottom-ava" src="./img/history/8.webp" alt="Алина Инсаркина">
+                            </picture>
+                            <div class="history-item-bottom-name">Алина Инсаркина</div>
+                        </div>
+                    </div>
+
+                    <div class="history-item swiper-slide">
+                        <div class="history-item-top">
+                            <span class="text-blue">До:</span> практикующий психолог с 5-летним стажем. До этого была
+                            кандидатом технических наук и помощником ректора одного из крупнейших вузов, преподавала в
+                            университете. После декрета решила сменить профессиональную сферу и начала развиваться в
+                            помогающей профессии.
+                        </div>
+                        <div class="history-item-body">
+                            <p><span class="text-blue">После:</span> сессии стали более эффективными, клиенты начали
+                                быстрее достигать результатов и оставлять положительные отзывы. Коучинговые инструменты
+                                помогли Ирине расширить практику и увеличили базу клиентов, а также улучшили ее
+                                профессиональные навыки.</p>
+                        </div>
+                        <div class="history-item-bottom">
+                            <picture>
+                                <source type="image/webp" srcset="./img/history/9.webp">
+                                <img class="history-item-bottom-ava" src="./img/history/9.webp" alt="Ирина Гетманова">
+                            </picture>
+                            <div class="history-item-bottom-name">Ирина Гетманова</div>
+                        </div>
+                    </div>
+
+                    <div class="history-item swiper-slide">
+                        <div class="history-item-top">
+                            <span class="text-blue">До:</span> работала юристом и уже имела небольшой опыт в коучинге,
+                            но решила освоить его на профессиональном уровне, расширить связи и получить обратную связь
+                            о своих компетенциях.
+                        </div>
+                        <div class="history-item-body">
+                            <p><span class="text-blue">После:</span> перешла на полставки на основном месте работы,
+                                чтобы больше времени уделять коучинговой практике. Первые клиенты стали приходить еще во
+                                время учебы. Планирует и дальше развиваться как коуч.</p>
+                        </div>
+                        <div class="history-item-bottom">
+                            <picture>
+                                <source type="image/webp" srcset="./img/history/10.webp">
+                                <img class="history-item-bottom-ava" src="./img/history/10.webp" alt="Алиса Бытева">
+                            </picture>
+                            <div class="history-item-bottom-name">Алиса Бытева</div>
+                        </div>
+                    </div>
+
+                    <div class="history-item swiper-slide">
+                        <div class="history-item-top">
+                            <span class="text-blue">До:</span> многодетная мама, была финансовым коучем и
+                            предпринимателем, имела опыт работы с клиентами и большим опытом в бизнесе и инвестициях. На
+                            курс пришла с целью расширить свои навыки в коучинге и получить официальный диплом для
+                            дальнейшего профессионального развития.
+                        </div>
+                        <div class="history-item-body">
+                            <p><span class="text-blue">После:</span> получила уверенность в своей профессии,
+                                освободилась от операционной работы и начала работать с клиентами. Свой первый миллион
+                                на коучинге заработала еще в процессе обучения. Заложила фундамент для своего
+                                онлайн-бизнеса, ведет блог.</p>
+                        </div>
+                        <div class="history-item-bottom">
+                            <picture>
+                                <source type="image/webp" srcset="./img/history/11.webp">
+                                <img class="history-item-bottom-ava" src="./img/history/11.webp" alt="Марта Дыбнова">
+                            </picture>
+                            <div class="history-item-bottom-name">Марта Дыбнова</div>
+                        </div>
+                    </div>
+
+                    <div class="history-item swiper-slide">
+                        <div class="history-item-top">
+                            <span class="text-blue">До:</span> 13 лет в найме, работа бизнес-ассистентом в международной
+                            сельхозкомпании, выгорание и желание выйти из корпоративного мира.
+                        </div>
+                        <div class="history-item-body">
+                            <p><span class="text-blue">После:</span> успешный переход в коучинг, увеличение стоимости
+                                сессий, развитие частной практики. Кроме этого, обучение помогло наладить отношения с
+                                семьей и чувствовать себя уверенно в жизни, сделать выбор в пользу себя и своих желаний.
+                            </p>
+                        </div>
+                        <div class="history-item-bottom">
+                            <picture>
+                                <source type="image/webp" srcset="./img/history/12.webp">
+                                <img class="history-item-bottom-ava" src="./img/history/12.webp"
+                                    alt="Александра Герасименко">
+                            </picture>
+                            <div class="history-item-bottom-name">Александра Герасименко</div>
+                        </div>
+                    </div>
+
+                    <div class="history-item swiper-slide">
+                        <div class="history-item-top">
+                            <span class="text-blue">До:</span> бизнес-консультант, коуч. Был опыт работы в консалтинге,
+                            но без формального коучинга. Пришла на курс с осознанным желанием сменить профессию и
+                            развить коучинговые навыки по международным стандартам ICF.
+                        </div>
+                        <div class="history-item-body">
+                            <p><span class="text-blue">После:</span> окупила стоимость уже в процессе обучения. Обучение
+                                стало значимым шагом в карьерном росте, позволило значительно повысить уверенность в
+                                себе и профессионализме. Коучинг помог увеличить доход на 30–40% и интегрировать его в
+                                другие процессы своей деятельности.</p>
+                        </div>
+                        <div class="history-item-bottom">
+                            <picture>
+                                <source type="image/webp" srcset="./img/history/13.webp">
+                                <img class="history-item-bottom-ava" src="./img/history/13.webp" alt="Галина Агапова">
+                            </picture>
+                            <div class="history-item-bottom-name">Галина Агапова</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class=" sw sw-bottom">
@@ -714,7 +864,7 @@
                 <div class="sw-navigation-pagination sw-dots history-dots swiper-pagination"></div>
             </div>
             <div class="history-link">
-                <button class="base-list-button history-button">Стать коучем ICF</button>
+                <a href="#paket" class="base-list-button history-button">Стать коучем ICF</a>
             </div>
         </div>
     </section>

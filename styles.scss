@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
-
+// @import url('./style/remodal.css');
 * {
   margin: 0;
   padding: 0;
@@ -4205,4 +4205,161 @@ li {
     line-height: 120%;
     font-size: 18px;
   }
+}
+
+// 1) Подложка
+.remodal-wrapper {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+  &.is-open {
+    display: block;
+    animation: fadeInOverlay 0.3s forwards;
+  }
+  &.is-closing {
+    animation: fadeOutOverlay 0.3s forwards;
+  }
+}
+
+// 2) Окно
+.remodal {
+  width: 90%;
+  max-width: 680px;
+  margin: 5% auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transform: translateY(-20px);
+  opacity: 0;
+  &.is-open ~ & { /* не требуется, анимация срабатывает при добавлении is-open у wrapper */
+  }
+  .remodal-wrapper.is-open & {
+    animation: slideDown 0.3s forwards;
+  }
+  .remodal-wrapper.is-closing & {
+    animation: slideUp 0.3s forwards;
+  }
+}
+
+// 3) Кнопка закрытия
+.remodal-close {
+  position: absolute;
+  top: 15px; right: 15px;
+  width: 24px; height: 24px;
+  background: url('data:image/svg+xml;base64,...') no-repeat center;
+  opacity: 0.6;
+  border: none;
+  cursor: pointer;
+  &:hover { opacity: 1; }
+}
+
+// 4) Контент
+.remodal__in {
+  padding: 30px;
+}
+
+// 5) Форма
+.remodal__form {
+  .remodal__form-title {
+    margin-bottom: 20px;
+    font-size: clamp(20px,2vw,28px);
+    font-weight: 500;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .form__item {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-weight: 500;
+        margin-bottom: 6px;
+        font-size: 14px;
+        color: #161618;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        padding: 10px 15px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        transition: border-color .2s;
+        &:focus {
+          outline: none;
+          border-color: #F23882;
+        }
+      }
+    }
+
+    .form__item-check {
+      display: flex;
+      align-items: center;
+
+      input[type="checkbox"] {
+        margin-right: 10px;
+        width: auto;
+      }
+
+      label {
+        font-size: 14px;
+        color: #161618;
+        a {
+          color: #F23882;
+          text-decoration: none;
+          &:hover { text-decoration: underline; }
+        }
+      }
+    }
+
+    .form__item_bottom {
+      margin-top: 10px;
+      button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 500;
+        background: #161618;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background .2s;
+        &:hover {
+          background: #F23882;
+        }
+      }
+    }
+  }
+}
+
+// 6) Анимации
+@keyframes fadeInOverlay {
+  from { background-color: rgba(0,0,0,0); }
+  to   { background-color: rgba(0,0,0,0.5); }
+}
+@keyframes fadeOutOverlay {
+  from { background-color: rgba(0,0,0,0.5); }
+  to   { background-color: rgba(0,0,0,0); }
+}
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(0);     opacity: 1; }
+  to   { transform: translateY(-20px); opacity: 0; }
+}
+
+// 7) Адаптив
+@media (max-width: 768px) {
+  .remodal { max-width: 90%; margin-top: 20px; }
+  .remodal-close { width: 20px; height: 20px; }
+  .remodal__in { padding: 20px; }
 }

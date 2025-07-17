@@ -314,3 +314,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const openBtns  = document.querySelectorAll('[data-modal-target]');
+  const closeBtns = document.querySelectorAll('[data-modal-close]');
+  const overlays  = document.querySelectorAll('.remodal-wrapper');
+
+  function openModal(id) {
+    const overlay = document.querySelector(`.remodal-wrapper[data-modal-id="${id}"]`);
+    if (!overlay) return;
+    overlay.classList.add('is-open');
+  }
+
+  function closeModal(overlay) {
+    overlay.classList.add('is-closing');
+    overlay.addEventListener('animationend', function _h() {
+      overlay.classList.remove('is-open','is-closing');
+      overlay.removeEventListener('animationend', _h);
+    });
+  }
+
+  openBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      openModal(btn.dataset.modalTarget);
+    });
+  });
+
+  // крестик
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const overlay = btn.closest('.remodal-wrapper');
+      closeModal(overlay);
+    });
+  });
+
+  // клик по фону
+  overlays.forEach(ov => {
+    ov.addEventListener('click', e => {
+      if (e.target === ov) {
+        closeModal(ov);
+      }
+    });
+  });
+});
