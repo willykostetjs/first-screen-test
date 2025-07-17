@@ -285,6 +285,19 @@ li {
 .start-buttons-blue {
   background-color: #2a5cd9 !important;
   border: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 30px;
+  font-weight: 600;
+  font-size: 18px;
+  @media screen and (max-width: 758px) {
+  padding: 20px 30px;
+  }
+  @media screen and (max-width: 460px) {
+  padding: 20px 30px;
+  }
 }
 
 .icon-list-list {
@@ -953,7 +966,7 @@ li {
     margin-bottom: 50px;
     @media screen and (max-width: 460px) {
       margin-bottom: 30px;
-    font-size: 14px;
+      font-size: 14px;
     }
   }
   &-item {
@@ -997,6 +1010,7 @@ li {
         border-radius: 20px;
         width: 80px;
         height: 80px;
+        object-fit: cover;
       }
       &-name {
         font-weight: 500;
@@ -1066,6 +1080,11 @@ li {
     opacity: 1 !important;
     width: 30px !important;
     border-radius: 300px !important;
+  }
+  &-dots {
+    @media screen and (max-width: 460px) {
+      display: none !important;
+    }
   }
 }
 .form {
@@ -1299,7 +1318,7 @@ li {
     border-radius: 45px;
     overflow: hidden;
     width: 410px !important;
-    height: 531px !important;
+    height: 561px !important;
     background: white;
     @media screen and (max-width: 1000px) {
     }
@@ -1344,11 +1363,12 @@ li {
       font-weight: 400;
       font-size: 16px;
       letter-spacing: -0.01em;
-      height: 30px;
+      height: 50px;
       margin-bottom: 22px;
       @media screen and (max-width: 1000px) {
       }
       @media screen and (max-width: 460px) {
+        margin-bottom: 7px;
         font-size: 14px;
       }
     }
@@ -2023,8 +2043,8 @@ li {
       font-size: 24px;
       font-weight: 500;
       @media screen and (max-width: 460px) {
-      font-size: 14px;
-    }
+        font-size: 14px;
+      }
     }
   }
   &-list {
@@ -2757,7 +2777,7 @@ li {
     }
   }
   &__all {
-    ul{
+    ul {
       margin-top: 10px;
     }
     &__list {
@@ -3553,12 +3573,11 @@ li {
 }
 .questions {
   margin: 80px 0;
-  &-link{
+  &-link {
     display: flex;
     justify-content: center;
-
   }
-  &-button{
+  &-button {
     margin-top: 0;
   }
   &-title {
@@ -4213,7 +4232,7 @@ li {
   inset: 0;
   display: none;
   z-index: 1000;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   &.is-open {
     display: block;
     animation: fadeInOverlay 0.3s forwards;
@@ -4233,7 +4252,8 @@ li {
   overflow: hidden;
   transform: translateY(-20px);
   opacity: 0;
-  &.is-open ~ & { /* не требуется, анимация срабатывает при добавлении is-open у wrapper */
+  &.is-open ~ & {
+    /* не требуется, анимация срабатывает при добавлении is-open у wrapper */
   }
   .remodal-wrapper.is-open & {
     animation: slideDown 0.3s forwards;
@@ -4246,13 +4266,18 @@ li {
 // 3) Кнопка закрытия
 .remodal-close {
   position: absolute;
-  top: 15px; right: 15px;
-  width: 24px; height: 24px;
-  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEzM18zOTM3KSI+CjxwYXRoIGQ9Ik0xNC4xMjI1IDEyLjAwMDdMMjMuNTYwMiAyLjU2MzAyQzI0LjE0NjYgMS45NzcxNyAyNC4xNDY2IDEuMDI2NiAyMy41NjAyIDAuNDQwNzQyQzIyLjk3MzkgLTAuMTQ1NjEyIDIyLjAyNDMgLTAuMTQ1NjEyIDIxLjQzOCAwLjQ0MDc0MkwxMi4wMDAyIDkuODc4NDRMMi41NjIwNSAwLjQ0MDc0MkMxLjk3NTY5IC0wLjE0NTYxMiAxLjAyNjEyIC0wLjE0NTYxMiAwLjQzOTc2NiAwLjQ0MDc0MkMtMC4xNDY1ODkgMS4wMjY2IC0wLjE0NjU4OSAxLjk3NzE3IDAuNDM5NzY2IDIuNTYzMDJMOS44Nzc5NyAxMi4wMDA3TDAuNDM5NzY2IDIxLjQzODRDLTAuMTQ2NTg5IDIyLjAyNDMgLTAuMTQ2NTg5IDIyLjk3NDkgMC40Mzk3NjYgMjMuNTYwN0MwLjczMjk0MyAyMy44NTM0IDEuMTE3MTcgMjQgMS41MDA5MSAyNEMxLjg4NDY0IDI0IDIuMjY4ODcgMjMuODUzNCAyLjU2MjA1IDIzLjU2MDJMMTIuMDAwMiAxNC4xMjI1TDIxLjQzOCAyMy41NjAyQzIxLjczMTEgMjMuODUzNCAyMi4xMTU0IDI0IDIyLjQ5OTEgMjRDMjIuODgyOCAyNCAyMy4yNjcxIDIzLjg1MzQgMjMuNTYwMiAyMy41NjAyQzI0LjE0NjYgMjIuOTc0NCAyNC4xNDY2IDIyLjAyMzggMjMuNTYwMiAyMS40Mzc5TDE0LjEyMjUgMTIuMDAwN1oiIGZpbGw9IiNBMUExQTEiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMzNfMzkzNyI+CjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K") no-repeat center;
+  top: 15px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEzM18zOTM3KSI+CjxwYXRoIGQ9Ik0xNC4xMjI1IDEyLjAwMDdMMjMuNTYwMiAyLjU2MzAyQzI0LjE0NjYgMS45NzcxNyAyNC4xNDY2IDEuMDI2NiAyMy41NjAyIDAuNDQwNzQyQzIyLjk3MzkgLTAuMTQ1NjEyIDIyLjAyNDMgLTAuMTQ1NjEyIDIxLjQzOCAwLjQ0MDc0MkwxMi4wMDAyIDkuODc4NDRMMi41NjIwNSAwLjQ0MDc0MkMxLjk3NTY5IC0wLjE0NTYxMiAxLjAyNjEyIC0wLjE0NTYxMiAwLjQzOTc2NiAwLjQ0MDc0MkMtMC4xNDY1ODkgMS4wMjY2IC0wLjE0NjU4OSAxLjk3NzE3IDAuNDM5NzY2IDIuNTYzMDJMOS44Nzc5NyAxMi4wMDA3TDAuNDM5NzY2IDIxLjQzODRDLTAuMTQ2NTg5IDIyLjAyNDMgLTAuMTQ2NTg5IDIyLjk3NDkgMC40Mzk3NjYgMjMuNTYwN0MwLjczMjk0MyAyMy44NTM0IDEuMTE3MTcgMjQgMS41MDA5MSAyNEMxLjg4NDY0IDI0IDIuMjY4ODcgMjMuODUzNCAyLjU2MjA1IDIzLjU2MDJMMTIuMDAwMiAxNC4xMjI1TDIxLjQzOCAyMy41NjAyQzIxLjczMTEgMjMuODUzNCAyMi4xMTU0IDI0IDIyLjQ5OTEgMjRDMjIuODgyOCAyNCAyMy4yNjcxIDIzLjg1MzQgMjMuNTYwMiAyMy41NjAyQzI0LjE0NjYgMjIuOTc0NCAyNC4xNDY2IDIyLjAyMzggMjMuNTYwMiAyMS40Mzc5TDE0LjEyMjUgMTIuMDAwN1oiIGZpbGw9IiNBMUExQTEiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMzNfMzkzNyI+CjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K")
+    no-repeat center;
   opacity: 0.6;
   border: none;
   cursor: pointer;
-  &:hover { opacity: 1; }
+  &:hover {
+    opacity: 1;
+  }
 }
 
 // 4) Контент
@@ -4264,7 +4289,7 @@ li {
 .remodal__form {
   .remodal__form-title {
     margin-bottom: 20px;
-    font-size: clamp(20px,2vw,28px);
+    font-size: clamp(20px, 2vw, 28px);
     font-weight: 500;
   }
 
@@ -4272,7 +4297,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 20px;
-background-color:#ececec;
+    background-color: #ececec;
     .form__item {
       display: flex;
       flex-direction: column;
@@ -4291,7 +4316,7 @@ background-color:#ececec;
         font-size: 14px;
         border: 1px solid #ccc;
         border-radius: 6px;
-        transition: border-color .2s;
+        transition: border-color 0.2s;
         &:focus {
           outline: none;
           border-color: #2a5cd9;
@@ -4314,7 +4339,9 @@ background-color:#ececec;
         a {
           color: #2a5cd9;
           text-decoration: none;
-          &:hover { text-decoration: underline; }
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -4331,7 +4358,7 @@ background-color:#ececec;
         border: none;
         border-radius: 6px;
         cursor: pointer;
-        transition: background .2s;
+        transition: background 0.2s;
         &:hover {
           background: #2a5cd9;
         }
@@ -4342,25 +4369,53 @@ background-color:#ececec;
 
 // 6) Анимации
 @keyframes fadeInOverlay {
-  from { background-color: rgba(0,0,0,0); }
-  to   { background-color: rgba(0,0,0,0.5); }
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 @keyframes fadeOutOverlay {
-  from { background-color: rgba(0,0,0,0.5); }
-  to   { background-color: rgba(0,0,0,0); }
+  from {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 @keyframes slideDown {
-  from { transform: translateY(-20px); opacity: 0; }
-  to   { transform: translateY(0);     opacity: 1; }
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes slideUp {
-  from { transform: translateY(0);     opacity: 1; }
-  to   { transform: translateY(-20px); opacity: 0; }
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
 }
 
 // 7) Адаптив
 @media (max-width: 768px) {
-  .remodal { max-width: 90%; margin-top: 20px; }
-  .remodal-close { width: 20px; height: 20px; }
-  .remodal__in { padding: 20px; }
+  .remodal {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+  .remodal-close {
+    width: 20px;
+    height: 20px;
+  }
+  .remodal__in {
+    padding: 20px;
+  }
 }

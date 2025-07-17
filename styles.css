@@ -298,6 +298,23 @@ li::before {
 .start-buttons-blue {
   background-color: #2a5cd9 !important;
   border: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 30px;
+  font-weight: 600;
+  font-size: 18px;
+}
+@media screen and (max-width: 758px) {
+  .start-buttons-blue {
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .start-buttons-blue {
+    padding: 20px 30px;
+  }
 }
 
 .icon-list-list {
@@ -1052,6 +1069,8 @@ li::before {
   border-radius: 20px;
   width: 80px;
   height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .history-item-bottom-name {
   font-weight: 500;
@@ -1117,6 +1136,11 @@ li::before {
   opacity: 1 !important;
   width: 30px !important;
   border-radius: 300px !important;
+}
+@media screen and (max-width: 460px) {
+  .sw-dots {
+    display: none !important;
+  }
 }
 
 .form {
@@ -1365,7 +1389,7 @@ li::before {
   border-radius: 45px;
   overflow: hidden;
   width: 410px !important;
-  height: 531px !important;
+  height: 561px !important;
   background: white;
 }
 @media screen and (max-width: 460px) {
@@ -1411,11 +1435,12 @@ li::before {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: -0.01em;
-  height: 30px;
+  height: 50px;
   margin-bottom: 22px;
 }
 @media screen and (max-width: 460px) {
   .teachers-item-role {
+    margin-bottom: 7px;
     font-size: 14px;
   }
 }
@@ -4043,7 +4068,9 @@ li::before {
   transform: translateY(-20px);
   opacity: 0;
 }
-.remodal.is-open ~ .remodal { /* не требуется, анимация срабатывает при добавлении is-open у wrapper */ }
+.remodal.is-open ~ .remodal {
+  /* не требуется, анимация срабатывает при добавлении is-open у wrapper */
+}
 .remodal-wrapper.is-open .remodal {
   animation: slideDown 0.3s forwards;
 }
