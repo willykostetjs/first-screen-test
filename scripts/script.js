@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: false,
     slidesPerView: "auto",
     spaceBetween: 12,
+    mousewheel: {
+      forceToAxis: true,
+      releaseOnEdges: true,
+    },
     pagination: {
       el: ".icf-dots",
       clickable: true,
@@ -35,14 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".icf-navigation-right",
     },
     breakpoints: {
-      200: {
-        slidesPerView: "auto",
-        spaceBetween: 12,
-      },
-      1024: {
-        slidesPerView: "auto",
-        spaceBetween: 12,
-      },
+      200: { slidesPerView: "auto", spaceBetween: 12 },
+      1024: { slidesPerView: "auto", spaceBetween: 12 },
     },
   });
   const historySwiper = new Swiper(".history-slider", {
@@ -259,7 +257,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-modal-target]").forEach((btn) => {
     const targetId = btn.getAttribute("data-modal-target");
     const modal = document.getElementById(targetId);
-    if (!modal) return; 
+    if (!modal) return;
 
     btn.addEventListener("click", () => {
       modal.classList.add("active");
@@ -270,7 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 2. Универсальное закрытие для всех модалок
   document.querySelectorAll(".modal").forEach((modal) => {
     const closeBtn = modal.querySelector(".modal-close");
-    const overlay  = modal.querySelector(".modal-overlay");
+    const overlay = modal.querySelector(".modal-overlay");
 
     function close() {
       modal.classList.remove("active");
@@ -278,35 +276,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (closeBtn) closeBtn.addEventListener("click", close);
-    if (overlay)  overlay.addEventListener("click", close);
+    if (overlay) overlay.addEventListener("click", close);
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const titles = document.querySelectorAll('.accordion__title');
+document.addEventListener("DOMContentLoaded", function () {
+  const titles = document.querySelectorAll(".accordion__title");
 
-  titles.forEach(title => {
-    title.addEventListener('click', function(e) {
+  titles.forEach((title) => {
+    title.addEventListener("click", function (e) {
       e.preventDefault();
-      const isActive = title.classList.contains('accordion-active');
+      const isActive = title.classList.contains("accordion-active");
 
       // закрываем всё
-      document.querySelectorAll('.accordion__title').forEach(t => t.classList.remove('accordion-active'));
-      document.querySelectorAll('.accordion__arrow').forEach(a => a.classList.remove('accordion__rotate'));
-      document.querySelectorAll('.accordion__content').forEach(c => {
-        c.classList.remove('open');
+      document
+        .querySelectorAll(".accordion__title")
+        .forEach((t) => t.classList.remove("accordion-active"));
+      document
+        .querySelectorAll(".accordion__arrow")
+        .forEach((a) => a.classList.remove("accordion__rotate"));
+      document.querySelectorAll(".accordion__content").forEach((c) => {
+        c.classList.remove("open");
         c.style.maxHeight = null;
       });
 
       // если до клика не было активно — открываем именно этот
       if (!isActive) {
-        title.classList.add('accordion-active');
-        const arrow = title.querySelector('.accordion__arrow');
-        if (arrow) arrow.classList.add('accordion__rotate');
+        title.classList.add("accordion-active");
+        const arrow = title.querySelector(".accordion__arrow");
+        if (arrow) arrow.classList.add("accordion__rotate");
 
         const content = title.nextElementSibling;
-        if (content && content.classList.contains('accordion__content')) {
-          content.classList.add('open');
+        if (content && content.classList.contains("accordion__content")) {
+          content.classList.add("open");
           // даём браузеру замерить scrollHeight после добавления класса
           // content.style.maxHeight = content.scrollHeight + 'px';
         }
@@ -315,42 +317,44 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const openBtns  = document.querySelectorAll('[data-modal-target]');
-  const closeBtns = document.querySelectorAll('[data-modal-close]');
-  const overlays  = document.querySelectorAll('.remodal-wrapper');
+document.addEventListener("DOMContentLoaded", () => {
+  const openBtns = document.querySelectorAll("[data-modal-target]");
+  const closeBtns = document.querySelectorAll("[data-modal-close]");
+  const overlays = document.querySelectorAll(".remodal-wrapper");
 
   function openModal(id) {
-    const overlay = document.querySelector(`.remodal-wrapper[data-modal-id="${id}"]`);
+    const overlay = document.querySelector(
+      `.remodal-wrapper[data-modal-id="${id}"]`
+    );
     if (!overlay) return;
-    overlay.classList.add('is-open');
+    overlay.classList.add("is-open");
   }
 
   function closeModal(overlay) {
-    overlay.classList.add('is-closing');
-    overlay.addEventListener('animationend', function _h() {
-      overlay.classList.remove('is-open','is-closing');
-      overlay.removeEventListener('animationend', _h);
+    overlay.classList.add("is-closing");
+    overlay.addEventListener("animationend", function _h() {
+      overlay.classList.remove("is-open", "is-closing");
+      overlay.removeEventListener("animationend", _h);
     });
   }
 
-  openBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+  openBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
       openModal(btn.dataset.modalTarget);
     });
   });
 
   // крестик
-  closeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const overlay = btn.closest('.remodal-wrapper');
+  closeBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const overlay = btn.closest(".remodal-wrapper");
       closeModal(overlay);
     });
   });
 
   // клик по фону
-  overlays.forEach(ov => {
-    ov.addEventListener('click', e => {
+  overlays.forEach((ov) => {
+    ov.addEventListener("click", (e) => {
       if (e.target === ov) {
         closeModal(ov);
       }
