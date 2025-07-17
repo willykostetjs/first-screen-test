@@ -4022,6 +4022,7 @@ li::before {
   position: fixed;
   inset: 0;
   display: none;
+  z-index: 1000;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .remodal-wrapper.is-open {
@@ -4056,7 +4057,7 @@ li::before {
   right: 15px;
   width: 24px;
   height: 24px;
-  background: url("data:image/svg+xml;base64,...") no-repeat center;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEzM18zOTM3KSI+CjxwYXRoIGQ9Ik0xNC4xMjI1IDEyLjAwMDdMMjMuNTYwMiAyLjU2MzAyQzI0LjE0NjYgMS45NzcxNyAyNC4xNDY2IDEuMDI2NiAyMy41NjAyIDAuNDQwNzQyQzIyLjk3MzkgLTAuMTQ1NjEyIDIyLjAyNDMgLTAuMTQ1NjEyIDIxLjQzOCAwLjQ0MDc0MkwxMi4wMDAyIDkuODc4NDRMMi41NjIwNSAwLjQ0MDc0MkMxLjk3NTY5IC0wLjE0NTYxMiAxLjAyNjEyIC0wLjE0NTYxMiAwLjQzOTc2NiAwLjQ0MDc0MkMtMC4xNDY1ODkgMS4wMjY2IC0wLjE0NjU4OSAxLjk3NzE3IDAuNDM5NzY2IDIuNTYzMDJMOS44Nzc5NyAxMi4wMDA3TDAuNDM5NzY2IDIxLjQzODRDLTAuMTQ2NTg5IDIyLjAyNDMgLTAuMTQ2NTg5IDIyLjk3NDkgMC40Mzk3NjYgMjMuNTYwN0MwLjczMjk0MyAyMy44NTM0IDEuMTE3MTcgMjQgMS41MDA5MSAyNEMxLjg4NDY0IDI0IDIuMjY4ODcgMjMuODUzNCAyLjU2MjA1IDIzLjU2MDJMMTIuMDAwMiAxNC4xMjI1TDIxLjQzOCAyMy41NjAyQzIxLjczMTEgMjMuODUzNCAyMi4xMTU0IDI0IDIyLjQ5OTEgMjRDMjIuODgyOCAyNCAyMy4yNjcxIDIzLjg1MzQgMjMuNTYwMiAyMy41NjAyQzI0LjE0NjYgMjIuOTc0NCAyNC4xNDY2IDIyLjAyMzggMjMuNTYwMiAyMS40Mzc5TDE0LjEyMjUgMTIuMDAwN1oiIGZpbGw9IiNBMUExQTEiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMzNfMzkzNyI+CjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K") no-repeat center;
   opacity: 0.6;
   border: none;
   cursor: pointer;
@@ -4078,6 +4079,7 @@ li::before {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-color: #ececec;
 }
 .remodal__form .form .form__item {
   display: flex;
@@ -4102,7 +4104,7 @@ li::before {
 .remodal__form .form .form__item input[type=email]:focus,
 .remodal__form .form .form__item input[type=tel]:focus {
   outline: none;
-  border-color: #F23882;
+  border-color: #2a5cd9;
 }
 .remodal__form .form .form__item-check {
   display: flex;
@@ -4117,7 +4119,7 @@ li::before {
   color: #161618;
 }
 .remodal__form .form .form__item-check label a {
-  color: #F23882;
+  color: #2a5cd9;
   text-decoration: none;
 }
 .remodal__form .form .form__item-check label a:hover {
@@ -4139,7 +4141,7 @@ li::before {
   transition: background 0.2s;
 }
 .remodal__form .form .form__item_bottom button:hover {
-  background: #F23882;
+  background: #2a5cd9;
 }
 
 @keyframes fadeInOverlay {
