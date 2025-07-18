@@ -3716,6 +3716,24 @@ li::before {
   font-size: 44px;
   line-height: 102%;
 }
+.reviewsN__inner .sw-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+.reviewsN__inner .sw .swiper-pagination-bullet-active {
+  background: #ffffff !important;
+}
+.reviewsN__video {
+  cursor: pointer;
+  background: #2a5cd9;
+  border-radius: 10px;
+  padding: 20px 30px;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+}
 .reviewsN .slider__bottom {
   width: 100%;
   padding: 0 20px;
@@ -3775,7 +3793,7 @@ li::before {
   filter: grayscale(0);
 }
 .reviewsN__slider-for {
-  margin-top: -110px;
+  margin-top: -90px;
   overflow: hidden;
 }
 @media (max-width: 991px) {

@@ -43,51 +43,38 @@ document.addEventListener("DOMContentLoaded", function () {
       1024: { slidesPerView: "auto", spaceBetween: 12 },
     },
   });
-  const reviewsSwiper = new Swiper(".reviews-slider", {
+  const thumbsSwiper = new Swiper(".reviews-slider", {
     loop: false,
-    slidesPerView: 3,
     spaceBetween: 12,
-    pagination: {
-      el: ".reviews-dots",
-      clickable: true,
-    },
-    navigation: {
-      prevEl: ".reviews-navigation-left",
-      nextEl: ".reviews-navigation-right",
-    },
+    slidesPerView: 6,
+    watchSlidesProgress: true,
+    slideToClickedSlide: true,
+
     breakpoints: {
-      200: {
-        slidesPerView: 3,
-        spaceBetween: 12,
-      },
-      1024: {
-        slidesPerView: 6,
-        spaceBetween: 12,
-      },
+      200: { slidesPerView: 3, spaceBetween: 12 },
+      1024: { slidesPerView: 6, spaceBetween: 12 },
     },
   });
-  const reviewsLeftSwiper = new Swiper(".reviews-left-slider", {
+  const mainSwiper = new Swiper(".reviews-left-slider", {
     loop: false,
-    slidesPerView: "auto",
     spaceBetween: 50,
-    pagination: {
-      el: ".reviews-left-dots",
-      clickable: true,
+    slidesPerView: 1,
+    thumbs: {
+      swiper: thumbsSwiper,
     },
     navigation: {
       prevEl: ".reviews-left-navigation-left",
       nextEl: ".reviews-left-navigation-right",
     },
-    breakpoints: {
-      200: {
-        slidesPerView: "auto",
-        spaceBetween: 50,
-      },
-      1024: {
-        slidesPerView: "auto",
-        spaceBetween: 50,
-      },
+    pagination: {
+      el: ".reviews-left-dots",
+      clickable: true,
     },
+    // при желании можете добавить навигацию или pagination для главного окна:
+    // navigation: {
+    //   prevEl: ".reviews-left-navigation-left",
+    //   nextEl: ".reviews-left-navigation-right",
+    // }
   });
   const historySwiper = new Swiper(".history-slider", {
     loop: false,
