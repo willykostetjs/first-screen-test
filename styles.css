@@ -3645,6 +3645,7 @@ li::before {
   z-index: 2;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 0;
 }
 .academy .about__tit {
   margin-bottom: 20px;
@@ -3702,6 +3703,7 @@ li::before {
   box-sizing: border-box;
   border-radius: clamp(18px, 1.875vw, 30px);
   background: #161618;
+  overflow-x: hidden;
 }
 @media (max-width: 991px) {
   .reviewsN__inner {
@@ -3710,6 +3712,9 @@ li::before {
 }
 .reviewsN__inner h2 {
   color: #fff;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 102%;
 }
 .reviewsN .slider__bottom {
   width: 100%;
@@ -3820,7 +3825,7 @@ li::before {
 }
 .reviewsN__slider-tx {
   width: 50%;
-  padding: 110px 0 105px 0;
+  padding: 160px 0 45px 0;
   box-sizing: border-box;
 }
 @media (max-width: 991px) {
