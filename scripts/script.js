@@ -22,6 +22,20 @@ function handleFormSubmit() {
     : alert("Пожалуйста, заполните все поля");
 }
 document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.js-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const header = document.querySelector('.header');
+      if (header) header.classList.toggle('is-open');
+    });
+  });
+
+  document.querySelectorAll('.header__menu ul li').forEach(li => {
+    li.addEventListener('click', () => {
+      const header = document.querySelector('.header');
+      if (header) header.classList.remove('is-open');
+    });
+  });
+
   const icfSwiper = new Swiper(".icf-slider", {
     loop: false,
     slidesPerView: "auto",
