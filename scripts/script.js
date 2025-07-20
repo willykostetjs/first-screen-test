@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   const mainSwiper = new Swiper(".reviews-left-slider", {
     loop: false,
-    spaceBetween: 50,
+    spaceBetween: 150,
     slidesPerView: 1,
     thumbs: {
       swiper: thumbsSwiper,
