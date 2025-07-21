@@ -95,6 +95,14 @@ a {
   padding: 11px 20px;
   font-size: 14px;
   font-weight: 400;
+  border-radius: 8px;
+}
+
+.ul-dots {
+  list-style-type: disc !important;
+}
+.ul-dots li::before {
+  content: "•";
 }
 
 .btn-primary {
@@ -825,7 +833,6 @@ li::before {
 }
 @media screen and (max-width: 590px) {
   .base-list-button {
-    width: 100%;
     margin-top: 20px;
     font-size: 15px;
   }
