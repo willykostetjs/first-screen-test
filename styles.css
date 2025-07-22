@@ -2242,12 +2242,60 @@ li::before {
   border: none;
   outline: none;
 }
+.faq-form input#check {
+  opacity: 0;
+}
 .faq-check {
-  font-size: 12px;
-  margin-top: 25px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: white;
+}
+.faq-check input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.faq-check::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid #515152;
+  border-radius: 4px;
+  transition: background 0.2s, border-color 0.2s;
+  margin-right: 0.5em;
+  box-sizing: border-box;
+}
+input[type=checkbox]:checked + .faq-check, input[type=checkbox]:checked + .faq-check::before {
+  background: none;
+  border-color: #515152;
+}
+input[type=checkbox]:checked + .faq-check::after {
+  content: "";
+  position: absolute;
+  left: 0.25em;
+  top: 0.05em;
+  width: 0.5em;
+  height: 0.9em;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 .faq-check a {
+  color: white;
   text-decoration: underline;
+  margin-left: 0.2em;
 }
 .faq-submit {
   background: #2a5cd9;
@@ -3991,6 +4039,7 @@ li::before {
   font-weight: 500;
   font-size: 44px;
   line-height: 102%;
+  max-width: 50%;
 }
 .reviewsN__inner .sw-bottom {
   position: absolute;

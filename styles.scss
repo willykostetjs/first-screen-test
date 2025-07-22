@@ -89,7 +89,7 @@ a {
   list-style-type: disc !important;
   li {
     &::before {
-     content:'•'
+      content: "•";
     }
   }
 }
@@ -2161,6 +2161,9 @@ li {
       padding: 24px;
       border: none;
       outline: none;
+      &#check{
+        opacity: 0;
+      }
       @media screen and (max-width: 1000px) {
       }
       @media screen and (max-width: 590px) {
@@ -2168,10 +2171,63 @@ li {
     }
   }
   &-check {
-    font-size: 12px;
-    margin-top: 25px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    // hide the native checkbox
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 1em;
+      height: 1em;
+      margin: 0;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    // draw our custom box
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      background: none; // dark background
+      border: 1px solid #515152;
+      border-radius: 4px;
+      transition: background 0.2s, border-color 0.2s;
+      margin-right: 0.5em;
+      box-sizing: border-box;
+    }
+
+    // draw checkmark when checked
+    input[type="checkbox"]:checked + &,
+    input[type="checkbox"]:checked + &::before {
+      background: none; // maybe a slightly lighter on check
+      border-color: #515152;
+    }
+
+    // Use a pseudo-element for the checkmark
+    input[type="checkbox"]:checked + &::after {
+      content: "";
+      position: absolute;
+      left: 0.25em;
+      top: 0.05em;
+      width: 0.5em;
+      height: 0.9em;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    // style the link part
     a {
+      color: white;
       text-decoration: underline;
+      margin-left: 0.2em;
     }
   }
   &-submit {
@@ -4122,6 +4178,7 @@ li {
       font-weight: 500;
       font-size: 44px;
       line-height: 102%;
+      max-width: 50%;
     }
     .sw-bottom {
       position: absolute;
