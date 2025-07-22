@@ -4649,8 +4649,10 @@ input[type=checkbox]:checked + .faq-check::after {
 .remodal__form .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  background-color: #ececec;
+  gap: 30px;
+  background-color: #fff;
+  margin-top: 40px;
+  padding: 0;
 }
 .remodal__form .form .form__item {
   display: flex;
@@ -4665,11 +4667,13 @@ input[type=checkbox]:checked + .faq-check::after {
 .remodal__form .form .form__item input[type=text],
 .remodal__form .form .form__item input[type=email],
 .remodal__form .form .form__item input[type=tel] {
-  padding: 10px 15px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  transition: border-color 0.2s;
+  width: 100%;
+  padding: 5px 0;
+  font-family: "Golos Text", sans-serif;
+  box-sizing: border-box;
+  font-size: clamp(16px, 1.25vw, 20px);
+  border: none;
+  border-bottom: 1px solid #161618;
 }
 .remodal__form .form .form__item input[type=text]:focus,
 .remodal__form .form .form__item input[type=email]:focus,
@@ -4700,7 +4704,6 @@ input[type=checkbox]:checked + .faq-check::after {
   margin-top: 10px;
 }
 .remodal__form .form .form__item_bottom button {
-  width: 100%;
   padding: 12px;
   font-size: 16px;
   font-weight: 500;
