@@ -816,6 +816,22 @@ li {
       gap: 20px;
     }
   }
+  &-btn {
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 221px;
+    height: 60px;
+    background: #2a5cd9;
+    text-align: center;
+    color: white;
+    @media screen and (max-width: 590px) {
+      width: 100%;
+      display: block;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 20px 30px;
+    }
+  }
   &-left {
     max-width: 577px;
     h2 {
@@ -826,6 +842,7 @@ li {
       }
       @media screen and (max-width: 590px) {
         font-size: 30px;
+        margin-bottom: 20px;
       }
     }
     &-text {
@@ -922,6 +939,7 @@ li {
         @media screen and (max-width: 590px) {
           font-size: 10px;
           height: 27px;
+          padding: 0 5px;
         }
       }
       p {
@@ -1822,6 +1840,8 @@ li {
       }
       @media screen and (max-width: 768px) {
         border-radius: 18px;
+        align-items: center;
+        justify-content: center;
       }
     }
     &-text {
@@ -2161,7 +2181,7 @@ li {
       padding: 24px;
       border: none;
       outline: none;
-      &#check{
+      &#check {
         opacity: 0;
       }
       @media screen and (max-width: 1000px) {
@@ -2297,6 +2317,7 @@ li {
     @media screen and (max-width: 1000px) {
     }
     @media screen and (max-width: 590px) {
+      font-size: 14px;
     }
     &:last-child {
       margin-bottom: 0;
@@ -3378,6 +3399,12 @@ li {
     font-weight: 500;
     font-size: 44px;
     margin-bottom: 40px;
+    @media screen and (max-width: 991px) {
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
   .btn {
     display: -webkit-inline-box;
@@ -3559,6 +3586,9 @@ li {
     &_bg1 {
       .rate__all {
         background: #4c77aa;
+        @media (max-width: 468px) {
+          padding: 0;
+        }
       }
       .rate__prices-moment .rate__prices-now {
         color: #303032;
@@ -3566,11 +3596,19 @@ li {
       .rate__prices-all .rate__prices-old {
         color: #94b3d9;
       }
+       @media (max-width: 468px) {
+        background: #4c77aa;
+        border-radius: 18px;
+        padding: 14px;
+      }
     }
     &_bg2 {
       .rate__all {
         background: #161618;
         color: #ffffff;
+        @media (max-width: 468px) {
+          padding: 0;
+        }
       }
       .rate__prices-moment .rate__prices-now {
         color: #4c77aa;
@@ -3582,10 +3620,18 @@ li {
       ul li:before {
         // background-color: #f2f2f2;
       }
+      @media (max-width: 468px) {
+        background: #161618;
+        border-radius: 18px;
+        padding: 14px;
+      }
     }
     &_bg3 {
       .rate__all {
         background: #4c77aa;
+        @media (max-width: 468px) {
+          padding: 0;
+        }
       }
       .rate__prices-moment .rate__prices-now {
         color: #688471;
@@ -3595,6 +3641,11 @@ li {
       }
       ul li:before {
         // background-color: #f2f2f2;
+      }
+      @media (max-width: 468px) {
+        background: #4c77aa;
+        border-radius: 18px;
+        padding: 14px;
       }
     }
   }
@@ -3624,6 +3675,9 @@ li {
     @media (max-width: 768px) {
       display: block;
     }
+    @media (max-width: 468px) {
+      display: flex;
+    }
   }
 
   &__about {
@@ -3635,7 +3689,11 @@ li {
   &__prices {
     display: flex;
     justify-content: space-between;
-
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 468px) {
+      flex-direction: column;
+    }
     &-moment {
       .rate__prices-now {
         font-size: 40px;
@@ -3646,7 +3704,9 @@ li {
 
     &-all {
       width: 49%;
-
+      @media (max-width: 468px) {
+        width: 100%;
+      }
       .rate__prices-now {
         font-size: 24px;
         font-weight: 500;
@@ -4122,7 +4182,8 @@ li {
     max-width: 1100px;
     margin-bottom: 50px;
     @media (max-width: 450px) {
-      font-size: 24px;
+      font-size: 30px;
+    margin-bottom: 30px;
     }
     @media (max-width: 400px) {
     }
@@ -4142,6 +4203,10 @@ li {
     padding: 30px;
     background-color: white;
     border-radius: 30px;
+     @media screen and (max-width: 590px) {
+border-radius: 18px;
+padding: 14px;
+    }
     &.active {
       background: #282f3f;
       color: white;
@@ -4179,6 +4244,11 @@ li {
       font-size: 44px;
       line-height: 102%;
       max-width: 50%;
+      @media screen and (max-width: 590px) {
+max-width: 100%;
+font-size: 30px;
+margin-bottom: 15px;
+    }
     }
     .sw-bottom {
       position: absolute;

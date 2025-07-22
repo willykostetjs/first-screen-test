@@ -878,6 +878,24 @@ li::before {
     gap: 20px;
   }
 }
+.how-much-btn {
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 221px;
+  height: 60px;
+  background: #2a5cd9;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 590px) {
+  .how-much-btn {
+    width: 100%;
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 20px 30px;
+  }
+}
 .how-much-left {
   max-width: 577px;
 }
@@ -889,6 +907,7 @@ li::before {
 @media screen and (max-width: 590px) {
   .how-much-left h2 {
     font-size: 30px;
+    margin-bottom: 20px;
   }
 }
 .how-much-left-text {
@@ -986,6 +1005,7 @@ li::before {
   .how-much-right-line span {
     font-size: 10px;
     height: 27px;
+    padding: 0 5px;
   }
 }
 .how-much-right-line p {
@@ -1904,6 +1924,8 @@ li::before {
 @media screen and (max-width: 768px) {
   .practice-item-img {
     border-radius: 18px;
+    align-items: center;
+    justify-content: center;
   }
 }
 .practice-item-text {
@@ -2361,6 +2383,11 @@ input[type=checkbox]:checked + .faq-check::after {
   line-height: 130%;
   color: #161618;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 590px) {
+  .develop-text {
+    font-size: 14px;
+  }
 }
 .develop-text:last-child {
   margin-bottom: 0;
@@ -3315,6 +3342,12 @@ input[type=checkbox]:checked + .faq-check::after {
   font-size: 44px;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 768px) {
+  .paket-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
 .paket .btn {
   display: inline-flex;
   align-items: center;
@@ -3475,15 +3508,32 @@ input[type=checkbox]:checked + .faq-check::after {
 .rate__item_bg1 .rate__all {
   background: #4c77aa;
 }
+@media (max-width: 468px) {
+  .rate__item_bg1 .rate__all {
+    padding: 0;
+  }
+}
 .rate__item_bg1 .rate__prices-moment .rate__prices-now {
   color: #303032;
 }
 .rate__item_bg1 .rate__prices-all .rate__prices-old {
   color: #94b3d9;
 }
+@media (max-width: 468px) {
+  .rate__item_bg1 {
+    background: #4c77aa;
+    border-radius: 18px;
+    padding: 14px;
+  }
+}
 .rate__item_bg2 .rate__all {
   background: #161618;
   color: #ffffff;
+}
+@media (max-width: 468px) {
+  .rate__item_bg2 .rate__all {
+    padding: 0;
+  }
 }
 .rate__item_bg2 .rate__prices-moment .rate__prices-now {
   color: #4c77aa;
@@ -3492,14 +3542,33 @@ input[type=checkbox]:checked + .faq-check::after {
   color: #ffffff;
   opacity: 0.6;
 }
+@media (max-width: 468px) {
+  .rate__item_bg2 {
+    background: #161618;
+    border-radius: 18px;
+    padding: 14px;
+  }
+}
 .rate__item_bg3 .rate__all {
   background: #4c77aa;
+}
+@media (max-width: 468px) {
+  .rate__item_bg3 .rate__all {
+    padding: 0;
+  }
 }
 .rate__item_bg3 .rate__prices-moment .rate__prices-now {
   color: #688471;
 }
 .rate__item_bg3 .rate__prices-all .rate__prices-old {
   color: #94b3d9;
+}
+@media (max-width: 468px) {
+  .rate__item_bg3 {
+    background: #4c77aa;
+    border-radius: 18px;
+    padding: 14px;
+  }
 }
 .rate__all {
   padding: 20px;
@@ -3526,6 +3595,11 @@ input[type=checkbox]:checked + .faq-check::after {
     display: block;
   }
 }
+@media (max-width: 468px) {
+  .rate__title {
+    display: flex;
+  }
+}
 .rate__about {
   margin-bottom: 23px;
   font-size: 14px;
@@ -3535,6 +3609,11 @@ input[type=checkbox]:checked + .faq-check::after {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 468px) {
+  .rate__prices {
+    flex-direction: column;
+  }
+}
 .rate__prices-moment .rate__prices-now {
   font-size: 40px;
   font-weight: 500;
@@ -3542,6 +3621,11 @@ input[type=checkbox]:checked + .faq-check::after {
 }
 .rate__prices-all {
   width: 49%;
+}
+@media (max-width: 468px) {
+  .rate__prices-all {
+    width: 100%;
+  }
 }
 .rate__prices-all .rate__prices-now {
   font-size: 24px;
@@ -3985,7 +4069,8 @@ input[type=checkbox]:checked + .faq-check::after {
 }
 @media (max-width: 450px) {
   .reviews-title {
-    font-size: 24px;
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 .reviews-tabs {
@@ -4003,6 +4088,12 @@ input[type=checkbox]:checked + .faq-check::after {
   padding: 30px;
   background-color: white;
   border-radius: 30px;
+}
+@media screen and (max-width: 590px) {
+  .reviews-tab {
+    border-radius: 18px;
+    padding: 14px;
+  }
 }
 .reviews-tab.active {
   background: #282f3f;
@@ -4040,6 +4131,13 @@ input[type=checkbox]:checked + .faq-check::after {
   font-size: 44px;
   line-height: 102%;
   max-width: 50%;
+}
+@media screen and (max-width: 590px) {
+  .reviewsN__inner h2 {
+    max-width: 100%;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
 }
 .reviewsN__inner .sw-bottom {
   position: absolute;
