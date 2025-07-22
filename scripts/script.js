@@ -69,6 +69,16 @@ document.addEventListener("DOMContentLoaded", function () {
       1024: { slidesPerView: 6, spaceBetween: 12 },
     },
   });
+  // const reviewsAvaSlider = new Swiper(".reviews-ava-slider", {
+  //   loop: false,
+  //   spaceBetween: 10,
+  //   slidesPerView: 3,
+
+  //   breakpoints: {
+  //     200: { slidesPerView: 3, spaceBetween: 10 },
+  //     1024: { slidesPerView: 3, spaceBetween: 10 },
+  //   },
+  // });
   const mainSwiper = new Swiper(".reviews-left-slider", {
     loop: false,
     spaceBetween: 150,
@@ -84,11 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       el: ".reviews-left-dots",
       clickable: true,
     },
-    // при желании можете добавить навигацию или pagination для главного окна:
-    // navigation: {
-    //   prevEl: ".reviews-left-navigation-left",
-    //   nextEl: ".reviews-left-navigation-right",
-    // }
+    
   });
   const historySwiper = new Swiper(".history-slider", {
     loop: false,

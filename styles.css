@@ -4209,6 +4209,12 @@ input[type=checkbox]:checked + .faq-check::after {
     bottom: 370px;
   }
 }
+@media (max-width: 468px) {
+  .reviewsN__slider-top {
+    width: 100%;
+    bottom: 320px;
+  }
+}
 .reviewsN__slider-nav {
   overflow: hidden;
 }
@@ -4240,6 +4246,11 @@ input[type=checkbox]:checked + .faq-check::after {
   .reviewsN__slider-ava {
     width: 44px;
     height: 44px;
+  }
+}
+@media (max-width: 491px) {
+  .reviewsN__slider-ava {
+    margin: 0;
   }
 }
 .reviewsN__slider-ava img {
@@ -4283,6 +4294,12 @@ input[type=checkbox]:checked + .faq-check::after {
 .reviewsN__slider-bt {
   padding-bottom: 20px;
   margin-top: 40px;
+}
+@media (max-width: 468px) {
+  .reviewsN__slider-bt {
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
 }
 .reviewsN__slider-name {
   display: inline-block;
