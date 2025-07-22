@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slideToClickedSlide: true,
 
     breakpoints: {
-      200: { slidesPerView: 3, spaceBetween: 12 },
+      200: { slidesPerView: 6, spaceBetween: 12 },
       1024: { slidesPerView: 6, spaceBetween: 12 },
     },
   });
