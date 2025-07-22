@@ -1150,6 +1150,8 @@ li::before {
 @media screen and (max-width: 590px) {
   .icf {
     overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 }
 .icf-title {
@@ -3366,6 +3368,11 @@ input[type=checkbox]:checked + .faq-check::after {
 .paket {
   margin-top: 80px;
 }
+@media screen and (max-width: 768px) {
+  .paket {
+    margin-top: 30px;
+  }
+}
 .paket-title {
   font-weight: 500;
   font-size: 44px;
@@ -3572,6 +3579,11 @@ input[type=checkbox]:checked + .faq-check::after {
   opacity: 0.6;
 }
 @media (max-width: 468px) {
+  .rate__item_bg2 .rate__prices-all .rate__prices-old {
+    order: 1;
+  }
+}
+@media (max-width: 468px) {
   .rate__item_bg2 {
     background: #161618;
     border-radius: 18px;
@@ -3641,6 +3653,7 @@ input[type=checkbox]:checked + .faq-check::after {
 @media (max-width: 468px) {
   .rate__prices {
     flex-direction: column;
+    gap: 20px;
   }
 }
 .rate__prices-moment .rate__prices-now {
@@ -3654,12 +3667,19 @@ input[type=checkbox]:checked + .faq-check::after {
 @media (max-width: 468px) {
   .rate__prices-all {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .rate__prices-all .rate__prices-now {
   font-size: 24px;
   font-weight: 500;
   line-height: 130%;
+}
+@media (max-width: 468px) {
+  .rate__prices-all .rate__prices-now {
+    order: 2;
+  }
 }
 .rate__prices-all .rate__prices-old {
   text-decoration: line-through;
@@ -3691,6 +3711,12 @@ input[type=checkbox]:checked + .faq-check::after {
   display: flex;
   font-size: 14px;
   gap: 5px;
+}
+@media (max-width: 468px) {
+  .rate__prices-tx {
+    width: 100%;
+    order: 3;
+  }
 }
 .rate__prices-tx span {
   font-weight: 600;

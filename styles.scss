@@ -1097,6 +1097,8 @@ li {
   overflow-x: hidden;
   @media screen and (max-width: 590px) {
     overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
   &-title {
     font-weight: 500;
@@ -3419,6 +3421,9 @@ li {
 
 .paket {
   margin-top: 80px;
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
   &-title {
     font-weight: 500;
     font-size: 44px;
@@ -3640,6 +3645,10 @@ li {
       .rate__prices-all .rate__prices-old {
         color: #ffffff;
         opacity: 0.6;
+        @media (max-width: 468px) {
+       
+        order: 1;
+      }
       }
       ul li:before {
         // background-color: #f2f2f2;
@@ -3717,6 +3726,7 @@ li {
     }
     @media (max-width: 468px) {
       flex-direction: column;
+      gap: 20px;
     }
     &-moment {
       .rate__prices-now {
@@ -3730,11 +3740,16 @@ li {
       width: 49%;
       @media (max-width: 468px) {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
       }
       .rate__prices-now {
         font-size: 24px;
         font-weight: 500;
         line-height: 130%;
+        @media (max-width: 468px) {
+          order: 2;
+    }
       }
 
       .rate__prices-old {
@@ -3773,6 +3788,10 @@ li {
       display: flex;
       font-size: 14px;
       gap: 5px;
+      @media (max-width: 468px) {
+        width: 100%;
+        order: 3;
+      }
       span {
         font-weight: 600;
         font-size: 12px;
@@ -4485,7 +4504,7 @@ li {
         right: 0;
       }
       @media (max-width: 478px) {
-       bottom: 20px;
+        bottom: 20px;
       }
     }
   }
