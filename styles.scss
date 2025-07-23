@@ -243,22 +243,30 @@ li {
       display: none;
       padding: 20px;
       width: 100%;
-      position: absolute;
-      top: 45px;
+      position: fixed;
+      top: 0;
       left: 0;
       z-index: 10;
+      height: 100vh;
       border-radius: 20px;
       background: #ffffff;
       text-align: center;
       box-sizing: border-box;
     }
-
+&__close{
+  position: absolute;
+  right: 20px;top: 20px;
+  font-size: 24px;
+}
     .is-open & {
       display: block;
     }
   }
 
   &__menu {
+    @media (max-width: 991px) {
+      margin-top: 60px;
+    }
     ul {
       display: flex;
       flex-direction: row;
@@ -1211,6 +1219,7 @@ li {
     border-radius: 45px;
     padding: 30px;
     width: 684px !important;
+    min-height: 415px;
     @media screen and (max-width: 768px) {
       width: 484px !important;
     }

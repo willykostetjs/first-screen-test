@@ -260,18 +260,30 @@ li::before {
     display: none;
     padding: 20px;
     width: 100%;
-    position: absolute;
-    top: 45px;
+    position: fixed;
+    top: 0;
     left: 0;
     z-index: 10;
+    height: 100vh;
     border-radius: 20px;
     background: #ffffff;
     text-align: center;
     box-sizing: border-box;
   }
 }
+.header__holder__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+}
 .is-open .header__holder {
   display: block;
+}
+@media (max-width: 991px) {
+  .header__menu {
+    margin-top: 60px;
+  }
 }
 .header__menu ul {
   display: flex;
@@ -1280,6 +1292,7 @@ li::before {
   border-radius: 45px;
   padding: 30px;
   width: 684px !important;
+  min-height: 415px;
   flex: 0 0 auto;
   font-weight: 400;
   font-size: 16px;

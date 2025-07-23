@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: false,
     slidesPerView: "auto",
     spaceBetween: 12,
+    autoHeight:true,
     pagination: {
       el: ".history-dots",
       clickable: true,
