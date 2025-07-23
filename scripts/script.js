@@ -36,27 +36,46 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const icfSwiper = new Swiper(".icf-slider", {
-    loop: false,
-    slidesPerView: "auto",
-    spaceBetween: 12,
-    mousewheel: {
-      forceToAxis: true,
-      releaseOnEdges: true,
-    },
-    pagination: {
-      el: ".icf-dots",
-      clickable: true,
-    },
-    navigation: {
-      prevEl: ".icf-navigation-left",
-      nextEl: ".icf-navigation-right",
-    },
-    breakpoints: {
-      200: { slidesPerView: "auto", spaceBetween: 12 },
-      1024: { slidesPerView: "auto", spaceBetween: 12 },
-    },
-  });
+  const icfSwiper = new Swiper('.icf-slider', {
+  loop: false,
+  slidesPerView: 'auto',
+  spaceBetween: 12,
+  mousewheel: {          // тач-свайпы остаются
+    forceToAxis: true,
+    releaseOnEdges: true
+  },
+  pagination: { el: '.icf-dots', clickable: true },
+  navigation: {
+    prevEl: '.icf-navigation-left',
+    nextEl: '.icf-navigation-right'
+  },
+  breakpoints: {
+    200:  { slidesPerView: 'auto', spaceBetween: 12 },
+    1024: { slidesPerView: 'auto', spaceBetween: 12 }
+  }
+});
+const sliderEl = document.querySelector('.icf-slider');
+
+function isSliderInFocus() {
+  const rect = sliderEl.getBoundingClientRect();
+  const viewportMid = window.innerHeight / 2;
+  return rect.top <= viewportMid && rect.bottom >= viewportMid;
+}
+
+function wheelHandler(e) {
+  if (window.innerWidth < 1024) return;
+  if (!isSliderInFocus()) return;
+
+  const forward  = e.deltaY > 0;
+  const atLast   = icfSwiper.isEnd;
+  const atFirst  = icfSwiper.isBeginning;
+  if ((forward && !atLast) || (!forward && !atFirst)) {
+    e.preventDefault();                   
+    forward ? icfSwiper.slideNext() : icfSwiper.slidePrev();
+  }
+}
+
+window.addEventListener('wheel', wheelHandler, { passive: false });
   const thumbsSwiper = new Swiper(".reviews-slider", {
     loop: false,
     spaceBetween: 12,

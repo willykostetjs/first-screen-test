@@ -1264,6 +1264,11 @@ li::before {
   display: flex;
   justify-content: center;
 }
+@media (min-width: 1024px) {
+  .icf .icf-slider {
+    overscroll-behavior-y: contain;
+  }
+}
 
 .text-blue {
   color: #2a5cd9;

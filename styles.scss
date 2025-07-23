@@ -1190,6 +1190,11 @@ li {
     display: flex;
     justify-content: center;
   }
+  @media (min-width: 1024px) {
+    .icf-slider {
+      overscroll-behavior-y: contain; 
+    }
+  }
 }
 .text-blue {
   color: #2a5cd9;
@@ -1897,7 +1902,7 @@ li {
         border-radius: 18px;
         align-items: center;
         justify-content: center;
-        picture{
+        picture {
           width: 100%;
         }
       }
@@ -3919,9 +3924,9 @@ li {
     padding: 3px 5px;
     margin-top: -5px;
     @media (max-width: 468px) {
-     position: absolute;
-     right: 80px;
-     top: -23px;
+      position: absolute;
+      right: 80px;
+      top: -23px;
     }
   }
 
@@ -4265,8 +4270,8 @@ li {
 .reviews {
   margin-top: 100px;
   @media (max-width: 468px) {
-  margin-top: 30px;
-    }
+    margin-top: 30px;
+  }
   &-title {
     font-weight: 500;
     font-size: 44px;
