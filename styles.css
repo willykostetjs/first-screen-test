@@ -900,6 +900,11 @@ li::before {
   border-radius: 45px;
   padding: 45px 40px;
 }
+@media screen and (max-width: 1000px) {
+  .how-much-wrapper {
+    border-radius: 18px;
+  }
+}
 @media screen and (max-width: 590px) {
   .how-much-wrapper {
     border-radius: 18px;
@@ -911,7 +916,7 @@ li::before {
   gap: 41px;
   color: white;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .how-much-content {
     flex-direction: column;
     gap: 20px;
@@ -925,6 +930,7 @@ li::before {
   background: #2a5cd9;
   text-align: center;
   color: white;
+  display: block;
 }
 @media screen and (max-width: 590px) {
   .how-much-btn {
@@ -937,6 +943,11 @@ li::before {
 }
 .how-much-left {
   max-width: 577px;
+}
+@media screen and (max-width: 1170px) {
+  .how-much-left {
+    max-width: 100%;
+  }
 }
 .how-much-left h2 {
   font-size: 44px;
@@ -1070,6 +1081,11 @@ li::before {
 .how-much-right-bottom-sum {
   font-weight: 400;
   font-size: 82px;
+}
+@media screen and (max-width: 1170px) {
+  .how-much-right-bottom-sum {
+    font-size: 66px;
+  }
 }
 @media screen and (max-width: 590px) {
   .how-much-right-bottom-sum {
@@ -1522,20 +1538,26 @@ li::before {
   width: 100%;
 }
 @media screen and (max-width: 590px) {
+  .internship-item img {
+    max-width: 90%;
+    max-height: 90%;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 590px) {
   .internship-item {
     border-radius: 5px;
     height: 52px;
   }
 }
 .internship-item picture {
-  height: 65%;
   max-width: 75%;
 }
-.internship-item picture img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+@media screen and (max-width: 590px) {
+  .internship-item picture img {
+    max-width: 90%;
+    width: 100%;
+  }
 }
 
 .text-green {
@@ -2307,13 +2329,13 @@ li::before {
   border: none;
   outline: none;
 }
-.faq-form input#check {
-  opacity: 0;
+.faq-form input[type=checkbox] {
+  display: none;
 }
 .faq-check {
   position: relative;
-  display: inline;
-  align-items: center;
+  display: flex;
+  align-items: start;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -4201,6 +4223,7 @@ input[type=checkbox]:checked + .faq-check::after {
 @media (max-width: 991px) {
   .reviewsN__inner {
     padding: 25px 20px;
+    padding-bottom: 70px;
   }
 }
 @media (max-width: 478px) {
@@ -4215,11 +4238,15 @@ input[type=checkbox]:checked + .faq-check::after {
   line-height: 102%;
   max-width: 50%;
 }
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 1000px) {
   .reviewsN__inner h2 {
     max-width: 100%;
-    font-size: 30px;
     margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .reviewsN__inner h2 {
+    font-size: 30px;
   }
 }
 .reviewsN__inner .sw-bottom {
@@ -4227,6 +4254,11 @@ input[type=checkbox]:checked + .faq-check::after {
   bottom: 0;
   width: 100%;
   z-index: 100;
+}
+@media screen and (max-width: 1000px) {
+  .reviewsN__inner .sw-bottom {
+    bottom: -55px;
+  }
 }
 @media screen and (max-width: 478px) {
   .reviewsN__inner .sw-bottom {
@@ -4288,13 +4320,13 @@ input[type=checkbox]:checked + .faq-check::after {
 }
 @media (max-width: 991px) {
   .reviewsN__slider-top {
-    bottom: 690px;
+    bottom: 630px;
   }
 }
 @media (max-width: 768px) {
   .reviewsN__slider-top {
     width: 100%;
-    bottom: 370px;
+    bottom: 330px;
   }
 }
 @media (max-width: 468px) {

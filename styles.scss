@@ -253,11 +253,12 @@ li {
       text-align: center;
       box-sizing: border-box;
     }
-&__close{
-  position: absolute;
-  right: 20px;top: 20px;
-  font-size: 24px;
-}
+    &__close {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 24px;
+    }
     .is-open & {
       display: block;
     }
@@ -831,6 +832,7 @@ li {
     border-radius: 45px;
     padding: 45px 40px;
     @media screen and (max-width: 1000px) {
+      border-radius: 18px;
     }
     @media screen and (max-width: 590px) {
       border-radius: 18px;
@@ -841,7 +843,7 @@ li {
     display: flex;
     gap: 41px;
     color: white;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
       flex-direction: column;
       gap: 20px;
     }
@@ -854,6 +856,7 @@ li {
     background: #2a5cd9;
     text-align: center;
     color: white;
+    display: block;
     @media screen and (max-width: 590px) {
       width: 100%;
       display: block;
@@ -864,6 +867,9 @@ li {
   }
   &-left {
     max-width: 577px;
+    @media screen and (max-width: 1170px) {
+      max-width: 100%;
+    }
     h2 {
       font-size: 44px;
       font-weight: 500;
@@ -997,7 +1003,8 @@ li {
       &-sum {
         font-weight: 400;
         font-size: 82px;
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1170px) {
+          font-size: 66px;
         }
         @media screen and (max-width: 590px) {
           font-size: 55px;
@@ -1436,6 +1443,11 @@ li {
     min-width: 80px;
     img {
       width: 100%;
+      @media screen and (max-width: 590px) {
+        max-width: 90%;
+        max-height: 90%;
+        height: 90%;
+      }
     }
     @media screen and (max-width: 1000px) {
     }
@@ -1444,12 +1456,21 @@ li {
       height: 52px;
     }
     picture {
-      height: 65%;
       max-width: 75%;
+      @media screen and (max-width: 1000px) {
+      }
+      @media screen and (max-width: 590px) {
+      }
       img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
+        @media screen and (max-width: 1000px) {
+        }
+        @media screen and (max-width: 590px) {
+          max-width: 90%;
+          width: 100%;
+        }
+        // height: 100%;
+        // width: 100%;
+        // object-fit: contain;
       }
     }
   }
@@ -2215,8 +2236,8 @@ li {
       padding: 24px;
       border: none;
       outline: none;
-      &#check {
-        opacity: 0;
+      &[type="checkbox"] {
+        display: none;
       }
       @media screen and (max-width: 1000px) {
       }
@@ -2226,8 +2247,8 @@ li {
   }
   &-check {
     position: relative;
-    display: inline;
-    align-items: center;
+    display: flex;
+    align-items: start;
     cursor: pointer;
     user-select: none;
     color: white;
@@ -3655,9 +3676,8 @@ li {
         color: #ffffff;
         opacity: 0.6;
         @media (max-width: 468px) {
-       
-        order: 1;
-      }
+          order: 1;
+        }
       }
       ul li:before {
         // background-color: #f2f2f2;
@@ -3758,7 +3778,7 @@ li {
         line-height: 130%;
         @media (max-width: 468px) {
           order: 2;
-    }
+        }
       }
 
       .rate__prices-old {
@@ -4296,6 +4316,7 @@ li {
 
     @media (max-width: 991px) {
       padding: 25px 20px;
+      padding-bottom: 70px;
     }
     @media (max-width: 478px) {
       padding-bottom: 70px;
@@ -4306,10 +4327,12 @@ li {
       font-size: 44px;
       line-height: 102%;
       max-width: 50%;
-      @media screen and (max-width: 590px) {
+      @media screen and (max-width: 1000px) {
         max-width: 100%;
-        font-size: 30px;
         margin-bottom: 15px;
+      }
+      @media screen and (max-width: 590px) {
+        font-size: 30px;
       }
     }
     .sw-bottom {
@@ -4317,6 +4340,9 @@ li {
       bottom: 0;
       width: 100%;
       z-index: 100;
+      @media screen and (max-width: 1000px) {
+        bottom: -55px;
+      }
       @media screen and (max-width: 478px) {
         bottom: -55px;
       }
@@ -4376,11 +4402,11 @@ li {
       width: 42%;
     }
     @media (max-width: 991px) {
-      bottom: 690px;
+      bottom: 630px;
     }
     @media (max-width: 768px) {
       width: 100%;
-      bottom: 370px;
+      bottom: 330px;
     }
     @media (max-width: 468px) {
       width: 100%;
@@ -4766,14 +4792,14 @@ li {
       input[type="text"],
       input[type="email"],
       input[type="tel"] {
-            width: 100%;
-    padding: 5px 0;
-    font-family: "Golos Text", sans-serif;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: clamp(16px, 1.25vw, 20px);
-    border: none;
-    border-bottom: 1px solid #161618;
+        width: 100%;
+        padding: 5px 0;
+        font-family: "Golos Text", sans-serif;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: clamp(16px, 1.25vw, 20px);
+        border: none;
+        border-bottom: 1px solid #161618;
         &:focus {
           outline: none;
           border-color: #2a5cd9;
