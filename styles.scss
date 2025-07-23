@@ -1897,6 +1897,9 @@ li {
         border-radius: 18px;
         align-items: center;
         justify-content: center;
+        picture{
+          width: 100%;
+        }
       }
     }
     &-text {
@@ -3782,7 +3785,7 @@ li {
       }
 
       .rate__prices-old {
-        text-decoration: line-through;
+        // text-decoration: line-through;
         font-size: 24px;
         font-weight: 500;
         line-height: 130%;
@@ -3820,6 +3823,7 @@ li {
       @media (max-width: 468px) {
         width: 100%;
         order: 3;
+        position: relative;
       }
       span {
         font-weight: 600;
@@ -3914,6 +3918,11 @@ li {
     line-height: 100%;
     padding: 3px 5px;
     margin-top: -5px;
+    @media (max-width: 468px) {
+     position: absolute;
+     right: 80px;
+     top: -23px;
+    }
   }
 
   // Responsive price tweaks
@@ -4255,6 +4264,9 @@ li {
 
 .reviews {
   margin-top: 100px;
+  @media (max-width: 468px) {
+  margin-top: 30px;
+    }
   &-title {
     font-weight: 500;
     font-size: 44px;

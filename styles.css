@@ -1992,6 +1992,9 @@ li::before {
     align-items: center;
     justify-content: center;
   }
+  .practice-item-img picture {
+    width: 100%;
+  }
 }
 .practice-item-text {
   max-width: 640px;
@@ -3717,7 +3720,6 @@ input[type=checkbox]:checked + .faq-check::after {
   }
 }
 .rate__prices-all .rate__prices-old {
-  text-decoration: line-through;
   font-size: 24px;
   font-weight: 500;
   line-height: 130%;
@@ -3751,6 +3753,7 @@ input[type=checkbox]:checked + .faq-check::after {
   .rate__prices-tx {
     width: 100%;
     order: 3;
+    position: relative;
   }
 }
 .rate__prices-tx span {
@@ -3833,6 +3836,13 @@ input[type=checkbox]:checked + .faq-check::after {
   line-height: 100%;
   padding: 3px 5px;
   margin-top: -5px;
+}
+@media (max-width: 468px) {
+  .rate__saleD {
+    position: absolute;
+    right: 80px;
+    top: -23px;
+  }
 }
 @media (min-width: 1200px) {
   .rate .rate__prices-all:first-child .rate__prices-now,
@@ -4159,6 +4169,11 @@ input[type=checkbox]:checked + .faq-check::after {
 
 .reviews {
   margin-top: 100px;
+}
+@media (max-width: 468px) {
+  .reviews {
+    margin-top: 30px;
+  }
 }
 .reviews-title {
   font-weight: 500;
