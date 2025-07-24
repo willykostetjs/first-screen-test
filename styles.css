@@ -872,8 +872,10 @@ li::before {
 }
 @media screen and (max-width: 590px) {
   .base-list-button {
+    width: 100%;
     margin-top: 20px;
     font-size: 15px;
+    text-align: center;
   }
 }
 
