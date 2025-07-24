@@ -2914,6 +2914,9 @@ input[type=checkbox]:checked + .faq-check::after {
   transform: translateY(0) scale(1);
   opacity: 1;
 }
+.modal-body p {
+  margin-bottom: 10px;
+}
 .modal-overlay {
   position: absolute;
   inset: 0;
@@ -2933,6 +2936,15 @@ input[type=checkbox]:checked + .faq-check::after {
   transform: translateY(-40px) scale(0.98);
   opacity: 0;
   transition: transform 0.3s, opacity 0.3s;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+@media (max-width: 480px) {
+  .modal-content {
+    width: 85%;
+    padding: 20px;
+    max-height: 90vh;
+  }
 }
 .modal-close {
   position: absolute;

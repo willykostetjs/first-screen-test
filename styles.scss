@@ -2817,6 +2817,11 @@ li {
       opacity: 1;
     }
   }
+  &-body{
+    p{
+      margin-bottom: 10px;
+    }
+  }
   &-overlay {
     position: absolute;
     inset: 0;
@@ -2836,6 +2841,13 @@ li {
     transform: translateY(-40px) scale(0.98);
     opacity: 0;
     transition: transform 0.3s, opacity 0.3s;
+    max-height: 90vh;
+    overflow-y: auto;
+    @media (max-width: 480px) {
+      width: 85%;
+      padding: 20px;
+      max-height: 90vh;
+  }
   }
   &-close {
     position: absolute;
