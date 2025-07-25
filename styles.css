@@ -276,6 +276,12 @@ li::before {
   right: 20px;
   top: 20px;
   font-size: 24px;
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .header__holder__close {
+    display: block;
+  }
 }
 .is-open .header__holder {
   display: block;
@@ -440,7 +446,7 @@ li::before {
     font-size: 48px !important;
   }
 }
-@media screen and (max-width: 1084px) {
+@media screen and (max-width: 1015px) {
   .start-heading {
     margin: 0 auto 30px;
   }
@@ -463,7 +469,7 @@ li::before {
     max-width: 500px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .start-list {
     max-width: 100%;
   }
@@ -578,6 +584,11 @@ li::before {
   gap: 20px;
   margin-top: 100px;
 }
+@media screen and (max-width: 1015px) {
+  .about-coach {
+    margin-top: 50px;
+  }
+}
 @media screen and (max-width: 590px) {
   .about-coach {
     margin-top: 40px;
@@ -591,7 +602,7 @@ li::before {
   align-items: stretch;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .about-coach-top {
     flex-direction: column;
   }
@@ -644,7 +655,7 @@ li::before {
   border-radius: 45px;
   padding: 40px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .about-coach-top-text {
     padding: 20px;
     border-radius: 18px;
@@ -656,7 +667,7 @@ li::before {
   font-weight: 500;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .about-coach-top-text h1 {
     font-size: 30px;
     margin-bottom: 20px;
@@ -754,6 +765,11 @@ li::before {
 
 .base-list {
   margin-top: 100px;
+}
+@media screen and (max-width: 1015px) {
+  .base-list {
+    margin-top: 50px;
+  }
 }
 .base-list-wrapper {
   max-width: 1396px;
@@ -891,6 +907,11 @@ li::before {
 .how-much {
   margin-top: 100px;
 }
+@media screen and (max-width: 1015px) {
+  .how-much {
+    margin-top: 50px;
+  }
+}
 @media screen and (max-width: 590px) {
   .how-much {
     margin-top: 40px;
@@ -902,7 +923,7 @@ li::before {
   border-radius: 45px;
   padding: 45px 40px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .how-much-wrapper {
     border-radius: 18px;
   }
@@ -918,7 +939,7 @@ li::before {
   gap: 41px;
   color: white;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .how-much-content {
     flex-direction: column;
     gap: 20px;
@@ -947,6 +968,11 @@ li::before {
   max-width: 577px;
 }
 @media screen and (max-width: 1170px) {
+  .how-much-left {
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 1015px) {
   .how-much-left {
     max-width: 100%;
   }
@@ -1108,7 +1134,7 @@ li::before {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .container {
     padding: 10px !important;
   }
@@ -1142,7 +1168,7 @@ li::before {
     background-image: none;
   }
   .start-heading {
-    font-size: 30px;
+    font-size: 30px !important;
     text-align: center;
   }
   .start-buttons {
@@ -1177,6 +1203,11 @@ li::before {
   padding: 80px 0;
   overflow-x: hidden;
 }
+@media screen and (max-width: 1015px) {
+  .icf {
+    padding: 40px 0;
+  }
+}
 @media screen and (max-width: 590px) {
   .icf {
     overflow: hidden;
@@ -1191,7 +1222,7 @@ li::before {
   letter-spacing: -0.02em;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .icf-title {
     font-size: 34px;
   }
@@ -1477,7 +1508,7 @@ li::before {
   max-width: 722px;
   width: 100%;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .internship-left {
     max-width: 50%;
   }
@@ -1493,7 +1524,7 @@ li::before {
   line-height: 102%;
   margin-bottom: 35px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .internship-title {
     max-width: 50%;
   }
@@ -1574,6 +1605,11 @@ li::before {
 .help {
   margin: 80px 0;
 }
+@media screen and (max-width: 1015px) {
+  .help {
+    margin: 40px 0;
+  }
+}
 @media screen and (max-width: 590px) {
   .help {
     margin: 0px 0 30px;
@@ -1584,7 +1620,7 @@ li::before {
   grid-template-columns: 1fr 578px;
   gap: 12px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .help-content {
     grid-template-columns: 1fr;
   }
@@ -1770,6 +1806,11 @@ li::before {
   overflow-x: hidden;
   padding: 80px 0;
 }
+@media screen and (max-width: 1015px) {
+  .learning {
+    padding: 40px 0;
+  }
+}
 @media screen and (max-width: 590px) {
   .learning {
     padding: 40px 0;
@@ -1865,6 +1906,13 @@ li::before {
   padding: 20px;
   overflow: hidden;
 }
+@media screen and (max-width: 1015px) {
+  .learning-right {
+    border-radius: 22px;
+    padding: 18px;
+    height: 430px;
+  }
+}
 @media screen and (max-width: 590px) {
   .learning-right {
     height: 230px;
@@ -1893,6 +1941,11 @@ li::before {
 .practice {
   margin-top: 100px;
 }
+@media screen and (max-width: 1015px) {
+  .practice {
+    margin-top: 50px;
+  }
+}
 @media screen and (max-width: 590px) {
   .practice {
     margin-top: 40px;
@@ -1904,7 +1957,7 @@ li::before {
   background-color: white;
   padding: 66px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .practice-wrapper {
     border-radius: 30px;
     padding: 20px !important;
@@ -2013,7 +2066,7 @@ li::before {
   line-height: 126%;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .practice-item-title {
     font-size: 20px;
   }
@@ -2025,7 +2078,7 @@ li::before {
   color: #161618;
   opacity: 0.6;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .practice-item-subtitle {
     font-size: 16px;
   }
@@ -2043,6 +2096,11 @@ li::before {
 .community {
   margin-top: 90px;
 }
+@media screen and (max-width: 1015px) {
+  .community {
+    margin-top: 50px;
+  }
+}
 @media screen and (max-width: 590px) {
   .community {
     margin-top: 40px;
@@ -2055,6 +2113,12 @@ li::before {
   padding: 80px 40px;
   overflow-x: hidden;
   color: white;
+}
+@media screen and (max-width: 1015px) {
+  .community-wrapper {
+    border-radius: 22px;
+    padding: 20px 20px !important;
+  }
 }
 @media screen and (max-width: 590px) {
   .community-wrapper {
@@ -2134,6 +2198,11 @@ li::before {
 
 .career {
   margin-top: 80px;
+}
+@media screen and (max-width: 1015px) {
+  .career {
+    margin-top: 40px;
+  }
 }
 @media screen and (max-width: 590px) {
   .career {
@@ -2285,7 +2354,7 @@ li::before {
   color: white;
   gap: 80px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .faq-content {
     gap: 40px;
   }
@@ -2342,6 +2411,11 @@ li::before {
 .faq-form input[type=checkbox] {
   display: none;
 }
+@media screen and (max-width: 590px) {
+  .faq-form input {
+    padding: 20px;
+  }
+}
 .faq-check {
   position: relative;
   display: flex;
@@ -2351,6 +2425,11 @@ li::before {
      -moz-user-select: none;
           user-select: none;
   color: white;
+}
+@media screen and (max-width: 590px) {
+  .faq-check {
+    font-size: 10px;
+  }
 }
 .faq-check input[type=checkbox] {
   position: absolute;
@@ -2409,6 +2488,11 @@ input[type=checkbox]:checked + .faq-check::after {
 .develop {
   margin-top: 90px;
 }
+@media screen and (max-width: 1015px) {
+  .develop {
+    margin-top: 40px;
+  }
+}
 @media screen and (max-width: 590px) {
   .develop {
     margin-top: 30px;
@@ -2419,7 +2503,7 @@ input[type=checkbox]:checked + .faq-check::after {
   grid-template-columns: 578px 1fr;
   gap: 12px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .develop-content {
     grid-template-columns: 378px 1fr;
   }
@@ -2504,7 +2588,7 @@ input[type=checkbox]:checked + .faq-check::after {
   gap: 30px;
   padding-right: 20px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .develop-right-item {
     flex-direction: column;
   }
@@ -2563,6 +2647,12 @@ input[type=checkbox]:checked + .faq-check::after {
 .nalog {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 1015px) {
+  .nalog {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 590px) {
   .nalog {
@@ -2660,7 +2750,7 @@ input[type=checkbox]:checked + .faq-check::after {
   font-size: 24px;
   line-height: 126%;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .banks-title {
     width: 50%;
   }
@@ -2676,7 +2766,7 @@ input[type=checkbox]:checked + .faq-check::after {
   display: flex;
   gap: 12px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .banks-list {
     width: 50%;
   }
@@ -2731,6 +2821,11 @@ input[type=checkbox]:checked + .faq-check::after {
 .cert {
   margin-top: 100px;
 }
+@media screen and (max-width: 1015px) {
+  .cert {
+    margin-top: 40px;
+  }
+}
 @media screen and (max-width: 590px) {
   .cert {
     margin-top: 40px;
@@ -2741,7 +2836,7 @@ input[type=checkbox]:checked + .faq-check::after {
   grid-template-columns: 578px 1fr;
   gap: 12px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .cert-content {
     grid-template-columns: 1fr 1fr;
   }
@@ -2801,6 +2896,11 @@ input[type=checkbox]:checked + .faq-check::after {
 
 .international {
   margin-top: 80px;
+}
+@media screen and (max-width: 1015px) {
+  .international {
+    margin-top: 40px;
+  }
 }
 @media screen and (max-width: 590px) {
   .international {
@@ -2982,9 +3082,10 @@ input[type=checkbox]:checked + .faq-check::after {
   background-color: white;
   border-radius: 50px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .program {
     border-radius: 30px;
+    margin: 30px 0;
   }
 }
 @media screen and (max-width: 590px) {
@@ -3000,7 +3101,7 @@ input[type=checkbox]:checked + .faq-check::after {
   color: #161618;
   padding: 60px 0;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .program-wrapper {
     padding: 20px;
   }
@@ -3011,7 +3112,7 @@ input[type=checkbox]:checked + .faq-check::after {
   line-height: 126%;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .program-title {
     margin-bottom: 10px;
     font-size: 35px;
@@ -3027,7 +3128,7 @@ input[type=checkbox]:checked + .faq-check::after {
   line-height: 126%;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .program-subtitle {
     margin-bottom: 20px;
     font-size: 20px;
@@ -3043,7 +3144,7 @@ input[type=checkbox]:checked + .faq-check::after {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 12px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .program-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -3098,6 +3199,11 @@ input[type=checkbox]:checked + .faq-check::after {
   padding: 60px 0;
   border-radius: clamp(18px, 1.875vw, 30px);
   background: #ffffff;
+}
+@media screen and (max-width: 991px) {
+  .lessons {
+    padding: 40px 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .lessons {
@@ -3859,7 +3965,7 @@ input[type=checkbox]:checked + .faq-check::after {
 @media (max-width: 468px) {
   .rate__saleD {
     position: absolute;
-    right: 80px;
+    left: 75%;
     top: -23px;
   }
 }
@@ -3968,6 +4074,11 @@ input[type=checkbox]:checked + .faq-check::after {
   background: #ffffff;
   margin-top: 40px;
 }
+@media (max-width: 1000px) {
+  .academy {
+    padding: 40px 0;
+  }
+}
 .academy h2 {
   margin-bottom: 40px;
   font-weight: 500;
@@ -4028,8 +4139,14 @@ input[type=checkbox]:checked + .faq-check::after {
   text-align: center;
 }
 @media (max-width: 478px) {
-  .academy .about__item_lg img {
+  .academy .about__item_lg picture {
+    max-width: 205px;
     width: 100%;
+  }
+  .academy .about__item_lg img {
+    max-width: 205px;
+    width: 100%;
+    max-height: 36px;
   }
 }
 .academy .about__item_bg1 {
@@ -4189,6 +4306,11 @@ input[type=checkbox]:checked + .faq-check::after {
 .reviews {
   margin-top: 100px;
 }
+@media (max-width: 1000px) {
+  .reviews {
+    margin-top: 50px;
+  }
+}
 @media (max-width: 468px) {
   .reviews {
     margin-top: 30px;
@@ -4272,7 +4394,7 @@ input[type=checkbox]:checked + .faq-check::after {
   line-height: 102%;
   max-width: 50%;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .reviewsN__inner h2 {
     max-width: 100%;
     margin-bottom: 15px;
@@ -4289,7 +4411,7 @@ input[type=checkbox]:checked + .faq-check::after {
   width: 100%;
   z-index: 100;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .reviewsN__inner .sw-bottom {
     bottom: -55px;
   }
