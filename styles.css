@@ -942,11 +942,17 @@ li::before {
   .how-much-wrapper {
     border-radius: 18px;
   }
+  .how-much-wrapper.container {
+    padding: 20px !important;
+  }
 }
 @media screen and (max-width: 590px) {
   .how-much-wrapper {
     border-radius: 18px;
     padding: 20px;
+  }
+  .how-much-wrapper.container {
+    padding: 10px !important;
   }
 }
 .how-much-content {
@@ -2315,7 +2321,7 @@ li::before {
 @media screen and (max-width: 1015px) {
   .career-wrapper {
     border-radius: 22px;
-    padding: 20px 20px;
+    padding: 20px !important;
   }
 }
 @media screen and (max-width: 590px) {
