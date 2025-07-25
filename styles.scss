@@ -1120,6 +1120,7 @@ li {
 
   .icon-list-item {
     padding-bottom: 0;
+    border-radius:22px;
   }
 
   .start-image {
@@ -2029,7 +2030,7 @@ li {
     }
     @media screen and (max-width: 590px) {
       border-radius: 18px;
-      padding: 20px 20px;
+      padding: 20px !important;
     }
   }
   &-header {
@@ -2126,7 +2127,7 @@ li {
     }
     @media screen and (max-width: 590px) {
       border-radius: 18px;
-      padding: 20px 20px;
+   padding: 20px !important;
     }
   }
   &-header {
@@ -2372,7 +2373,7 @@ li {
     input[type="checkbox"]:checked + &,
     input[type="checkbox"]:checked + &::before {
       background: none; // maybe a slightly lighter on check
-      padding-top: 4px;
+      // padding-top: 4px;
       border-color: #515152;
     }
 

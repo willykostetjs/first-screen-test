@@ -1209,6 +1209,7 @@ li::before {
   }
   .icon-list-item {
     padding-bottom: 0;
+    border-radius: 22px;
   }
   .start-image {
     width: 100%;
@@ -2217,7 +2218,7 @@ li::before {
 @media screen and (max-width: 590px) {
   .community-wrapper {
     border-radius: 18px;
-    padding: 20px 20px;
+    padding: 20px !important;
   }
 }
 .community-header {
@@ -2320,7 +2321,7 @@ li::before {
 @media screen and (max-width: 590px) {
   .career-wrapper {
     border-radius: 18px;
-    padding: 20px 20px;
+    padding: 20px !important;
   }
 }
 .career-title {
@@ -2587,7 +2588,6 @@ li::before {
 }
 input[type=checkbox]:checked + .faq-check, input[type=checkbox]:checked + .faq-check::before {
   background: none;
-  padding-top: 4px;
   border-color: #515152;
 }
 input[type=checkbox]:checked + .faq-check::after {
