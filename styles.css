@@ -3676,7 +3676,7 @@ input[type=checkbox]:checked + .faq-check::after {
   padding: 30px 20px 10px;
   margin-top: 5px;
   border-top: 1px solid #dcddee;
-  max-height: 1000px;
+  max-height: 10000px;
 }
 .accordion__content p {
   margin-bottom: 20px;
