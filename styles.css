@@ -165,6 +165,11 @@ li::before {
   letter-spacing: -0.02em;
   color: #161618;
 }
+@media screen and (max-width: 1015px) {
+  .title {
+    font-size: 36px;
+  }
+}
 @media screen and (max-width: 590px) {
   .title {
     font-size: 30px;
@@ -618,6 +623,11 @@ li::before {
   border-radius: 45px;
   overflow: hidden;
 }
+@media screen and (max-width: 1015px) {
+  .about-coach-top-image-wrapper {
+    border-radius: 22px;
+  }
+}
 .about-coach-top-image-wrapper img {
   width: 100%;
   height: 100%;
@@ -658,7 +668,7 @@ li::before {
 @media screen and (max-width: 1015px) {
   .about-coach-top-text {
     padding: 20px;
-    border-radius: 18px;
+    border-radius: 22px;
   }
 }
 .about-coach-top-text h1 {
@@ -697,6 +707,11 @@ li::before {
   padding: 40px;
   background-color: #4c77aa;
   border-radius: 45px;
+}
+@media screen and (max-width: 1015px) {
+  .about-coach-bottom-text {
+    border-radius: 22px;
+  }
 }
 @media screen and (max-width: 590px) {
   .about-coach-bottom-text {
@@ -982,6 +997,11 @@ li::before {
   font-weight: 500;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 1015px) {
+  .how-much-left h2 {
+    font-size: 36px;
+  }
+}
 @media screen and (max-width: 590px) {
   .how-much-left h2 {
     font-size: 30px;
@@ -1225,6 +1245,7 @@ li::before {
 @media screen and (max-width: 1015px) {
   .icf-title {
     font-size: 34px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 590px) {
@@ -1242,6 +1263,12 @@ li::before {
   flex: 0 0 auto;
   background: white;
   padding: 30px;
+}
+@media screen and (max-width: 1015px) {
+  .icf-item {
+    padding: 20px;
+    border-radius: 22px;
+  }
 }
 @media screen and (max-width: 590px) {
   .icf-item {
@@ -1323,6 +1350,12 @@ li::before {
   letter-spacing: -0.02em;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1015px) {
+  .history-title {
+    font-size: 36px;
+    margin-bottom: 22px;
+  }
+}
 @media screen and (max-width: 590px) {
   .history-title {
     font-size: 30px;
@@ -1334,6 +1367,12 @@ li::before {
   font-size: 26px;
   color: #161618;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1015px) {
+  .history-subtitle {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
 }
 @media screen and (max-width: 590px) {
   .history-subtitle {
@@ -1353,6 +1392,11 @@ li::before {
   line-height: 126%;
   letter-spacing: -0.01em;
   color: #161618;
+}
+@media screen and (max-width: 1015px) {
+  .history-item {
+    border-radius: 22px;
+  }
 }
 @media screen and (max-width: 768px) {
   .history-item {
@@ -1496,6 +1540,12 @@ li::before {
   gap: 40px;
   color: white;
 }
+@media screen and (max-width: 1015px) {
+  .internship-wrapper {
+    border-radius: 22px;
+    padding: 20px !important;
+  }
+}
 @media screen and (max-width: 590px) {
   .internship-wrapper {
     border-radius: 18px;
@@ -1527,6 +1577,7 @@ li::before {
 @media screen and (max-width: 1015px) {
   .internship-title {
     max-width: 50%;
+    font-size: 35px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1541,6 +1592,11 @@ li::before {
   font-size: 24px;
   line-height: 126%;
   letter-spacing: -0.02em;
+}
+@media screen and (max-width: 1015px) {
+  .internship-subtitle {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 590px) {
   .internship-subtitle {
@@ -1557,6 +1613,11 @@ li::before {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
+}
+@media screen and (max-width: 1015px) {
+  .internship-list {
+    gap: 5px;
+  }
 }
 @media screen and (max-width: 590px) {
   .internship-list {
@@ -1575,11 +1636,22 @@ li::before {
 .internship-item img {
   width: 100%;
 }
+@media screen and (max-width: 1015px) {
+  .internship-item img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 @media screen and (max-width: 590px) {
   .internship-item img {
     max-width: 90%;
     max-height: 90%;
     height: 90%;
+  }
+}
+@media screen and (max-width: 1015px) {
+  .internship-item {
+    padding: 0 10px;
   }
 }
 @media screen and (max-width: 590px) {
@@ -1638,6 +1710,12 @@ li::before {
   color: white;
   height: 100%;
 }
+@media screen and (max-width: 1015px) {
+  .help-left {
+    padding: 20px;
+    border-radius: 22px;
+  }
+}
 @media screen and (max-width: 590px) {
   .help-left {
     border-radius: 18px;
@@ -1669,6 +1747,11 @@ li::before {
   font-size: 44px;
   line-height: 102%;
   letter-spacing: -0.02em;
+}
+@media screen and (max-width: 1015px) {
+  .help-title {
+    font-size: 36px;
+  }
 }
 @media screen and (max-width: 590px) {
   .help-title {
@@ -1844,6 +1927,11 @@ li::before {
   overflow: hidden;
   position: relative;
 }
+@media screen and (max-width: 1015px) {
+  .learning-left {
+    height: 322px;
+  }
+}
 @media screen and (max-width: 590px) {
   .learning-left {
     height: auto;
@@ -1976,6 +2064,12 @@ li::before {
   letter-spacing: -0.02em;
   color: #161618;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1015px) {
+  .practice-title {
+    font-size: 36px;
+    margin-bottom: 22px;
+  }
 }
 @media screen and (max-width: 590px) {
   .practice-title {
@@ -2217,6 +2311,12 @@ li::before {
   overflow-x: hidden;
   color: white;
 }
+@media screen and (max-width: 1015px) {
+  .career-wrapper {
+    border-radius: 22px;
+    padding: 20px 20px;
+  }
+}
 @media screen and (max-width: 590px) {
   .career-wrapper {
     border-radius: 18px;
@@ -2250,6 +2350,11 @@ li::before {
 .career-content {
   margin-top: 60px;
 }
+@media screen and (max-width: 1015px) {
+  .career-content {
+    margin-top: 40px;
+  }
+}
 @media screen and (max-width: 590px) {
   .career-content {
     margin-top: 30px;
@@ -2262,6 +2367,11 @@ li::before {
   border-radius: 45px;
   color: #161618;
   overflow: hidden;
+}
+@media screen and (max-width: 1015px) {
+  .career-item {
+    border-radius: 22px;
+  }
 }
 @media screen and (max-width: 590px) {
   .career-item {
@@ -2303,6 +2413,11 @@ li::before {
   border-radius: 45px;
   overflow: hidden;
 }
+@media screen and (max-width: 1015px) {
+  .career-item-img {
+    border-radius: 22px;
+  }
+}
 @media screen and (max-width: 590px) {
   .career-item-img {
     border-radius: 18px;
@@ -2342,6 +2457,12 @@ li::before {
   border-radius: 28px;
   padding: 40px;
 }
+@media screen and (max-width: 1015px) {
+  .faq-wrapper {
+    border-radius: 22px;
+    padding: 22px !important;
+  }
+}
 @media screen and (max-width: 590px) {
   .faq-wrapper {
     border-radius: 18px;
@@ -2371,6 +2492,12 @@ li::before {
   line-height: 102%;
   margin-bottom: 35px;
 }
+@media screen and (max-width: 1015px) {
+  .faq-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+}
 @media screen and (max-width: 590px) {
   .faq-title {
     font-size: 30px;
@@ -2383,6 +2510,11 @@ li::before {
   font-size: 24px;
   line-height: 126%;
   letter-spacing: -0.02em;
+}
+@media screen and (max-width: 1015px) {
+  .faq-subtitle {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 590px) {
   .faq-subtitle {
@@ -2673,6 +2805,12 @@ input[type=checkbox]:checked + .faq-check::after {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1015px) {
+  .nalog-wrapper {
+    border-radius: 22px;
+    padding: 22px !important;
+  }
+}
 @media screen and (max-width: 590px) {
   .nalog-wrapper {
     flex-direction: column;
@@ -2737,6 +2875,12 @@ input[type=checkbox]:checked + .faq-check::after {
   align-items: center;
   gap: 12px;
 }
+@media screen and (max-width: 1015px) {
+  .banks-wrapper {
+    border-radius: 22px;
+    padding: 22px !important;
+  }
+}
 @media screen and (max-width: 590px) {
   .banks-wrapper {
     flex-direction: column;
@@ -2753,6 +2897,7 @@ input[type=checkbox]:checked + .faq-check::after {
 @media screen and (max-width: 1015px) {
   .banks-title {
     width: 50%;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 590px) {
@@ -2786,9 +2931,13 @@ input[type=checkbox]:checked + .faq-check::after {
   width: 212px;
   height: 108px;
 }
+@media screen and (max-width: 1015px) {
+  .banks-item {
+    padding: 0 10px;
+  }
+}
 @media screen and (max-width: 590px) {
   .banks-item {
-    border-radius: 8px;
     width: 100%;
     height: 126px;
   }
@@ -2932,6 +3081,12 @@ input[type=checkbox]:checked + .faq-check::after {
   color: #161618;
   font-weight: 500;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1015px) {
+  .international-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 590px) {
   .international-title {
@@ -4027,6 +4182,11 @@ input[type=checkbox]:checked + .faq-check::after {
 .questions {
   margin: 80px 0;
 }
+@media (max-width: 1015px) {
+  .questions {
+    margin: 40px 0;
+  }
+}
 @media (max-width: 500px) {
   .questions {
     margin: 40px 0;
@@ -4074,7 +4234,7 @@ input[type=checkbox]:checked + .faq-check::after {
   background: #ffffff;
   margin-top: 40px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1015px) {
   .academy {
     padding: 40px 0;
   }
@@ -4306,7 +4466,7 @@ input[type=checkbox]:checked + .faq-check::after {
 .reviews {
   margin-top: 100px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1015px) {
   .reviews {
     margin-top: 50px;
   }
@@ -4322,6 +4482,11 @@ input[type=checkbox]:checked + .faq-check::after {
   line-height: 102%;
   max-width: 1100px;
   margin-bottom: 50px;
+}
+@media (max-width: 1015px) {
+  .reviews-title {
+    font-size: 36px;
+  }
 }
 @media (max-width: 450px) {
   .reviews-title {
@@ -4398,6 +4563,7 @@ input[type=checkbox]:checked + .faq-check::after {
   .reviewsN__inner h2 {
     max-width: 100%;
     margin-bottom: 15px;
+    font-size: 36px;
   }
 }
 @media screen and (max-width: 590px) {
