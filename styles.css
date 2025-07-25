@@ -924,13 +924,13 @@ li::before {
 }
 @media screen and (max-width: 1015px) {
   .how-much {
+    padding: 0 14px;
     margin-top: 50px;
   }
 }
 @media screen and (max-width: 590px) {
   .how-much {
     margin-top: 40px;
-    padding: 0 14px;
   }
 }
 .how-much-wrapper {
@@ -1532,9 +1532,13 @@ li::before {
 .internship {
   margin-top: 20px;
 }
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 1015px) {
   .internship {
     padding: 12px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .internship {
     margin-top: 10px;
   }
 }
@@ -1936,6 +1940,7 @@ li::before {
 }
 @media screen and (max-width: 1015px) {
   .learning-left {
+    border-radius: 22px;
     height: 322px;
   }
 }
@@ -2005,7 +2010,7 @@ li::before {
   .learning-right {
     border-radius: 22px;
     padding: 18px;
-    height: 430px;
+    height: auto;
   }
 }
 @media screen and (max-width: 590px) {
@@ -2039,12 +2044,12 @@ li::before {
 @media screen and (max-width: 1015px) {
   .practice {
     margin-top: 50px;
+    padding: 0 12px;
   }
 }
 @media screen and (max-width: 590px) {
   .practice {
     margin-top: 40px;
-    padding: 0 12px;
   }
 }
 .practice-wrapper {
@@ -2200,12 +2205,12 @@ li::before {
 @media screen and (max-width: 1015px) {
   .community {
     margin-top: 50px;
+    padding: 0 12px;
   }
 }
 @media screen and (max-width: 590px) {
   .community {
     margin-top: 40px;
-    padding: 0 12px;
   }
 }
 .community-wrapper {
@@ -2302,13 +2307,13 @@ li::before {
 }
 @media screen and (max-width: 1015px) {
   .career {
+    padding: 0 12px;
     margin-top: 40px;
   }
 }
 @media screen and (max-width: 590px) {
   .career {
     margin-top: 40px;
-    padding: 0 12px;
   }
 }
 .career-wrapper {
@@ -2790,11 +2795,11 @@ input[type=checkbox]:checked + .faq-check::after {
   .nalog {
     margin-top: 30px;
     margin-bottom: 30px;
+    padding: 0 12px;
   }
 }
 @media screen and (max-width: 590px) {
   .nalog {
-    padding: 0 12px;
     position: relative;
     z-index: 2;
   }
@@ -2864,9 +2869,13 @@ input[type=checkbox]:checked + .faq-check::after {
   }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 1015px) {
   .banks {
     padding: 0 12px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .banks {
     margin-top: -70px;
     position: relative;
     z-index: 1;
@@ -3251,7 +3260,8 @@ input[type=checkbox]:checked + .faq-check::after {
 }
 @media screen and (max-width: 590px) {
   .program {
-    padding: 0 12px;
+    padding: 20px 0 12px;
+    border-radius: 18px;
   }
 }
 .program-link {

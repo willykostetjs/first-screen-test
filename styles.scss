@@ -840,11 +840,11 @@ li {
 .how-much {
   margin-top: 100px;
   @media screen and (max-width: 1015px) {
+    padding: 0 14px;
     margin-top: 50px;
   }
   @media screen and (max-width: 590px) {
     margin-top: 40px;
-    padding: 0 14px;
   }
   &-wrapper {
     background: #161618;
@@ -1410,9 +1410,9 @@ li {
   margin-top: 20px;
 
   @media screen and (max-width: 1015px) {
+    padding: 12px;
   }
   @media screen and (max-width: 590px) {
-    padding: 12px;
     margin-top: 10px;
   }
   &-wrapper {
@@ -1769,6 +1769,7 @@ li {
     overflow: hidden;
     position: relative;
     @media screen and (max-width: 1015px) {
+      border-radius: 22px;
       height: 322px;
     }
     @media screen and (max-width: 590px) {
@@ -1835,7 +1836,7 @@ li {
     @media screen and (max-width: 1015px) {
       border-radius: 22px;
       padding: 18px;
-      height: 430px;
+      height: auto;
     }
     @media screen and (max-width: 590px) {
       height: 230px;
@@ -1873,10 +1874,10 @@ li {
   margin-top: 100px;
   @media screen and (max-width: 1015px) {
     margin-top: 50px;
+    padding: 0 12px;
   }
   @media screen and (max-width: 590px) {
     margin-top: 40px;
-    padding: 0 12px;
   }
   &-wrapper {
     border-radius: 50px;
@@ -2019,10 +2020,10 @@ li {
   margin-top: 90px;
   @media screen and (max-width: 1015px) {
     margin-top: 50px;
+    padding: 0 12px;
   }
   @media screen and (max-width: 590px) {
     margin-top: 40px;
-    padding: 0 12px;
   }
   &-wrapper {
     border-radius: 50px;
@@ -2115,11 +2116,11 @@ li {
 .career {
   margin-top: 80px;
   @media screen and (max-width: 1015px) {
+    padding: 0 12px;
     margin-top: 40px;
   }
   @media screen and (max-width: 590px) {
     margin-top: 40px;
-    padding: 0 12px;
   }
   &-wrapper {
     border-radius: 50px;
@@ -2578,9 +2579,9 @@ li {
   @media screen and (max-width: 1015px) {
     margin-top: 30px;
     margin-bottom: 30px;
+    padding: 0 12px;
   }
   @media screen and (max-width: 590px) {
-    padding: 0 12px;
     position: relative;
     z-index: 2;
   }
@@ -2647,9 +2648,9 @@ li {
 }
 .banks {
   @media screen and (max-width: 1015px) {
+    padding: 0 12px;
   }
   @media screen and (max-width: 590px) {
-    padding: 0 12px;
     margin-top: -70px;
     position: relative;
     z-index: 1;
@@ -2990,7 +2991,8 @@ li {
     margin: 30px 0;
   }
   @media screen and (max-width: 590px) {
-    padding: 0 12px;
+    padding: 20px 0 12px;
+    border-radius: 18px;
   }
   &-link {
     display: flex;
